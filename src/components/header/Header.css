@@ -12,7 +12,13 @@
 .logo-link {
     display: flex;
     align-items: center;
+    max-width: 189px;
 }
+
+.logo-link:hover {
+    cursor: pointer;
+}
+
 
 .logo {
     width: 100%;
