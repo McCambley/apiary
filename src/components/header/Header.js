@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import './Header.css';
-import Logo from '../../assets/logo.png';
-import Hamburger from '../../assets/hamburger.svg';
-import XIcon from '../../assets/x-icon.svg';
+import Logo from '../../images/logo.png';
+import Hamburger from '../../images/hamburger.svg';
+import XIcon from '../../images/x-icon.svg';
 import HeaderWrapper from '../header-wrapper/HeaderWrapper';
 
 function Header() {
