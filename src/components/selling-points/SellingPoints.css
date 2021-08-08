@@ -1,0 +1,27 @@
+.selling-points {
+    background-color: #1A1B22;
+}
+
+.selling-points__title-group {
+    max-width: 840px;
+    width: 58.33%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.selling-points__title {
+    font-size: 48px;
+    line-height: 55.58px;
+    color: #FFFFFF;
+}
+
+.selling-points__subtitle {
+    color: #DDDDDD;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.selling-points__image-card-group {
+    display: flex;
+}
+
