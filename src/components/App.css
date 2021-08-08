@@ -3,4 +3,6 @@
 
 .page {
     font-family: "Suisse Intl", sans-serif;
+    min-width: 320px;
+    margin: 0 auto;
 }
