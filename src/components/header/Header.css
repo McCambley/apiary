@@ -12,6 +12,11 @@
 .logo-link {
     display: flex;
     align-items: center;
+    max-width: 189px;
+}
+
+.logo-link:hover {
+    cursor: pointer;
 }
 
 .logo {
@@ -164,6 +169,10 @@
         border: none;
     }
 
+    .header__hamburger-button:hover {
+        cursor: pointer;
+    }
+
     .header__hamburger-button_active {
         display: block;
     }
@@ -173,6 +182,11 @@
         background-color: transparent;
         border: none;
     }
+
+    .header__x-icon-button:hover {
+        cursor: pointer;
+    }
+
 
     .header__x-icon-button_active {
         display: block;
@@ -227,6 +241,7 @@
         background-color: #FF9900;
         width: 60%;
         margin: 0 auto;
+        border-radius: 40px;
     }
 
 }
