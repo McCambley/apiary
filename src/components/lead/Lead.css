@@ -1,0 +1,18 @@
+.lead__title {
+    font-size: 48px;
+    line-height: 55.58px;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.lead__subtitle {
+    color: #DDDDDD;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.lead__image-card-group {
+    display: flex;
+}
+
