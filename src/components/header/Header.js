@@ -32,17 +32,17 @@ function Header() {
     return (
         <header className="header">
             <div className="header__mobile-wrapper">
-                <Link className="logo-link" to="header" smooth={true}><img className="logo" src={Logo} alt="" /></Link>
+                <Link className="logo-link" to="/dummy-page" smooth={true}><img className="logo" src={Logo} alt="" /></Link>
                 <button className={`header__hamburger-button ${isMenuOpen ? '' : 'header__hamburger-button_active'}`}><img src={Hamburger} alt="" onClick={onNavClick} /></button>
                 <button className={`header__x-icon-button ${isMenuOpen ? 'header__x-icon-button_active' : ''}`}><img src={XIcon} alt="" onClick={onNavClick} /></button>
             </div>
             <HeaderWrapper wrapMobileMenu={mobileWidth} isMenuOpen={isMenuOpen}>
                 <ul className="header__navbar">
-                    <li className="header__list"><Link className="header__link" to="" smooth={true} onClick={onNavClick} >We can help!</Link></li>
-                    <li className="header__list"><Link className="header__link" to="" smooth={true} onClick={onNavClick} >About</Link></li>
-                    <li className="header__list"><Link className="header__link" to="" smooth={true} onClick={onNavClick} >How to start</Link></li>
-                    <li className="header__list"><Link className="header__link" to="" smooth={true} onClick={onNavClick} >Projects</Link></li>
-                    <li className="header__list"><Link className="header__link" to="" smooth={true} onClick={onNavClick} >Contacts</Link></li>
+                    <li className="header__list"><Link className="header__link" to="/dummy-page" smooth={true} onClick={onNavClick} >We can help!</Link></li>
+                    <li className="header__list"><Link className="header__link" to="/dummy-page" smooth={true} onClick={onNavClick} >About</Link></li>
+                    <li className="header__list"><Link className="header__link" to="/dummy-page" smooth={true} onClick={onNavClick} >How to start</Link></li>
+                    <li className="header__list"><Link className="header__link" to="/dummy-page" smooth={true} onClick={onNavClick} >Projects</Link></li>
+                    <li className="header__list"><Link className="header__link" to="/dummy-page" smooth={true} onClick={onNavClick} >Contacts</Link></li>
                 </ul>
                 <button className="header__button" to="" onClick={onNavClick} >Delegate a task</button>
             </HeaderWrapper>
