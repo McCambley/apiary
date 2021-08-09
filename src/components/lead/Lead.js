@@ -8,18 +8,21 @@ import PRBoostImage from '../../images/rocket.png';
 function Lead() {
     return (
         <SellingPoints
+        componentType="lead"
+        title="Why is it useful for your company?"
+        subtitle="By handing over assignments to students for work, you free experienced employees from routine tasks, as well as increase brand awareness."
         cardAImage={ResourceSavingImage}
         cardAAlt="hands exchanging resources"
         cardATitle="Resource saving"
-        cardAParagraph="Delegate tasks for free and get results that can be used in your future work."
+        cardADescription="Delegate tasks for free and get results that can be used in your future work."
         cardBImage={PublicizeImage}
         cardBAlt="megaphone and media marketing"
         cardBTitle="Publicize"
-        cardBParagraph="We take pride in the real-world value of the tasks that our students perform and we share them in all available channels."
+        cardBDescription="We take pride in the real-world value of the tasks that our students perform and we share them in all available channels."
         cardCImage={PRBoostImage}
         cardCAlt="rocket ship"
         cardCTitle="PR boost"
-        cardCParagraph="This will increase the visibility of the company among job seekers and attract those who share the values of your company."
+        cardCDescription="This will increase the visibility of the company among job seekers and attract those who share the values of your company."
       />
     )
 }

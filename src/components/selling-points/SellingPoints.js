@@ -5,24 +5,26 @@ function SellingPoints(props) {
     return (
         <section className="selling-points">
             <div className="selling-points__title-group">
-                <h2 className="selling-points__title">Why is it useful for your company?</h2>
-                <p className="selling-points__subtitle">By handing over assignments to students for work, you free experienced employees from routine tasks, as well as increase brand awareness.</p>
+                <h2 className="selling-points__title">{props.title}</h2>
+                <p className="selling-points__subtitle">{props.subtitle}</p>
             </div>
             <div className="selling-points__image-card-group">
-                <div className="image-card">
-                    <img className="image-card__image" src={props.cardAImage} alt={props.cardAAlt} />
-                    <p className="image-card__title">{props.cardATitle}</p>
-                    <p className="image-card__description">{props.cardAParagraph}</p>
+                <div className="selling-points__image-card-wrap-container">
+                    <div className="image-card">
+                        <img className={`image-card__image ${props.componentType === "lead" ? 'image-card__image_type_resources' : 'image-card__image_type_quality'}`} src={props.cardAImage} alt={props.cardAAlt} />
+                        <p className="image-card__title">{props.cardATitle}</p>
+                        <p className="image-card__description">{props.cardADescription}</p>
+                    </div>
                 </div>
                 <div className="image-card">
-                    <img className="image-card__image" src={props.cardBImage} alt={props.cardBAlt} />
+                    <img className={`image-card__image ${props.componentType === "lead" ? 'image-card__image_type_publicize' : 'image-card__image_type_professionalism'}`} src={props.cardBImage} alt={props.cardBAlt} />
                     <p className="image-card__title">{props.cardBTitle}</p>
-                    <p className="image-card__description">{props.cardBParagraph}</p>
+                    <p className="image-card__description">{props.cardBDescription}</p>
                 </div>
                 <div className="image-card">
-                    <img className="image-card__image" src={props.cardCImage} alt={props.cardCAlt}/>
+                    <img className={`image-card__image ${props.componentType === "lead" ? 'image-card__image_type_boost' : 'image-card__image_type_speciality'}`} src={props.cardCImage} alt={props.cardCAlt} />
                     <p className="image-card__title">{props.cardCTitle}</p>
-                    <p className="image-card__description">{props.cardCParagraph}</p>
+                    <p className="image-card__description">{props.cardCDescription}</p>
                 </div>
             </div>
         </section>
