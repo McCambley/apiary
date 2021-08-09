@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/apiary/static/css/main.a617e044.chunk.css",
-    "main.js": "/apiary/static/js/main.4a24ed55.chunk.js",
-    "main.js.map": "/apiary/static/js/main.4a24ed55.chunk.js.map",
-    "runtime-main.js": "/apiary/static/js/runtime-main.b917b500.js",
-    "runtime-main.js.map": "/apiary/static/js/runtime-main.b917b500.js.map",
-    "static/js/2.0c60d4f9.chunk.js": "/apiary/static/js/2.0c60d4f9.chunk.js",
-    "static/js/2.0c60d4f9.chunk.js.map": "/apiary/static/js/2.0c60d4f9.chunk.js.map",
-    "static/js/3.a293d928.chunk.js": "/apiary/static/js/3.a293d928.chunk.js",
-    "static/js/3.a293d928.chunk.js.map": "/apiary/static/js/3.a293d928.chunk.js.map",
+    "main.css": "/apiary/static/css/main.52dcccb9.chunk.css",
+    "main.js": "/apiary/static/js/main.3d09471d.chunk.js",
+    "main.js.map": "/apiary/static/js/main.3d09471d.chunk.js.map",
+    "runtime-main.js": "/apiary/static/js/runtime-main.3512694a.js",
+    "runtime-main.js.map": "/apiary/static/js/runtime-main.3512694a.js.map",
+    "static/js/2.a3e493e8.chunk.js": "/apiary/static/js/2.a3e493e8.chunk.js",
+    "static/js/2.a3e493e8.chunk.js.map": "/apiary/static/js/2.a3e493e8.chunk.js.map",
+    "static/js/3.21bad8b8.chunk.js": "/apiary/static/js/3.21bad8b8.chunk.js",
+    "static/js/3.21bad8b8.chunk.js.map": "/apiary/static/js/3.21bad8b8.chunk.js.map",
     "index.html": "/apiary/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/apiary/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.0c60d4f9.chunk.js.LICENSE.txt": "/apiary/static/js/2.0c60d4f9.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/apiary/static/media/logo.6ce24c58.svg"
+    "static/css/main.52dcccb9.chunk.css.map": "/apiary/static/css/main.52dcccb9.chunk.css.map",
+    "static/js/2.a3e493e8.chunk.js.LICENSE.txt": "/apiary/static/js/2.a3e493e8.chunk.js.LICENSE.txt",
+    "static/media/hamburger.7d90c33c.svg": "/apiary/static/media/hamburger.7d90c33c.svg",
+    "static/media/hands.5cf54c36.png": "/apiary/static/media/hands.5cf54c36.png",
+    "static/media/hero-meditation.19edbb91.png": "/apiary/static/media/hero-meditation.19edbb91.png",
+    "static/media/megaphone.8f56ecb0.png": "/apiary/static/media/megaphone.8f56ecb0.png",
+    "static/media/rocket.0e66ed9a.png": "/apiary/static/media/rocket.0e66ed9a.png",
+    "static/media/x-icon.e9f35edf.svg": "/apiary/static/media/x-icon.e9f35edf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b917b500.js",
-    "static/js/2.0c60d4f9.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.4a24ed55.chunk.js"
+    "static/js/runtime-main.3512694a.js",
+    "static/js/2.a3e493e8.chunk.js",
+    "static/css/main.52dcccb9.chunk.css",
+    "static/js/main.3d09471d.chunk.js"
   ]
 }
