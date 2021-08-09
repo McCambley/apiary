@@ -2,7 +2,9 @@ import React from 'react';
 
 function DummyPage() {
     return(
-        <div></div>
+        <div>
+            <h1>hello</h1>
+        </div>
     )
 }
 
