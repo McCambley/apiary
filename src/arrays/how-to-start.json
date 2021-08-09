@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "title": "Resource saving",
-    "subTitle": "Delegate tasks for free and get results that can be used in your future work.",
-    "image": "",
-    "alt": ""
+    "title": "Fill in the checklist",
+    "subTitle": "So that we can understand your request and how we can help you",
+    "image": "../images/pencil-checkbox.png",
+    "alt": "to-do list checkmark"
   },
   {
     "id": 2,
-    "title": "Publicize",
-    "subTitle": "We take pride in the real-world value of the tasks that our students perform and we share them in all available channels.",
-    "image": "",
-    "alt": ""
+    "title": "We will clarify the details and connect the necessary experts",
+    "subTitle": "We will help you formulate the request so that it's understandable to our students, and you will receive a high-quality solution in a timely manner",
+    "image": "../images/question-bubble.png",
+    "alt": "question mark chat bubble"
   },
   {
     "id": 3,
-    "title": "PR boost",
-    "subTitle": "This will increase the visibility of the company among job seekers and attract those who share the values of your company.",
-    "image": "",
-    "alt": ""
+    "title": "We will start solving your tasks",
+    "subTitle": "Practicum by Yandex students will solve the task, then our curators check and correct their solutions. We'll send you the work. Additionally, if you wish, you may talk to the authors of the best solutions and invite them to join you",
+    "image": "../images/work-bee.png",
+    "alt": "bee sitting on top the word Work"
   }
 ]
