@@ -1,0 +1,121 @@
+.requests {
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 80px;
+}
+
+.requests__title {
+  margin: 0 auto;
+  max-width: 725px;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.requests__subtitle {
+  color: #616161;
+  max-width: 825px;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 40px auto 70px auto;
+}
+
+.requests__card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  justify-items: center;
+  align-self: center;
+}
+
+.card {
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: translate3D(0, -1px, 0) scale(1.02);
+}
+
+.card__hashtag {
+  color: #ff9900;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.card__title {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.card__image {
+  width: 95%;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .requests {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .requests__card-container {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    grid-template-areas:
+      'card-1 card-1'
+      'card-2 card-3';
+  }
+
+  .card {
+    max-width: 452px;
+  }
+
+  .card:first-of-type {
+    grid-area: card-1;
+  }
+
+  .card:nth-child(2) {
+    grid-area: card-2;
+  }
+
+  .card:last-of-type {
+    grid-area: card-3;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .requests {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .requests__title {
+    text-align: left;
+    font-size: 32px;
+  }
+
+  .requests__subtitle {
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .requests__card-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'card-1'
+      'card-2'
+      'card-3';
+  }
+}
