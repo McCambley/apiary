@@ -6,6 +6,7 @@ import Header from './header/Header.js';
 import Lead from './lead/Lead.js';
 import DummyPage from './dummy-page/DummyPage.js';
 import ChooseUs from './choose-us/ChooseUs.js';
+import Footer from './footer/Footer';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <DummyPage />
       </Route>
       <ChooseUs/>
+      <Footer></Footer>
     </div>
-  )
+  );
 }
 
 export default App;
