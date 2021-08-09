@@ -1,4 +1,4 @@
-export const practicum = [
+const practicum = [
   {
     id: 1,
     owner: 'practicum',
@@ -57,3 +57,5 @@ export const practicum = [
     'bacground-image': 'null',
   },
 ];
+
+export default practicum;

@@ -1,5 +1,6 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/jsx-boolean-value */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import { Link } from 'react-scroll';
@@ -32,9 +33,15 @@ function Header() {
   }
 
   return (
+<<<<<<< HEAD
     <header className="header">
       <div className="header__mobile-wrapper">
         <Link className="logo-link" to="/dummy-page" smooth>
+=======
+    <header className="header" id="header">
+      <div className="header__mobile-wrapper">
+        <Link className="logo-link" to="/dummy-page" smooth={true}>
+>>>>>>> main
           <img className="logo" src={Logo} alt="" />
         </Link>
         <button
@@ -53,27 +60,47 @@ function Header() {
       <HeaderWrapper wrapMobileMenu={mobileWidth} isMenuOpen={isMenuOpen}>
         <ul className="header__navbar">
           <li className="header__list">
+<<<<<<< HEAD
             <Link className="header__link" to="/dummy-page" smooth onClick={onNavClick}>
+=======
+            <Link className="header__link" to="/dummy-page" smooth={true} onClick={onNavClick}>
+>>>>>>> main
               We can help!
             </Link>
           </li>
           <li className="header__list">
+<<<<<<< HEAD
             <Link className="header__link" to="/dummy-page" smooth onClick={onNavClick}>
+=======
+            <Link className="header__link" to="/dummy-page" smooth={true} onClick={onNavClick}>
+>>>>>>> main
               About
             </Link>
           </li>
           <li className="header__list">
+<<<<<<< HEAD
             <Link className="header__link" to="/dummy-page" smooth onClick={onNavClick}>
+=======
+            <Link className="header__link" to="/dummy-page" smooth={true} onClick={onNavClick}>
+>>>>>>> main
               How to start
             </Link>
           </li>
           <li className="header__list">
+<<<<<<< HEAD
             <Link className="header__link" to="/dummy-page" smooth onClick={onNavClick}>
+=======
+            <Link className="header__link" to="/dummy-page" smooth={true} onClick={onNavClick}>
+>>>>>>> main
               Projects
             </Link>
           </li>
           <li className="header__list">
+<<<<<<< HEAD
             <Link className="header__link" to="/dummy-page" smooth onClick={onNavClick}>
+=======
+            <Link className="header__link" to="/dummy-page" smooth={true} onClick={onNavClick}>
+>>>>>>> main
               Contacts
             </Link>
           </li>

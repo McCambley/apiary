@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import ResourceSavingImage from '../images/hands.png';
 import PublicizeImage from '../images/megaphone.png';
 import PRBoostImage from '../images/rocket.png';
@@ -28,3 +27,5 @@ export const useful = [
     alt: 'rocket ship',
   },
 ];
+
+export default useful;

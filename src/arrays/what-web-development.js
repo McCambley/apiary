@@ -1,4 +1,4 @@
-export const whatWeb = [
+const whatWeb = [
   {
     id: 1,
     number: '1',
@@ -18,3 +18,8 @@ export const whatWeb = [
     subtitle: 'We are able to work on highly complex websites with deeply nested pages.',
   },
 ];
+<<<<<<< HEAD
+=======
+
+export default whatWeb;
+>>>>>>> main

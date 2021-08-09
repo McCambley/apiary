@@ -29,3 +29,5 @@ export const choose = [
     alt: 'flowers',
   },
 ];
+
+export default choose;

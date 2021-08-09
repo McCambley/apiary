@@ -2,7 +2,7 @@ import DataAnalysis from '../images/data-analysis.png';
 import WebDev from '../images/web-dev.png';
 import DataScience from '../images/data-science.png';
 
-export const requests = [
+const requests = [
   {
     id: 1,
     hashtag: '#programing',
@@ -25,3 +25,5 @@ export const requests = [
     alt: "rubik's cube",
   },
 ];
+
+export default requests;

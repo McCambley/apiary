@@ -2,7 +2,7 @@ import Checkbox from '../images/pencil-checkbox.png';
 import Bee from '../images/work-bee.png';
 import QuestionBubble from '../images/question-bubble.png';
 
-export const start = [
+const start = [
   {
     id: 1,
     title: 'Fill in the checklist',
@@ -27,3 +27,5 @@ export const start = [
     alt: 'bee sitting on top the word Work',
   },
 ];
+
+export default start;
