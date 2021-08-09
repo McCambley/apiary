@@ -8,18 +8,23 @@
 }
 
 .footer {
-  display: grid;
   background-color: #1a1b22;
   color: #dddddd;
+  padding: 80px;
+  font-size: 20px;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+.footer__content {
+  gap: 20px;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     'about credit top'
     'contact credit copy';
-  padding: 80px;
-  gap: 20px;
-  font-size: 20px;
-  line-height: 30px;
-  overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .footer__about {
@@ -124,15 +129,18 @@
 }
 @media (max-width: 768px) {
   .footer {
-    gap: 60px;
     padding: 40px 10px;
+    font-size: 18px;
+  }
+
+  .footer__content {
+    gap: 60px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       'about top'
       'contact contact'
       'credit credit'
       'copy copy';
-    font-size: 18px;
   }
 
   .footer__contact {
