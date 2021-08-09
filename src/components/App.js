@@ -17,8 +17,8 @@ function App() {
       <Route path="/dummy-page">
         <DummyPage />
       </Route>
-      <ChooseUs/>
-      <Footer></Footer>
+      <ChooseUs />
+      <Footer />
     </div>
   );
 }
