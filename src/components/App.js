@@ -5,6 +5,7 @@ import Hero from './hero/Hero.js';
 import Header from './header/Header.js';
 import Lead from './lead/Lead.js';
 import DummyPage from './dummy-page/DummyPage';
+import Footer from './footer/Footer';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <Route path="/dummy-page">
         <DummyPage />
       </Route>
+      <Footer></Footer>
     </div>
-  )
+  );
 }
 
 export default App;
