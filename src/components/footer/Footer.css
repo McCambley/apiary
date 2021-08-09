@@ -19,6 +19,7 @@
   gap: 20px;
   font-size: 20px;
   line-height: 30px;
+  overflow: hidden;
 }
 
 .footer__about {
