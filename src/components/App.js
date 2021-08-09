@@ -5,7 +5,7 @@ import Hero from './hero/Hero.js';
 import Header from './header/Header.js';
 import Lead from './lead/Lead.js';
 import DummyPage from './dummy-page/DummyPage.js';
-import ChooseUs from './choose-us/ChooseUs';
+import ChooseUs from './choose-us/ChooseUs.js';
 
 function App() {
   return (
