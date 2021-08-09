@@ -5,7 +5,7 @@ import DataScience from '../images/data-science.png';
 const requests = [
   {
     id: 1,
-    hashtag: '#programing',
+    hashtag: '#programming',
     title: 'Web development',
     image: DataAnalysis,
     alt: 'website drawing',
