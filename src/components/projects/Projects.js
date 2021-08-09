@@ -1,7 +1,31 @@
+import React from 'react';
 import './Projects.css';
 import floppyHat from '../../images/floppy-hat.png';
+import {
+  webDevProjects,
+  dataAnalysisProjects,
+  dataScienceProjects,
+} from '../../arrays/delegate-tasks';
 
 export default function Projects() {
+  const [focusedCourse, setCourse] = React.useState([]);
+  const [displayedProjects, setProjects] = React.useState([]);
+  // console.table(webDevProjects, dataAnalysisProjects, dataScienceProjects);
+  console.log(displayedProjects);
+
+  React.useEffect(() => {
+    setCourse(webDevProjects);
+    setProjects(focusedCourse.slice(0, 2));
+  }, []);
+
+  function updateCourse(course) {
+    setCourse(course);
+  }
+
+  function showMore() {
+    setProjects(focusedCourse);
+  }
+
   const title = 'Delegate tasks to those who enjoy them';
   const subtitle =
     'Check out the projects our students have done for companies in the USA and beyond';
@@ -24,6 +48,9 @@ export default function Projects() {
         <button type="button" className="projects__button">
           Data science
         </button>
+        {displayedProjects.map((project) => {
+          <Project data={project} />;
+        })}
       </div>
     </section>
   );
