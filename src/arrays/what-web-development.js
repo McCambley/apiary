@@ -18,8 +18,5 @@ const whatWeb = [
     subtitle: 'We are able to work on highly complex websites with deeply nested pages.',
   },
 ];
-<<<<<<< HEAD
-=======
 
 export default whatWeb;
->>>>>>> main
