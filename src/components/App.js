@@ -6,6 +6,7 @@ import Header from './header/Header.js';
 import Lead from './lead/Lead.js';
 import DummyPage from './dummy-page/DummyPage.js';
 import ChooseUs from './choose-us/ChooseUs.js';
+import Projects from './projects/Projects';
 import Footer from './footer/Footer';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <DummyPage />
       </Route>
       <ChooseUs />
+      <Projects />
       <Footer />
     </div>
   );
