@@ -57,32 +57,9 @@
 
 .image-card__image {
     margin: 0;
-    margin-bottom: 32px;
-    border: 1px solid red;
-}
-
-.image-card__image_type_resources {
-    max-width: 248px;
-}
-
-.image-card__image_type_publicize {
-    max-width: 316px;
-}
-
-.image-card__image_type_boost {
-    max-width: 293px;
-}
-
-.image-card__image_type_quality {
-    max-width: 332px;
-}
-
-.image-card__image_type_professionalism {
-    max-width: 375px;
-}
-
-.image-card__image_type_speciality {
-    max-width: 371px;
+    margin-bottom: 25px;
+    max-width: 350px;
+    width: 100%;
 }
 
 .image-card__title {
@@ -143,10 +120,6 @@
         margin-bottom: 97px;
     }
 
-    .image-card__image {
-        margin-bottom: 30px;
-    }
-
 }
 
 
@@ -193,7 +166,11 @@
     }
 
     .image-card:nth-child(2) {
-        margin: 70px 0;
+        margin: 80px 0;
+    }
+
+    .image-card__image {
+        margin-bottom: 15px;
     }
 
 }
@@ -252,10 +229,6 @@
 
     .image-card:first-child {
         width: 100%;
-    }
-
-    .image-card__image {
-        margin-bottom: 30px;
     }
 
     .image-card__title {

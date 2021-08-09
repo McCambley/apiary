@@ -2,7 +2,7 @@ import React from 'react';
 import SellingPoints from '../selling-points/SellingPoints.js';
 import '../selling-points/SellingPoints.css';
 import QualityImage from '../../images/star-world.png';
-import ProfessionalismImage from '../../images/grad-cpu.png';
+import ProfessionalismImage from '../../images/grad-laptop.png';
 import SpecialityImage from '../../images/bees-n-flowers.png';
 
 function ChooseUs() {
