@@ -1,0 +1,68 @@
+.footer {
+  display: grid;
+  background-color: #1a1b22;
+  color: #dddddd;
+  grid-template-areas:
+    'about credit top'
+    'contact credit copy';
+  padding: 80px;
+  font-size: 20px;
+}
+
+.footer__about {
+  border: 1px solid red;
+  grid-area: about;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__top {
+  border: 1px solid red;
+  grid-area: top;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__contact {
+  border: 1px solid red;
+  grid-area: contact;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__email {
+  border: 1px solid red;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__social {
+  border: 1px solid red;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__phone {
+  border: 1px solid red;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__credits {
+  border: 1px solid red;
+  grid-area: credit;
+}
+
+.footer__disclaimer {
+  border: 1px solid red;
+}
+
+.footer__authors {
+  border: 1px solid red;
+}
+
+.footer__copyright {
+  border: 1px solid red;
+  grid-area: copy;
+}
