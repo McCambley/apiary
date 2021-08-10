@@ -6,6 +6,7 @@ import {
   dataAnalysisProjects,
   dataScienceProjects,
 } from '../../arrays/delegate-tasks';
+import Project from '../project/Project.js';
 
 export default function Projects() {
   const [focusedCourse, setCourse] = React.useState([]);
@@ -15,8 +16,12 @@ export default function Projects() {
 
   React.useEffect(() => {
     setCourse(webDevProjects);
-    setProjects(focusedCourse.slice(0, 2));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  React.useEffect(() => {
+    setProjects(focusedCourse.slice(0, 2));
+  }, [focusedCourse]);
 
   function updateCourse(course) {
     setCourse(course);
@@ -48,9 +53,11 @@ export default function Projects() {
         <button type="button" className="projects__button">
           Data science
         </button>
-        {displayedProjects.map((project) => {
-          <Project data={project} />;
-        })}
+        <ul className="projects__list">
+          {displayedProjects.map((project) => (
+            <Project key={project.id} data={project} />
+          ))}
+        </ul>
       </div>
     </section>
   );
