@@ -11,8 +11,7 @@ import Project from '../project/Project.js';
 export default function Projects() {
   const [focusedCourse, setCourse] = React.useState([]);
   const [displayedProjects, setProjects] = React.useState([]);
-  // console.table(webDevProjects, dataAnalysisProjects, dataScienceProjects);
-  console.log(displayedProjects);
+  const [isExpanded, setExpanded] = React.useState(false);
 
   React.useEffect(() => {
     setCourse(webDevProjects);
@@ -28,7 +27,12 @@ export default function Projects() {
   }
 
   function showMore() {
-    setProjects(focusedCourse);
+    if (!isExpanded) {
+      setProjects(focusedCourse);
+    } else {
+      setProjects(focusedCourse.slice(0, 2));
+    }
+    setExpanded(!isExpanded);
   }
 
   const title = 'Delegate tasks to those who enjoy them';
@@ -65,11 +69,25 @@ export default function Projects() {
         >
           Data science
         </button>
-        <ul className="projects__list">
-          {displayedProjects.map((project) => (
-            <Project key={project.info.title} data={project} />
-          ))}
-        </ul>
+      </div>
+      <ul className="projects__list">
+        {displayedProjects.map((project) => (
+          <Project key={project.id} data={project} />
+        ))}
+      </ul>
+      <div className="projects__end-buttons">
+        <button type="button" className="projects__end-button" onClick={showMore}>
+          {!isExpanded ? 'More projects...' : 'Less projects..'}
+        </button>
+        <button
+          type="button"
+          className="projects__end-button"
+          onClick={() => {
+            console.log('Delegating...');
+          }}
+        >
+          Delegate a task
+        </button>
       </div>
     </section>
   );

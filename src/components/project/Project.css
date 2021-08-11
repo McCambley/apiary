@@ -1,6 +1,6 @@
 @keyframes appear {
   from {
-    transform: scale(0.99);
+    transform: scale(1.02);
     opacity: 0;
   }
   to {
@@ -14,7 +14,7 @@
 }
 
 .project {
-  animation: appear 0.3s ease forwards;
+  animation: appear 0.3s ease-out forwards;
   margin-bottom: 60px;
 }
 
