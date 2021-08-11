@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React from 'react';
 import './ProfessionHero.css';
 import WebDev from '../../images/web-dev.png';
