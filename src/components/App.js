@@ -8,6 +8,7 @@ import DummyPage from './dummy-page/DummyPage.js';
 import ChooseUs from './choose-us/ChooseUs.js';
 import ProfessionHero from './profession-hero/ProfessionHero.js';
 import Footer from './footer/Footer';
+import Requests from './requests/Requests';
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
       <Header />
       <Hero />
       <Lead />
+      <Requests />
       <Route path="/dummy-page">
         <DummyPage />
       </Route>
-      <ChooseUs/>
+      <ChooseUs />
       <ProfessionHero />
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
