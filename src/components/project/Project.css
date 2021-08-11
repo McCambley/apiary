@@ -21,13 +21,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  border-radius: 16px;
+  border-radius: 14px;
   background-color: #fff;
 }
 
 .project__image {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 14px;
 }
 
 .project__info {
@@ -93,4 +93,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  list-style: none;
+  padding: 0;
 }
