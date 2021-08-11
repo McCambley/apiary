@@ -1,0 +1,13 @@
+.review__show {
+  color: #ff9900;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.review__show:hover {
+  opacity: 0.7;
+}
+
+.review__show_hidden {
+  display: none;
+}

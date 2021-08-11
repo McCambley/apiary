@@ -1,0 +1,24 @@
+@keyframes appear {
+  from {
+    transform: scale(0.99);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.project * {
+  border: 1px solid red;
+}
+
+.project {
+  animation: appear 0.3s ease forwards;
+  margin-bottom: 60px;
+}
+
+.project__image {
+  width: 300px;
+  border-radius: 10px;
+}

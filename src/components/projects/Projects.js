@@ -44,18 +44,30 @@ export default function Projects() {
         <img src={floppyHat} alt="Developer with a floppy had" className="projects__hero-image" />
       </div>
       <div className="projects__buttons">
-        <button type="button" className="projects__button">
+        <button
+          type="button"
+          className="projects__button"
+          onClick={() => updateCourse(webDevProjects)}
+        >
           Web developement
         </button>
-        <button type="button" className="projects__button">
+        <button
+          type="button"
+          className="projects__button"
+          onClick={() => updateCourse(dataAnalysisProjects)}
+        >
           Data analysis
         </button>
-        <button type="button" className="projects__button">
+        <button
+          type="button"
+          className="projects__button"
+          onClick={() => updateCourse(dataScienceProjects)}
+        >
           Data science
         </button>
         <ul className="projects__list">
           {displayedProjects.map((project) => (
-            <Project key={project.id} data={project} />
+            <Project key={project.info.title} data={project} />
           ))}
         </ul>
       </div>
