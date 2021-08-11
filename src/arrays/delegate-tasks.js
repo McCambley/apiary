@@ -18,6 +18,7 @@ export const webDevProjects = [
         'Landing page website for the company that cakes automated logistics robots from Oakland, CA',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Visit website →',
     },
     reviews: [
       {
@@ -52,6 +53,7 @@ export const webDevProjects = [
       subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Visit website →',
     },
     reviews: [
       {
@@ -86,6 +88,7 @@ export const webDevProjects = [
       subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Visit website →',
     },
     reviews: [
       {
@@ -120,6 +123,7 @@ export const webDevProjects = [
       subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Visit website →',
     },
     reviews: [
       {
@@ -158,6 +162,7 @@ export const dataAnalysisProjects = [
         'Landing page website for the company that cakes automated logistics robots from Oakland, CA',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Download presentation →',
     },
     reviews: [
       {
@@ -192,6 +197,7 @@ export const dataAnalysisProjects = [
       subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Download presentation →',
     },
     reviews: [
       {
@@ -226,6 +232,7 @@ export const dataAnalysisProjects = [
       subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Download presentation →',
     },
     reviews: [
       {
@@ -260,6 +267,7 @@ export const dataAnalysisProjects = [
       subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Download presentation →',
     },
     reviews: [
       {
@@ -297,7 +305,8 @@ export const dataScienceProjects = [
       subtitle:
         'Landing page website for the company that cakes automated logistics robots from Oakland, CA',
       date: 'May 2021',
-      link: 'https://www.example.com/',
+      link: 'https://youtu.be/dQw4w9WgXcQ',
+      linkText: 'Download presentation →',
     },
     reviews: [
       {
@@ -332,6 +341,7 @@ export const dataScienceProjects = [
       subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Download presentation →',
     },
     reviews: [
       {
@@ -366,6 +376,7 @@ export const dataScienceProjects = [
       subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Download presentation →',
     },
     reviews: [
       {
@@ -400,6 +411,7 @@ export const dataScienceProjects = [
       subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
       date: 'May 2021',
       link: 'https://www.example.com/',
+      linkText: 'Download presentation →',
     },
     reviews: [
       {

@@ -21,7 +21,7 @@ export default function Project({ data }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visit website →
+              {data.info.linkText}
             </a>
           </div>
         </div>

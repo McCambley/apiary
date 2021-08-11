@@ -28,6 +28,8 @@
 .project__image {
   width: 100%;
   border-radius: 14px;
+  object-fit: cover;
+  height: 100%;
 }
 
 .project__info {
@@ -95,4 +97,40 @@
   gap: 20px;
   list-style: none;
   padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .project {
+    margin-bottom: 60px;
+  }
+  .project__info-container {
+    min-height: 336px;
+  }
+  .project__info {
+    padding: 20px 20px 20px 0px;
+  }
+}
+
+@media (max-width: 980px) {
+  .project__reviews {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .project__info-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project__image {
+    width: 100%;
+    border-radius: 14px;
+    object-fit: fill;
+    height: auto;
+  }
+
+  .project__info {
+    padding: 0 20px 20px 20px;
+    min-height: 246px;
+  }
 }

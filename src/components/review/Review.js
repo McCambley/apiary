@@ -32,9 +32,11 @@ export default function Review({ data }) {
   return (
     <li className="review">
       <div className="review__reviewer-info">
-        {avatars.map((image) => (
-          <img key={image.id} src={image.src} alt="A dude" className="review__avatar" />
-        ))}
+        <div className="review__avatar-container">
+          {avatars.map((image) => (
+            <img key={image.id} src={image.src} alt="A dude" className="review__avatar" />
+          ))}
+        </div>
         <div className="review__title-container">
           <div className="review__title">{title}</div>
           <h2 className="review__subtitle">{subtitle}</h2>
