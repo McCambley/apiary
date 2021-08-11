@@ -78,76 +78,76 @@ export const webDevProjects = [
       },
     ],
   },
-  {
-    id: 3,
-    image: {
-      image: PrimU,
-    },
-    info: {
-      title: 'Prim-U',
-      subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
-      date: 'May 2021',
-      link: 'https://www.example.com/',
-      linkText: 'Visit website →',
-    },
-    reviews: [
-      {
-        id: 31,
-        avatars: [{ id: 1, src: avatar }],
-        title: 'Maxim Antonenko',
-        subtitle: 'Ant Robotics CEO',
-        description:
-          ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
-      },
-      {
-        id: 32,
-        avatars: [
-          { id: 1, src: avatar },
-          { id: 2, src: avatar },
-          { id: 3, src: avatar },
-        ],
-        title: 'Students team',
-        subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
-        description:
-          '“I learned so much from it,” Xia said. “Not just about new packages and methods of analysis and reporting, but also workflow management, how to clarify task requirements, collaborate with others, and more. Those are the kind of experiences I can put on my resume, and that’s awesome too.”',
-      },
-    ],
-  },
-  {
-    id: 4,
-    image: {
-      image: PrimU,
-    },
-    info: {
-      title: 'Prim-U',
-      subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
-      date: 'May 2021',
-      link: 'https://www.example.com/',
-      linkText: 'Visit website →',
-    },
-    reviews: [
-      {
-        id: 41,
-        avatars: [{ id: 1, src: avatar }],
-        title: 'Maxim Antonenko',
-        subtitle: 'Ant Robotics CEO',
-        description:
-          ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
-      },
-      {
-        id: 42,
-        avatars: [
-          { id: 1, src: avatar },
-          { id: 2, src: avatar },
-          { id: 3, src: avatar },
-        ],
-        title: 'Students team',
-        subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
-        description:
-          '“I learned so much from it,” Xia said. “Not just about new packages and methods of analysis and reporting, but also workflow management, how to clarify task requirements, collaborate with others, and more. Those are the kind of experiences I can put on my resume, and that’s awesome too.”',
-      },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   image: {
+  //     image: PrimU,
+  //   },
+  //   info: {
+  //     title: 'Prim-U',
+  //     subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
+  //     date: 'May 2021',
+  //     link: 'https://www.example.com/',
+  //     linkText: 'Visit website →',
+  //   },
+  //   reviews: [
+  //     {
+  //       id: 31,
+  //       avatars: [{ id: 1, src: avatar }],
+  //       title: 'Maxim Antonenko',
+  //       subtitle: 'Ant Robotics CEO',
+  //       description:
+  //         ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
+  //     },
+  //     {
+  //       id: 32,
+  //       avatars: [
+  //         { id: 1, src: avatar },
+  //         { id: 2, src: avatar },
+  //         { id: 3, src: avatar },
+  //       ],
+  //       title: 'Students team',
+  //       subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
+  //       description:
+  //         '“I learned so much from it,” Xia said. “Not just about new packages and methods of analysis and reporting, but also workflow management, how to clarify task requirements, collaborate with others, and more. Those are the kind of experiences I can put on my resume, and that’s awesome too.”',
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 4,
+  //   image: {
+  //     image: PrimU,
+  //   },
+  //   info: {
+  //     title: 'Prim-U',
+  //     subtitle: 'Main entry page for the first on-demand beauty platform from the South Africa',
+  //     date: 'May 2021',
+  //     link: 'https://www.example.com/',
+  //     linkText: 'Visit website →',
+  //   },
+  //   reviews: [
+  //     {
+  //       id: 41,
+  //       avatars: [{ id: 1, src: avatar }],
+  //       title: 'Maxim Antonenko',
+  //       subtitle: 'Ant Robotics CEO',
+  //       description:
+  //         ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
+  //     },
+  //     {
+  //       id: 42,
+  //       avatars: [
+  //         { id: 1, src: avatar },
+  //         { id: 2, src: avatar },
+  //         { id: 3, src: avatar },
+  //       ],
+  //       title: 'Students team',
+  //       subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
+  //       description:
+  //         '“I learned so much from it,” Xia said. “Not just about new packages and methods of analysis and reporting, but also workflow management, how to clarify task requirements, collaborate with others, and more. Those are the kind of experiences I can put on my resume, and that’s awesome too.”',
+  //     },
+  //   ],
+  // },
 ];
 
 export const dataAnalysisProjects = [

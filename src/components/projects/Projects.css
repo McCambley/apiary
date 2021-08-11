@@ -61,7 +61,8 @@
   width: 75%;
   max-width: 712px;
   gap: 40px;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .projects__button {
@@ -85,6 +86,15 @@
 .projects__button_active {
   color: #ffffff;
   background-color: #ff9900;
+}
+
+.projects__button_hidden {
+  display: none;
+}
+
+.projects__button_center {
+  max-width: 348px;
+  justify-self: center;
 }
 
 .projects__list {

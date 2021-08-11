@@ -13,6 +13,8 @@ export default function Projects({ title, subtitle, defaultDisplay, displayCours
   const [focusedCourse, setCourse] = React.useState(defaultDisplay);
   const [displayedProjects, setProjects] = React.useState([]);
   const [isExpanded, setExpanded] = React.useState(false);
+  const [isShowMoreHidden, setHideShowMoreButton] = React.useState(false);
+  const displayLimit = 2;
 
   React.useEffect(() => {
     setCourse(webDevProjects);
@@ -20,7 +22,15 @@ export default function Projects({ title, subtitle, defaultDisplay, displayCours
   }, []);
 
   React.useEffect(() => {
-    setProjects(focusedCourse.slice(0, 2));
+    setProjects(focusedCourse.slice(0, displayLimit));
+  }, [focusedCourse]);
+
+  React.useEffect(() => {
+    if (focusedCourse.length > displayLimit) {
+      setHideShowMoreButton(false);
+    } else {
+      setHideShowMoreButton(true);
+    }
   }, [focusedCourse]);
 
   function updateCourse(course) {
@@ -31,7 +41,7 @@ export default function Projects({ title, subtitle, defaultDisplay, displayCours
     if (!isExpanded) {
       setProjects(focusedCourse);
     } else {
-      setProjects(focusedCourse.slice(0, 2));
+      setProjects(focusedCourse.slice(0, displayLimit));
     }
     setExpanded(!isExpanded);
   }
@@ -86,12 +96,18 @@ export default function Projects({ title, subtitle, defaultDisplay, displayCours
           ))}
         </ul>
         <div className="projects__buttons projects__buttons_position_end">
-          <button type="button" className="projects__button" onClick={showMore}>
+          <button
+            type="button"
+            className={`projects__button ${isShowMoreHidden && 'projects__button_hidden'}`}
+            onClick={showMore}
+          >
             {!isExpanded ? 'More projects...' : 'Less projects..'}
           </button>
           <button
             type="button"
-            className="projects__button projects__button_active"
+            className={`projects__button projects__button_active ${
+              isShowMoreHidden && 'projects__button_center'
+            }`}
             onClick={() => {
               console.log('Delegating...');
             }}
