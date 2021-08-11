@@ -4,7 +4,6 @@ import './Project.css';
 import Review from '../review/Review.js';
 
 export default function Project({ data }) {
-  console.log(data);
   return (
     <li className="project">
       <div className="project__info-container">
@@ -26,12 +25,12 @@ export default function Project({ data }) {
             </a>
           </div>
         </div>
-        <ul className="project__reviews">
-          {data.reviews.map((review) => (
-            <Review key={review.id} data={review} />
-          ))}
-        </ul>
       </div>
+      <ul className="project__reviews">
+        {data.reviews.map((review) => (
+          <Review key={review.id} data={review} />
+        ))}
+      </ul>
     </li>
   );
 }

@@ -22,7 +22,7 @@ export const webDevProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -30,7 +30,11 @@ export const webDevProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -52,7 +56,7 @@ export const webDevProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -60,7 +64,11 @@ export const webDevProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -82,7 +90,7 @@ export const webDevProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -90,7 +98,11 @@ export const webDevProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -112,7 +124,7 @@ export const webDevProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -120,7 +132,11 @@ export const webDevProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -146,7 +162,7 @@ export const dataAnalysisProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -154,7 +170,11 @@ export const dataAnalysisProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -176,7 +196,7 @@ export const dataAnalysisProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -184,7 +204,11 @@ export const dataAnalysisProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -206,7 +230,7 @@ export const dataAnalysisProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -214,7 +238,11 @@ export const dataAnalysisProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -236,7 +264,7 @@ export const dataAnalysisProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -244,7 +272,11 @@ export const dataAnalysisProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -270,7 +302,7 @@ export const dataScienceProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -278,7 +310,11 @@ export const dataScienceProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -300,7 +336,7 @@ export const dataScienceProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -308,7 +344,11 @@ export const dataScienceProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -330,7 +370,7 @@ export const dataScienceProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -338,7 +378,11 @@ export const dataScienceProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -360,7 +404,7 @@ export const dataScienceProjects = [
     reviews: [
       {
         id: 1,
-        avatars: [avatar],
+        avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
         description:
@@ -368,7 +412,11 @@ export const dataScienceProjects = [
       },
       {
         id: 2,
-        avatars: [avatar, avatar, avatar],
+        avatars: [
+          { id: 1, src: avatar },
+          { id: 2, src: avatar },
+          { id: 3, src: avatar },
+        ],
         title: 'Students team',
         subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
         description:
@@ -402,7 +450,7 @@ export const dataScienceProjects = [
 //
 //     },
 //     bottomLeft: {
-//       avatars: [avatar, avatar, avatar],
+//       avatars: [{id: 1, src: avatar}, {id: 2, src: avatar}, {id: 3, src: avatar}] ,
 //       title: 'Students team',
 //       subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
 //       description:
@@ -429,7 +477,7 @@ export const dataScienceProjects = [
 //
 //     },
 //     bottomLeft: {
-//       avatars: [avatar, avatar, avatar],
+//       avatars: [{id: 1, src: avatar}, {id: 2, src: avatar}, {id: 3, src: avatar}] ,
 //       title: 'Students team',
 //       subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
 //       description:
@@ -460,7 +508,7 @@ export const dataScienceProjects = [
 //
 //     },
 //     bottomLeft: {
-//       avatars: [avatar, avatar, avatar],
+//       avatars: [{id: 1, src: avatar}, {id: 2, src: avatar}, {id: 3, src: avatar}] ,
 //       title: 'Students team',
 //       subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
 //       description:
@@ -487,7 +535,7 @@ export const dataScienceProjects = [
 //
 //     },
 //     bottomLeft: {
-//       avatars: [avatar, avatar, avatar],
+//       avatars: [{id: 1, src: avatar}, {id: 2, src: avatar}, {id: 3, src: avatar}] ,
 //       title: 'Students team',
 //       subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
 //       description:
@@ -518,7 +566,7 @@ export const dataScienceProjects = [
 //
 //     },
 //     bottomLeft: {
-//       avatars: [avatar, avatar, avatar],
+//       avatars: [{id: 1, src: avatar}, {id: 2, src: avatar}, {id: 3, src: avatar}] ,
 //       title: 'Students team',
 //       subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
 //       description:
@@ -545,7 +593,7 @@ export const dataScienceProjects = [
 //
 //     },
 //     bottomLeft: {
-//       avatars: [avatar, avatar, avatar],
+//       avatars: [{id: 1, src: avatar}, {id: 2, src: avatar}, {id: 3, src: avatar}] ,
 //       title: 'Students team',
 //       subtitle: 'Maria Wright, Maria Wright, Enyel Sequeira',
 //       description:

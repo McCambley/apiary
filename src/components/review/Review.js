@@ -16,6 +16,7 @@ export default function Review({ data }) {
     if (description.length > lengthLimit) {
       setReview(shortenedReview);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function handleDisplayAmountClick() {
@@ -32,7 +33,7 @@ export default function Review({ data }) {
     <li className="review">
       <div className="review__reviewer-info">
         {avatars.map((image) => (
-          <img src={image} alt="A dude" />
+          <img key={image.id} src={image.src} alt="A dude" className="review__avatar" />
         ))}
         <div className="review__title-container">
           <div className="review__title">{title}</div>
