@@ -29,6 +29,10 @@ function App() {
       <Requests />
       <ChooseUs />
       <Projects
+        // Colin these props will be the things you change when you route this component
+        // For the profession pages select the corresponding titles from pageTitles
+        // select the defaultDisplay from delegate-tasks
+        // displayCourseButtons will be false
         title={pageTitles.default.title}
         subtitle={pageTitles.default.subtitle}
         defaultDisplay={webDevProjects}

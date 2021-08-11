@@ -21,7 +21,7 @@ export const webDevProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 11,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -29,7 +29,7 @@ export const webDevProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 12,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -55,7 +55,7 @@ export const webDevProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 21,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -63,7 +63,7 @@ export const webDevProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 22,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -89,7 +89,7 @@ export const webDevProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 31,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -97,7 +97,7 @@ export const webDevProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 32,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -123,7 +123,7 @@ export const webDevProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 41,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -131,7 +131,7 @@ export const webDevProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 42,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -148,7 +148,7 @@ export const webDevProjects = [
 
 export const dataAnalysisProjects = [
   {
-    id: 1,
+    id: 5,
     image: {
       image: graph,
     },
@@ -161,7 +161,7 @@ export const dataAnalysisProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 51,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -169,7 +169,7 @@ export const dataAnalysisProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 52,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -183,7 +183,7 @@ export const dataAnalysisProjects = [
     ],
   },
   {
-    id: 2,
+    id: 6,
     image: {
       image: wordCloud,
     },
@@ -195,7 +195,7 @@ export const dataAnalysisProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 61,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -203,7 +203,7 @@ export const dataAnalysisProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 62,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -217,7 +217,7 @@ export const dataAnalysisProjects = [
     ],
   },
   {
-    id: 3,
+    id: 7,
     image: {
       image: wordCloud,
     },
@@ -229,7 +229,7 @@ export const dataAnalysisProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 71,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -237,7 +237,7 @@ export const dataAnalysisProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 72,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -251,7 +251,7 @@ export const dataAnalysisProjects = [
     ],
   },
   {
-    id: 4,
+    id: 8,
     image: {
       image: wordCloud,
     },
@@ -263,7 +263,7 @@ export const dataAnalysisProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 81,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -271,7 +271,7 @@ export const dataAnalysisProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 82,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -288,7 +288,7 @@ export const dataAnalysisProjects = [
 
 export const dataScienceProjects = [
   {
-    id: 1,
+    id: 9,
     image: {
       image: flumeScience,
     },
@@ -301,7 +301,7 @@ export const dataScienceProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 91,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -309,7 +309,7 @@ export const dataScienceProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 92,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -323,7 +323,7 @@ export const dataScienceProjects = [
     ],
   },
   {
-    id: 2,
+    id: 10,
     image: {
       image: connectedWorld,
     },
@@ -335,7 +335,7 @@ export const dataScienceProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 101,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -343,7 +343,7 @@ export const dataScienceProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 102,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -357,7 +357,7 @@ export const dataScienceProjects = [
     ],
   },
   {
-    id: 3,
+    id: 11,
     image: {
       image: connectedWorld,
     },
@@ -369,7 +369,7 @@ export const dataScienceProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 111,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -377,7 +377,7 @@ export const dataScienceProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 112,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },
@@ -391,7 +391,7 @@ export const dataScienceProjects = [
     ],
   },
   {
-    id: 4,
+    id: 12,
     image: {
       image: connectedWorld,
     },
@@ -403,7 +403,7 @@ export const dataScienceProjects = [
     },
     reviews: [
       {
-        id: 1,
+        id: 121,
         avatars: [{ id: 1, src: avatar }],
         title: 'Maxim Antonenko',
         subtitle: 'Ant Robotics CEO',
@@ -411,7 +411,7 @@ export const dataScienceProjects = [
           ' “The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning algorithms, to build a robust model that accurately predicts if a review praises, criticizes or requests game translation.”',
       },
       {
-        id: 2,
+        id: 122,
         avatars: [
           { id: 1, src: avatar },
           { id: 2, src: avatar },

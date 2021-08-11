@@ -1,6 +1,6 @@
 @keyframes appear {
   from {
-    transform: scale(1.02);
+    transform: scale(0.98);
     opacity: 0;
   }
   to {
@@ -10,7 +10,7 @@
 }
 
 .project {
-  animation: appear 0.3s ease-out forwards;
+  animation: appear 0.5s ease-in-out forwards;
   margin-bottom: 80px;
   display: grid;
   grid-template-columns: 1fr;
