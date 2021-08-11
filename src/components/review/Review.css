@@ -96,3 +96,29 @@
 .review__show_hidden {
   display: none;
 }
+
+@media (max-width: 480px) {
+  .review {
+    padding: 16px;
+  }
+
+  .review__reviewer-info {
+    flex-direction: column;
+  }
+  .review__avatar-container {
+    margin-bottom: 16px;
+  }
+  .review__avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .review__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .review__review {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
