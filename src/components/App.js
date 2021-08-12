@@ -8,7 +8,7 @@ import Lead from './lead/Lead';
 import Requests from './requests/Requests';
 import DummyPage from './dummy-page/DummyPage';
 import ChooseUs from './choose-us/ChooseUs';
-import ProfessionHero from './profession-hero/ProfessionHero.js';
+import ProfessionHero from './profession-hero/ProfessionHero';
 import Projects from './projects/Projects';
 import Footer from './footer/Footer';
 import pageTitles from '../arrays/projects-page-titles'; // import titles to be used in profession page
@@ -17,6 +17,7 @@ import {
   dataAnalysisProjects, // default display data for dataAnalysis profession page
   dataScienceProjects, // default display data for dataScience profession page
 } from '../arrays/delegate-tasks';
+import professionHeroTitles from '../arrays/profession-hero-titles';
 
 function App() {
   return (
@@ -29,7 +30,9 @@ function App() {
         <DummyPage />
       </Route>
       <ChooseUs />
-      <ProfessionHero />
+      <Route path="/profession-hero/:id">
+        <ProfessionHero professionHeroTitles={professionHeroTitles} />
+      </Route>
       <Projects
         // Colin these props will be the things you change when you route this component
         // For the profession pages select the corresponding titles from pageTitles

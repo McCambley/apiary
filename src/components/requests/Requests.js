@@ -1,5 +1,6 @@
 import React from 'react';
 import './Requests.css';
+import { Link } from 'react-router-dom';
 import requests from '../../arrays/what-requests';
 
 function Requests() {
@@ -11,11 +12,11 @@ function Requests() {
       </p>
       <div className="requests__card-container">
         {requests.map((item) => (
-          <div key={item.id} className="card">
+          <Link key={item.id} className="card" to={item.link}>
             <p className="card__hashtag">{item.hashtag}</p>
             <p className="card__title">{item.title}</p>
             <img className="card__image" src={item.image} alt={item.alt} />
-          </div>
+          </Link>
         ))}
       </div>
     </section>

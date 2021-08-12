@@ -1,25 +1,24 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import './ProfessionHero.css';
-import WebDev from '../../images/web-dev.png';
-import DataAnalysis from '../../images/data-analysis.png';
-import DataScience from '../../images/data-science.png';
 
-function ProfessionHero({ props }) {
+function ProfessionHero(props) {
+  const { id } = useParams();
+  console.log(props);
+  const professionPages  = props.professionHeroTitles;
+  const professionPage = professionPages.find((page) => page.id === id);
+
   return (
     <section className="profession">
       <div className="profession__intro-group">
-        <img className="profession__image" src={WebDev} alt="beep" />
+        <img className="profession__image" src={professionPage.image} alt="beep" />
         <div className="profession__title-group">
-          <h2 className="profession__title">
-            {props.title}What web development requests can we help with?
-          </h2>
-          <p className="profession__subtitle">
-            {props.description}Practicum by Yandex students are ready to build your website from
-            your design or if necessary, we can ask our colleagues from the design team to create a
-            unique design for your company and a website based on this design.
-          </p>
+          <h2 className="profession__title">{professionPage.title}</h2>
+          <p className="profession__subtitle">{professionPage.subtitle}</p>
         </div>
       </div>
       <div className="profession__card-group">

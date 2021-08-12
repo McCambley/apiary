@@ -9,6 +9,7 @@ const requests = [
     title: 'Web development',
     image: DataAnalysis,
     alt: 'website drawing',
+    link: '/profession-hero/web-dev',
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const requests = [
     title: 'Data analysis',
     image: WebDev,
     alt: 'snowglobe with math inside',
+    link: '/profession-hero/data-analysis',
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ const requests = [
     title: 'Data science',
     image: DataScience,
     alt: "rubik's cube",
+    link: '/profession-hero/data-science',
   },
 ];
 
