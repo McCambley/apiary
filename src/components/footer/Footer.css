@@ -24,6 +24,7 @@
     'about credit top'
     'contact credit copy';
   max-width: 1440px;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
