@@ -8,7 +8,6 @@ function Requests(props) {
   function onProfessionPageClick() {
     // eslint-disable-next-line react/prop-types
     props.setProfessionPage(true);
-    console.log(true);
   }
 
   return (
