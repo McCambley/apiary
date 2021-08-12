@@ -8,13 +8,12 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 0 auto 100px 80px;
-    width: 85%;
+    margin: 0 0 100px 0;
+    width: 100%;
 }
 
 .profession__image {
-    max-width: 350px;
-    margin-bottom: 140px;
+    max-width: 550px;
     object-fit: contain;
     width: 100%;
 }
@@ -25,6 +24,7 @@
     max-width: 840px;
     width: 69.6%;
     margin-top: 80px;
+    margin-left: 80px;
 }
 
 .profession__title {
@@ -106,11 +106,15 @@
     }
     .profession__intro-group {
         margin: 0 80px 100px 80px;
-        width: 90%;
+        width: 100%;
     }
 
     .profession__image {
-        max-width: 300px;
+        max-width: 400px;
+    }
+
+    .profession__title-group {
+        margin-left: 40px;
     }
 
     .profession__card-group {
@@ -125,6 +129,12 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .profession__image {
+        max-width: 350px;
+    }
+}
+
 @media (max-width: 910px) {
     .profession__intro-group {
         flex-direction: column;
@@ -134,7 +144,7 @@
 
     .profession__image {
         margin-bottom: 0;
-        max-width: 500px;
+        max-width: 550px;
         width: 100%;
     }
 

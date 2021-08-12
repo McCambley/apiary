@@ -17,7 +17,6 @@ import {
   dataAnalysisProjects, // default display data for dataAnalysis profession page
   dataScienceProjects, // default display data for dataScience profession page
 } from '../arrays/delegate-tasks';
-import professionHeroTitles from '../arrays/profession-hero-titles';
 
 function App() {
   return (
@@ -31,7 +30,7 @@ function App() {
       </Route>
       <ChooseUs />
       <Route path="/profession-hero/:id">
-        <ProfessionHero professionHeroTitles={professionHeroTitles} />
+        <ProfessionHero />
       </Route>
       <Projects
         // Colin these props will be the things you change when you route this component
