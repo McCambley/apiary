@@ -57,15 +57,17 @@ function Hero() {
         {loading ? (
           <h2>is loading</h2>
         ) : (
-          data.coverImageCollection.items.map((project, index) => {
-            console.log(data);
-            return (
-              <div key={index}>
-                <h2>{}</h2>
-                <img src={project.image.url} alt="as" />
-              </div>
-            );
-          })
+          <ul>
+            {data.coverImageCollection.items.map((project, index) => {
+              console.log(data);
+              return (
+                <li key={index}>
+                  <h2>{}</h2>
+                  <img src={project.image.url} alt="as" />
+                </li>
+              );
+            })}
+          </ul>
         )}
         <h1 className="hero__title">
           Your task. Done by data and web development students. <br />
