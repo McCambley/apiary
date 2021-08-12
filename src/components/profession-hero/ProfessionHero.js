@@ -10,7 +10,6 @@ import professionHeroCards from '../../arrays/profession-hero-cards';
 
 function ProfessionHero() {
   const { id } = useParams();
-  // const professionTitles = professionHeroTitles;
   const professionTitle = professionHeroTitles.find((page) => page.id === id);
   const professionCard = professionHeroCards.find((cardGroup) => cardGroup.id === id);
 
