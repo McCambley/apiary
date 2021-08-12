@@ -19,17 +19,20 @@ import {
 } from '../arrays/delegate-tasks';
 
 function App() {
+  const [professionPage, setProfessionPage] = React.useState(false);
+
   return (
     <div className="page">
-      <Header />
+      <Header professionPage={professionPage} setProfessionPage={setProfessionPage} />
       <Hero />
       <Lead />
-      <Requests />
+      <Requests setProfessionPage={setProfessionPage} />
       <Route path="/dummy-page">
         <DummyPage />
       </Route>
       <ChooseUs />
       <Route path="/profession-hero/:id">
+        <Header professionPage={professionPage} setProfessionPage={setProfessionPage} />
         <ProfessionHero />
       </Route>
       <Projects
