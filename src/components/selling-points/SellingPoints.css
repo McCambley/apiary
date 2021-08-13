@@ -33,6 +33,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 80px;
+  box-sizing: border-box;
 }
 
 .selling-points__image-card-wrap-container {
