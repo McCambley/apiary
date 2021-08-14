@@ -15,7 +15,7 @@ export default function Footer() {
           About us
         </a>
         {/* TODO link the link below to the header */}
-        <a href="#header" className="footer__top transparency">
+        <a href="" className="footer__top transparency">
           Back to top ↑
         </a>
         <ul className="footer__contact">

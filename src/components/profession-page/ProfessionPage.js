@@ -25,6 +25,10 @@ function ProfessionPage(props) {
   const [projectTitle, setProjectTitle] = React.useState(projectsPageTitles.webDev.title);
 
   React.useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
+  React.useEffect(() => {
     if (id === 'web-dev') {
       setProjectDisplay(webDevProjects);
       setProjectTitle(projectsPageTitles.webDev.title);
@@ -45,12 +49,12 @@ function ProfessionPage(props) {
         setProfessionPage={props.setProfessionPage}
       >
         <li className="header__list">
-          <NavLink className="header__link" exact to="/" smooth={true} onClick={props.onNavClick}>
+          <NavLink className="header__link" exact to="/" smooth="true" onClick={props.onNavClick}>
             Back to homepage
           </NavLink>
         </li>
         <li className="header__list">
-          <Link className="header__link" to="projects" smooth={true} onClick={props.onNavClick}>
+          <Link className="header__link" to="projects" smooth="true" onClick={props.onNavClick}>
             Students' projects
           </Link>
         </li>
