@@ -39,7 +39,11 @@ function ProfessionPage(props) {
 
   return (
     <>
-      <Header professionPage={props.professionPage} setProfessionPage={props.setProfessionPage}>
+      <Header
+        name="header"
+        professionPage={props.professionPage}
+        setProfessionPage={props.setProfessionPage}
+      >
         <li className="header__list">
           <NavLink className="header__link" exact to="/" smooth={true} onClick={props.onNavClick}>
             Back to homepage

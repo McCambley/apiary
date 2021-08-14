@@ -18,7 +18,7 @@ import {
 function Homepage(props) {
   return (
     <>
-      <Header onNavClick={props.onNavClick} isMenuOpen={props.isMenuOpen}>
+      <Header name="header" onNavClick={props.onNavClick} isMenuOpen={props.isMenuOpen}>
         <li className="header__list">
           <Link className="header__link" to="requests" smooth={true} onClick={props.onNavClick}>
             We can help!
