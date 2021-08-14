@@ -17,8 +17,11 @@ export default function Projects({ title, subtitle, defaultDisplay, displayCours
   const displayLimit = 2;
 
   React.useEffect(() => {
+    setCourse(defaultDisplay);
+  }, [defaultDisplay]);
+
+  React.useEffect(() => {
     setCourse(webDevProjects);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   React.useEffect(() => {

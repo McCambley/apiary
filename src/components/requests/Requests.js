@@ -1,12 +1,12 @@
+/* eslint-disable array-callback-return */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './Requests.css';
 import { Link } from 'react-router-dom';
 import requests from '../../arrays/what-requests';
-import projectsPageTitles from '../../arrays/projects-page-titles';
 
 function Requests(props) {
   function onProfessionPageClick() {
-    // eslint-disable-next-line react/prop-types
     props.setProfessionPage(true);
   }
 

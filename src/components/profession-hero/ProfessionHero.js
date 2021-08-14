@@ -3,27 +3,20 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import './ProfessionHero.css';
-import professionHeroTitles from '../../arrays/profession-hero-titles';
-import professionHeroCards from '../../arrays/profession-hero-cards';
 
-function ProfessionHero() {
-  const { id } = useParams();
-  const professionTitle = professionHeroTitles.find((page) => page.id === id);
-  const professionCard = professionHeroCards.find((cardGroup) => cardGroup.id === id);
-
+function ProfessionHero(props) {
   return (
     <section className="profession">
       <div className="profession__intro-group">
-        <img className="profession__image" src={professionTitle.image} alt="beep" />
+        <img className="profession__image" src={props.professionTitle.image} alt="beep" />
         <div className="profession__title-group">
-          <h2 className="profession__title">{professionTitle.title}</h2>
-          <p className="profession__subtitle">{professionTitle.subtitle}</p>
+          <h2 className="profession__title">{props.professionTitle.title}</h2>
+          <p className="profession__subtitle">{props.professionTitle.subtitle}</p>
         </div>
       </div>
       <div className="profession__card-group">
-        {professionCard.cards.map((card) => (
+        {props.professionCard.cards.map((card) => (
           <div key={card.id} className={`profession-card profession-card_type_${card.class}`}>
             <div className="profession-card__content-group">
               <h3 className="profession-card__number">{card.id}</h3>

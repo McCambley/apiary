@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter basename="/apiary">
+    <HashRouter basename="/">
       <App />
     </HashRouter>
   </React.StrictMode>,
