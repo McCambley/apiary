@@ -21,12 +21,12 @@ function Homepage(props) {
       <Header onNavClick={props.onNavClick} isMenuOpen={props.isMenuOpen}>
         <li className="header__list">
           <Link className="header__link" to="requests" smooth={true} onClick={props.onNavClick}>
-            'We can help!'
+            We can help!
           </Link>
         </li>
         <li className="header__list">
           <Link className="header__link" to="about" smooth={true} onClick={props.onNavClick}>
-            'About'
+            About
           </Link>
         </li>
         <li className="header__list">
