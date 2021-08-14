@@ -7,7 +7,6 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Link } from 'react-scroll';
 import './Header.css';
 import Logo from '../../images/logo.png';
 import Hamburger from '../../images/hamburger.svg';
@@ -34,7 +33,7 @@ function Header(props) {
   return (
     <header className="header" id="header">
       <div className="header__mobile-wrapper">
-        <NavLink className="logo-link" exact to="/" smooth={true}>
+        <NavLink className="logo-link" exact to="/" smooth="true">
           <img className="logo" src={Logo} alt="" />
         </NavLink>
         <button

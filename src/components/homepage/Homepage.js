@@ -20,27 +20,27 @@ function Homepage(props) {
     <>
       <Header name="header" onNavClick={props.onNavClick} isMenuOpen={props.isMenuOpen}>
         <li className="header__list">
-          <Link className="header__link" to="requests" smooth={true} onClick={props.onNavClick}>
+          <Link className="header__link" to="requests" smooth="true" onClick={props.onNavClick}>
             We can help!
           </Link>
         </li>
         <li className="header__list">
-          <Link className="header__link" to="about" smooth={true} onClick={props.onNavClick}>
+          <Link className="header__link" to="about" smooth="true" onClick={props.onNavClick}>
             About
           </Link>
         </li>
         <li className="header__list">
-          <Link className="header__link" to="start" smooth={true} onClick={props.onNavClick}>
+          <Link className="header__link" to="start" smooth="true" onClick={props.onNavClick}>
             How to start
           </Link>
         </li>
         <li className="header__list">
-          <Link className="header__link" to="projects" smooth={true} onClick={props.onNavClick}>
+          <Link className="header__link" to="projects" smooth="true" onClick={props.onNavClick}>
             Projects
           </Link>
         </li>
         <li className="header__list">
-          <Link className="header__link" to="footer" smooth={true} onClick={props.onNavClick}>
+          <Link className="header__link" to="footer" smooth="true" onClick={props.onNavClick}>
             Contacts
           </Link>
         </li>
