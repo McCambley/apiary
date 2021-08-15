@@ -6,7 +6,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './Form.css';
-import XIcon from '../../images/x-icon.svg';
 
 function Form(props) {
   const [displayForm, setDisplayForm] = React.useState(true);
