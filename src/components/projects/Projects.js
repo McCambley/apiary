@@ -71,7 +71,7 @@ export default function Projects({ title, subtitle, defaultDisplay, displayCours
               }`}
               onClick={() => updateCourse(webDevProjects)}
             >
-              Web developement
+              Web development
             </button>
             <button
               type="button"
