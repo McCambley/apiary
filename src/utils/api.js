@@ -10,47 +10,50 @@ export const client = new ApolloClient({
   },
 });
 
-export const QUERY = gql`
-  query courseProjects {
-    webDev: projectCollection(where: { course_contains: "Web Development" }) {
-      items {
-        info {
-          title
-          description
-          date
-          link
-          linkText
-        }
-        image {
-          image {
+export function createQuery(course) {
+  console.log(typeof course);
+  return gql`
+    query courseProjects {
+      ${course}: projectCollection(where: { course_contains: "${course}" }) {
+        items {
+          info {
             title
-            fileName
-            url
+            description
+            date
+            link
+            linkText
           }
-        }
-        companyReview {
-          title
-          subtitle
-          description
-          avatar {
-            fileName
-            url
-          }
-        }
-        studentReview {
-          title
-          subtitle
-          description
-          avatarsCollection {
-            items {
+          image {
+            image {
+              title
               fileName
               url
+            }
+          }
+          companyReview {
+            title
+            subtitle
+            description
+            avatar {
+              fileName
+              url
+            }
+          }
+          studentReview {
+            title
+            subtitle
+            description
+            avatarsCollection {
+              items {
+                fileName
+                url
+              }
             }
           }
         }
       }
     }
-  }
-`;
+  `;
+}
 
-export default { client, QUERY };
+export default { client, createQuery };
