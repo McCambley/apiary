@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 /* eslint-disable react/jsx-boolean-value */
 import React from 'react';
 import './App.css';
@@ -9,6 +10,7 @@ import Requests from './requests/Requests';
 import DummyPage from './dummy-page/DummyPage';
 import ChooseUs from './choose-us/ChooseUs';
 import Projects from './projects/Projects';
+import Form from './form/Form';
 import Footer from './footer/Footer';
 import pageTitles from '../arrays/projects-page-titles'; // import titles to be used in profession page
 import {
@@ -18,10 +20,20 @@ import {
 } from '../arrays/delegate-tasks';
 
 function App() {
+  const [isPopupOpen, setIsPopupOpen] = React.useState(false);
+
+  function handleButtonClick() {
+    setIsPopupOpen(true);
+  }
+
+  function closePopup() {
+    setIsPopupOpen(false);
+  }
+
   return (
     <div className="page">
       <Header />
-      <Hero />
+      <Hero onButtonClick={handleButtonClick} />
       <Lead />
       <Route path="/dummy-page">
         <DummyPage />
@@ -39,6 +51,7 @@ function App() {
         displayCourseButtons={true}
       />
       <Footer />
+      <Form isOpen={isPopupOpen} onClose={closePopup} />
     </div>
   );
 }
