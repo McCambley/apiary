@@ -105,6 +105,7 @@
 @media (max-width: 1240px) {
     .profession {
         align-items: center;
+        padding-top: 50px;
     }
     .profession__intro-group {
         margin: 0 80px 100px 80px;
@@ -169,6 +170,10 @@
 }
 
 @media (max-width: 740px) {
+    .profession {
+        padding-top: 20px;
+    }
+
     .profession__title {
         font-size: 42px;
     }
