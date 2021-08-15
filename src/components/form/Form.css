@@ -14,19 +14,6 @@
   transition: visibility 0.4s, opacity 0.4s linear;
 }
 
-.error {
-  display: inline-block;
-  color: red;
-  font-size: 1rem;
-  position: absolute;
-  top: calc(100% + 6px);
-  left: 0;
-}
-
-.error_visible {
-  visibility: visible;
-}
-
 .modal_open {
   visibility: visible;
   opacity: 1;
@@ -39,6 +26,7 @@
   border-radius: 10px;
   background-color: #fff;
   padding: 60px 100px;
+  position: relative;
 }
 
 .modal__title {
@@ -46,6 +34,33 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 40px;
+}
+
+.modal__close-button {
+  background-image: url(../../images/x-icon.svg);
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  position: absolute;
+}
+
+.modal__close-button:hover {
+  opacity: 0.6;
+}
+
+.modal__close-button_form {
+  top: 30px;
+  right: 30px;
+}
+
+.modal__close-button_completed {
+  top: 10px;
+  right: 10px;
 }
 
 .form__label {
@@ -69,6 +84,20 @@
   height: 152px;
 }
 
+.form__error {
+  display: inline-block;
+  color: red;
+  font-size: 16px;
+  visibility: hidden;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+}
+
+.form__error_visible {
+  visibility: visible;
+}
+
 .form__button {
   border: none;
   background-color: #ff9900;
@@ -80,6 +109,11 @@
   border-radius: 40px;
   padding: 19px 60px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form__button:hover {
+  transform: translate3D(0, -1px, 0) scale(1.05);
 }
 
 .modal__content_completed {
@@ -116,6 +150,11 @@
 
   .modal__title {
     width: 90%;
+  }
+
+  .modal__close-button_form {
+    top: 20px;
+    right: 10px;
   }
 
   .modal__content_completed {

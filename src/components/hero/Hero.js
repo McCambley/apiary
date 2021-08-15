@@ -18,7 +18,9 @@ function Hero(props) {
         </button>
       </div>
       <img src={HeroImage} alt="hero" className="hero__image" />
-      <button className="hero__cta-button hero__cta-button_mobile">Delegate a task</button>
+      <button className="hero__cta-button hero__cta-button_mobile" onClick={props.onButtonClick}>
+        Delegate a task
+      </button>
     </section>
   );
 }

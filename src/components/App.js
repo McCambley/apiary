@@ -20,14 +20,14 @@ import {
 } from '../arrays/delegate-tasks';
 
 function App() {
-  const [isPopupOpen, setIsPopupOpen] = React.useState(false);
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
 
   function handleButtonClick() {
-    setIsPopupOpen(true);
+    setIsModalOpen(true);
   }
 
-  function closePopup() {
-    setIsPopupOpen(false);
+  function closeModal() {
+    setIsModalOpen(false);
   }
 
   return (
@@ -51,7 +51,7 @@ function App() {
         displayCourseButtons={true}
       />
       <Footer />
-      <Form isOpen={isPopupOpen} onClose={closePopup} />
+      <Form isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 }
