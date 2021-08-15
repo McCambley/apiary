@@ -17,19 +17,8 @@ import {
   dataAnalysisProjects, // default display data for dataAnalysis profession page
   dataScienceProjects, // default display data for dataScience profession page
 } from '../arrays/delegate-tasks';
-import { createQuery } from '../utils/api';
 
 function App() {
-  const [currentCourseData, setCurrentCourseData] = React.useState({});
-  const { data: web, loading: webLoad } = useQuery(createQuery('webDevelopment'));
-  const { data: analy, loading: analLoad } = useQuery(createQuery('dataAnalysis'));
-  const { data: sci, loading: sciLoad } = useQuery(createQuery('dataScience'));
-  console.log(web, analy, sci);
-
-  function getCourseProjects(course) {
-    ({ data, loading, error } = useQuery(createQuery(course)));
-  }
-
   return (
     <div className="page">
       <Header />
