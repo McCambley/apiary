@@ -30,6 +30,10 @@ function ProfessionPage(props) {
   });
 
   React.useEffect(() => {
+    props.setProfessionPage(true);
+  }, [props]);
+
+  React.useEffect(() => {
     if (id === 'web-dev') {
       setProjectDisplay(webDevProjects);
       setProjectTitle(projectsPageTitles.webDev.title);
@@ -47,7 +51,8 @@ function ProfessionPage(props) {
       <Header
         name="header"
         professionPage={props.professionPage}
-        setProfessionPage={props.setProfessionPage}
+        onNavClick={props.onNavClick}
+        isMenuOpen={props.isMenuOpen}
       >
         <li className="header__list">
           <NavLink className="header__link" exact to="/" smooth="true" onClick={props.onNavClick}>

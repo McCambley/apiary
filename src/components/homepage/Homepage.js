@@ -17,9 +17,18 @@ import {
 import Footer from '../footer/Footer';
 
 function Homepage(props) {
+  React.useEffect(() => {
+    props.setProfessionPage(false);
+  }, [props]);
+
   return (
     <>
-      <Header name="header" onNavClick={props.onNavClick} isMenuOpen={props.isMenuOpen}>
+      <Header
+        name="header"
+        onNavClick={props.onNavClick}
+        isMenuOpen={props.isMenuOpen}
+        professionPage={props.professionPage}
+      >
         <li className="header__list">
           <Link className="header__link" to="requests" smooth="true" onClick={props.onNavClick}>
             We can help!

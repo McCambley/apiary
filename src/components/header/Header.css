@@ -199,10 +199,16 @@
         overflow: hidden;
     }
 
-    .header__menu_type_active {
+    .header__homepage-menu_type_active {
         transition: 1s;
         max-height: 540px;
         min-height: 540px;
+    }
+
+    .header__profession-menu_type_active {
+        transition: 1s;
+        max-height: 350px;
+        min-height: 350px;
     }
 
     .header__menu_type_inactive {

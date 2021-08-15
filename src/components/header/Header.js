@@ -11,24 +11,24 @@ import './Header.css';
 import Logo from '../../images/logo.png';
 import Hamburger from '../../images/hamburger.svg';
 import XIcon from '../../images/x-icon.svg';
-// import HeaderWrapper from '../header-wrapper/HeaderWrapper';
+import HeaderWrapper from '../header-wrapper/HeaderWrapper';
 
 function Header(props) {
-  // const [mobileWidth, setMobileWidth] = React.useState(false);
+  const [mobileWidth, setMobileWidth] = React.useState(false);
 
-  // React.useState(() => {
-  //   function checkWidth() {
-  //     const windowWidth = window.matchMedia('(max-width: 640px)');
-  //     if (windowWidth.matches) {
-  //       setMobileWidth(true);
-  //     } else {
-  //       setMobileWidth(false);
-  //     }
-  //   }
-  //   checkWidth();
-  //   window.addEventListener('resize', checkWidth);
-  //   return () => window.removeEventListener('resize', checkWidth);
-  // });
+  React.useState(() => {
+    function checkWidth() {
+      const windowWidth = window.matchMedia('(max-width: 640px)');
+      if (windowWidth.matches) {
+        setMobileWidth(true);
+      } else {
+        setMobileWidth(false);
+      }
+    }
+    checkWidth();
+    window.addEventListener('resize', checkWidth);
+    return () => window.removeEventListener('resize', checkWidth);
+  });
 
   return (
     <header className="header" id="header">
@@ -51,22 +51,18 @@ function Header(props) {
           <img src={XIcon} alt="" onClick={props.onNavClick} />
         </button>
       </div>
-      <ul className="header__navbar">
-        <div
-          className={`header__menu ${
-            props.isMenuOpen ? 'header__menu_type_active' : 'header__menu_type_inactive'
-          }`}
-        >
-          {props.children}
-        </div>
-      </ul>
-      <button className="header__button" to="" onClick={props.onNavClick}>
-        Delegate a task
-      </button>
+      <HeaderWrapper
+        wrapMobileMenu={mobileWidth}
+        isMenuOpen={props.isMenuOpen}
+        professionPage={props.professionPage}
+      >
+        <ul className="header__navbar">{props.children}</ul>
+        <button className="header__button" to="" onClick={props.onNavClick}>
+          Delegate a task
+        </button>
+      </HeaderWrapper>
     </header>
   );
 }
 
 export default Header;
-
-// wrapMobileMenu={mobileWidth} isMenuOpen={isMenuOpen}

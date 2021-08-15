@@ -5,7 +5,6 @@ import { Route, Switch } from 'react-router-dom';
 import Homepage from './homepage/Homepage';
 import ProfessionPage from './profession-page/ProfessionPage';
 import PageNotFound from './page-not-found/PageNotFound';
-import Footer from './footer/Footer';
 import pageTitles from '../arrays/projects-page-titles'; // import titles to be used in profession page
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
 
   function handleNavClick() {
     setIsMenuOpen(!isMenuOpen);
-    setProfessionPage(false);
   }
 
   return (
@@ -35,6 +33,8 @@ function App() {
             setProfessionPage={setProfessionPage}
             pageTitles={pageTitles}
             displayCourseButtons={false}
+            onNavClick={handleNavClick}
+            isMenuOpen={isMenuOpen}
           />
         </Route>
         <Route>
