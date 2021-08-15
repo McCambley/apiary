@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="page">
-      <Header />
+      <Header onButtonClick={handleButtonClick} />
       <Hero onButtonClick={handleButtonClick} />
       <Lead />
       <Route path="/dummy-page">

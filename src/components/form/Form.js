@@ -38,7 +38,12 @@ function Form(props) {
   // Combines closing modal and clearing of inputs and error messages
   function closeModal() {
     props.onClose();
-    clearValues();
+    setTimeout(clearValues, 1000);
+    setTimeout(() => {
+      // Display form instead of confirmation message when reopening popup
+      setDisplayForm(true);
+      setIsCompleted(false);
+    }, 1000);
     window.removeEventListener('keydown', handleEscClose);
   }
 
@@ -88,7 +93,7 @@ function Form(props) {
     return errors;
   };
 
-  // If there are no errors and user clicks on submit button, submit form
+  // If there are no errors the form will be submitted
   React.useEffect(() => {
     if (Object.keys(inputErrors).length === 0 && onSubmitClick) {
       submit();
@@ -96,10 +101,10 @@ function Form(props) {
   }, [inputErrors]);
 
   // Close form and display confirmation message
-  const submit = () => {
+  function submit() {
     setDisplayForm(false);
     setIsCompleted(true);
-  };
+  }
 
   return (
     <div className={`modal ${props.isOpen ? 'modal_open' : ''}`} onClick={handleModalClick}>
