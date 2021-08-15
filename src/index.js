@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { ApolloProvider } from '@apollo/client';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import { client } from './utils/api';
 
-const { REACT_APP_ACCESS_TOKEN, REACT_APP_SPACE_ID } = process.env;
+// const { REACT_APP_ACCESS_TOKEN, REACT_APP_SPACE_ID } = process.env;
 
-const client = new ApolloClient({
-  cache: new InMemoryCache(),
-  uri: `https://graphql.contentful.com/content/v1/spaces/${REACT_APP_SPACE_ID}`,
-  headers: {
-    Authorization: `Bearer ${REACT_APP_ACCESS_TOKEN}`,
-  },
-});
+// const client = new ApolloClient({
+//   cache: new InMemoryCache(),
+//   uri: `https://graphql.contentful.com/content/v1/spaces/${REACT_APP_SPACE_ID}`,
+//   headers: {
+//     Authorization: `Bearer ${REACT_APP_ACCESS_TOKEN}`,
+//   },
+// });
 
 ReactDOM.render(
   <React.StrictMode>

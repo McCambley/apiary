@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
 import Hero from './hero/Hero';
 import Header from './header/Header';
 import Lead from './lead/Lead';
@@ -16,8 +17,12 @@ import {
   dataAnalysisProjects, // default display data for dataAnalysis profession page
   dataScienceProjects, // default display data for dataScience profession page
 } from '../arrays/delegate-tasks';
+import { QUERY } from '../utils/api';
 
 function App() {
+  const { data } = useQuery(QUERY);
+  console.log(data);
+
   return (
     <div className="page">
       <Header />
