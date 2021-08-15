@@ -15,6 +15,7 @@ import {
   dataScienceProjects,
   webDevProjects,
 } from '../../arrays/delegate-tasks';
+import Footer from '../footer/Footer';
 
 function ProfessionPage(props) {
   const { id } = useParams();
@@ -66,6 +67,7 @@ function ProfessionPage(props) {
         defaultDisplay={projectDisplay}
         displayCourseButtons={props.displayCourseButtons}
       />
+      <Footer name="footer" />
     </>
   );
 }

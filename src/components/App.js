@@ -4,6 +4,7 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import Homepage from './homepage/Homepage';
 import ProfessionPage from './profession-page/ProfessionPage';
+import PageNotFound from './page-not-found/PageNotFound';
 import Footer from './footer/Footer';
 import pageTitles from '../arrays/projects-page-titles'; // import titles to be used in profession page
 
@@ -28,7 +29,7 @@ function App() {
             isMenuOpen={isMenuOpen}
           />
         </Route>
-        <Route path="/profession-hero/:id">
+        <Route exact path="/profession-hero/:id">
           <ProfessionPage
             professionPage={professionPage}
             setProfessionPage={setProfessionPage}
@@ -36,8 +37,10 @@ function App() {
             displayCourseButtons={false}
           />
         </Route>
+        <Route>
+          <PageNotFound />
+        </Route>
       </Switch>
-      <Footer name="footer" />
     </div>
   );
 }

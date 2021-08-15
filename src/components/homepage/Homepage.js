@@ -14,6 +14,7 @@ import {
   // dataAnalysisProjects, // default display data for dataAnalysis profession page
   // dataScienceProjects, // default display data for dataScience profession page
 } from '../../arrays/delegate-tasks';
+import Footer from '../footer/Footer';
 
 function Homepage(props) {
   return (
@@ -56,6 +57,7 @@ function Homepage(props) {
         defaultDisplay={webDevProjects}
         displayCourseButtons={true}
       />
+      <Footer name="footer" />
     </>
   );
 }

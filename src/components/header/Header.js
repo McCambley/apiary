@@ -51,7 +51,15 @@ function Header(props) {
           <img src={XIcon} alt="" onClick={props.onNavClick} />
         </button>
       </div>
-      <ul className="header__navbar">{props.children}</ul>
+      <ul className="header__navbar">
+        <div
+          className={`header__menu ${
+            props.isMenuOpen ? 'header__menu_type_active' : 'header__menu_type_inactive'
+          }`}
+        >
+          {props.children}
+        </div>
+      </ul>
       <button className="header__button" to="" onClick={props.onNavClick}>
         Delegate a task
       </button>
