@@ -27,7 +27,7 @@ function App() {
   console.log(web, analy, sci);
 
   function getCourseProjects(course) {
-    return ({ data, loading, error } = useQuery(createQuery(course)));
+    ({ data, loading, error } = useQuery(createQuery(course)));
   }
 
   return (
