@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-boolean-value */
-/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-scroll';
@@ -16,53 +15,59 @@ import {
 } from '../../arrays/delegate-tasks';
 import Footer from '../footer/Footer';
 
-function Homepage(props) {
+function Homepage({
+  isProfessionPageFocused,
+  setIsProfessionPageFocused,
+  pageTitles,
+  onNavClick,
+  isMenuOpen,
+}) {
   React.useEffect(() => {
-    props.setProfessionPage(false);
-  }, [props]);
+    setIsProfessionPageFocused(false);
+  }, [isProfessionPageFocused, setIsProfessionPageFocused]);
 
   return (
     <>
       <Header
         name="header"
-        onNavClick={props.onNavClick}
-        isMenuOpen={props.isMenuOpen}
-        professionPage={props.professionPage}
+        onNavClick={onNavClick}
+        isMenuOpen={isMenuOpen}
+        isProfessionPageFocused={isProfessionPageFocused}
       >
         <li className="header__list">
-          <Link className="header__link" to="requests" smooth="true" onClick={props.onNavClick}>
+          <Link className="header__link" to="requests" smooth="true" onClick={onNavClick}>
             We can help!
           </Link>
         </li>
         <li className="header__list">
-          <Link className="header__link" to="about" smooth="true" onClick={props.onNavClick}>
+          <Link className="header__link" to="about" smooth="true" onClick={onNavClick}>
             About
           </Link>
         </li>
         <li className="header__list">
-          <Link className="header__link" to="start" smooth="true" onClick={props.onNavClick}>
+          <Link className="header__link" to="start" smooth="true" onClick={onNavClick}>
             How to start
           </Link>
         </li>
         <li className="header__list">
-          <Link className="header__link" to="projects" smooth="true" onClick={props.onNavClick}>
+          <Link className="header__link" to="projects" smooth="true" onClick={onNavClick}>
             Projects
           </Link>
         </li>
         <li className="header__list">
-          <Link className="header__link" to="footer" smooth="true" onClick={props.onNavClick}>
+          <Link className="header__link" to="footer" smooth="true" onClick={onNavClick}>
             Contacts
           </Link>
         </li>
       </Header>
       <Hero />
       <Lead />
-      <Requests name="requests" setProfessionPage={props.setProfessionPage} />
+      <Requests name="requests" setIsProfessionPageFocused={setIsProfessionPageFocused} />
       <ChooseUs />
       <Projects
         name="projects"
-        title={props.pageTitles.default.title}
-        subtitle={props.pageTitles.default.subtitle}
+        title={pageTitles.default.title}
+        subtitle={pageTitles.default.subtitle}
         defaultDisplay={webDevProjects}
         displayCourseButtons={true}
       />

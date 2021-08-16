@@ -7,7 +7,7 @@ import requests from '../../arrays/what-requests';
 
 function Requests(props) {
   function onProfessionPageClick() {
-    props.setProfessionPage(true);
+    props.setIsProfessionPageFocused(true);
   }
 
   return (

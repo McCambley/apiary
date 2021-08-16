@@ -4,6 +4,11 @@
   padding: 100px 0 120px 0;
 }
 
+.selling-points__content-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .selling-points__title-group {
   max-width: 840px;
   width: 58.33%;

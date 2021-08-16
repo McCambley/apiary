@@ -282,31 +282,44 @@
         padding: 19px 0;
         color: #FFFFFF;
         background-color: #FF9900;
-        width: 60%;
+        width: 250px;
         margin: 0 auto;
         border-radius: 40px;
     }
 
 }
 
+@media (max-width: 480px) {
+    .header__menu {
+        width: 100%;
+    }
+
+    .header__homepage-menu_type_active {
+        max-height: 570px;
+        min-height: 570px;
+    }
+
+    .header__navbar {
+        margin: 70px 0;
+    }
+
+    .header__button {
+        width: 90%;
+    }
+}
+
 @media (max-width: 320px) {
+    .header__homepage-menu_type_active {
+        max-height: 520px;
+        min-height: 520px;
+    }
 
     .header__mobile-wrapper {
         padding: 10px 16px 36px 16px;
     }
 
-    .header__navbar {
-        margin-top: 66px;
-        margin-bottom: 70px;
-    }
-
     .header__list {
         margin-bottom: 20px;
-    }
-
-    .header__button {
-
-        width: 100%;
     }
 
 }

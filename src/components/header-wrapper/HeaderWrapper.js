@@ -2,7 +2,7 @@ import React from 'react';
 
 function HeaderWrapper(props) {
   function setPageMenuActiveClass() {
-    if (props.isMenuOpen && props.professionPage) {
+    if (props.isMenuOpen && props.isProfessionPageFocused) {
       return 'header__profession-menu_type_active';
     }
     if (props.isMenuOpen) {

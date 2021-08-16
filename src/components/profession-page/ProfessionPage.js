@@ -1,6 +1,5 @@
-/* eslint-disable react/jsx-boolean-value */
 /* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
+
 import React from 'react';
 import { useParams, NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
@@ -17,7 +16,13 @@ import {
 } from '../../arrays/delegate-tasks';
 import Footer from '../footer/Footer';
 
-function ProfessionPage(props) {
+function ProfessionPage({
+  isProfessionPageFocused,
+  setIsProfessionPageFocused,
+  displayCourseButtons,
+  onNavClick,
+  isMenuOpen,
+}) {
   const { id } = useParams();
   const professionTitle = professionHeroTitles.find((page) => page.id === id);
   const professionCard = professionHeroCards.find((cardGroup) => cardGroup.id === id);
@@ -30,8 +35,8 @@ function ProfessionPage(props) {
   });
 
   React.useEffect(() => {
-    props.setProfessionPage(true);
-  }, [props]);
+    setIsProfessionPageFocused(true);
+  }, [setIsProfessionPageFocused]);
 
   React.useEffect(() => {
     if (id === 'web-dev') {
@@ -50,17 +55,17 @@ function ProfessionPage(props) {
     <>
       <Header
         name="header"
-        professionPage={props.professionPage}
-        onNavClick={props.onNavClick}
-        isMenuOpen={props.isMenuOpen}
+        isProfessionPageFocused={isProfessionPageFocused}
+        onNavClick={onNavClick}
+        isMenuOpen={isMenuOpen}
       >
         <li className="header__list">
-          <NavLink className="header__link" exact to="/" smooth="true" onClick={props.onNavClick}>
+          <NavLink className="header__link" exact to="/" smooth="true" onClick={onNavClick}>
             Back to homepage
           </NavLink>
         </li>
         <li className="header__list">
-          <Link className="header__link" to="projects" smooth="true" onClick={props.onNavClick}>
+          <Link className="header__link" to="projects" smooth="true" onClick={onNavClick}>
             Students' projects
           </Link>
         </li>
@@ -70,7 +75,7 @@ function ProfessionPage(props) {
         name="projects"
         title={projectTitle}
         defaultDisplay={projectDisplay}
-        displayCourseButtons={props.displayCourseButtons}
+        displayCourseButtons={displayCourseButtons}
       />
       <Footer name="footer" />
     </>

@@ -33,7 +33,7 @@ function Header(props) {
   return (
     <header className="header" id="header">
       <div className="header__mobile-wrapper">
-        <NavLink className="logo-link" exact to="/" smooth="true">
+        <NavLink className="logo-link" exact to="/" smooth="true" onClick={props.onNavClick}>
           <img className="logo" src={Logo} alt="" />
         </NavLink>
         <button
@@ -54,7 +54,7 @@ function Header(props) {
       <HeaderWrapper
         wrapMobileMenu={mobileWidth}
         isMenuOpen={props.isMenuOpen}
-        professionPage={props.professionPage}
+        isProfessionPageFocused={props.isProfessionPageFocused}
       >
         <ul className="header__navbar">{props.children}</ul>
         <button className="header__button" to="" onClick={props.onNavClick}>

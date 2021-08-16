@@ -9,6 +9,7 @@ const professionHeroTitles = [
     subtitle:
       'Practicum by Yandex students are ready to build your website from your design or if necessary, we can ask our colleagues from the design team to create a unique design for your company and a website based on this design.',
     image: webDevImage,
+    alt: 'calendar',
   },
   {
     id: 'data-analysis',
@@ -16,6 +17,7 @@ const professionHeroTitles = [
     subtitle:
       'Practicum by Yandex students are ready to undertake analytics of the data provided by the company or if necessary, are ready to conduct market research to obtain the necessary data for analysis.',
     image: dataAnalysisImage,
+    alt: 'crystal ball',
   },
   {
     id: 'data-science',
@@ -23,6 +25,7 @@ const professionHeroTitles = [
     subtitle:
       'Practicum by Yandex students are ready to undertake analytics of the data provided by the company or if necessary, are ready to conduct market research to obtain the necessary data for analysis.',
     image: dataScienceImage,
+    alt: 'rubiks cube',
   },
 ];
 

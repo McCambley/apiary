@@ -10,7 +10,7 @@ import PageNotFound from './page-not-found/PageNotFound';
 import pageTitles from '../arrays/projects-page-titles'; // import titles to be used in profession page
 
 function App() {
-  const [professionPage, setProfessionPage] = React.useState(false);
+  const [isProfessionPageFocused, setIsProfessionPageFocused] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   function handleNavClick() {
@@ -28,8 +28,8 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Homepage
-            professionPage={professionPage}
-            setProfessionPage={setProfessionPage}
+            isProfessionPageFocused={isProfessionPageFocused}
+            setIsProfessionPageFocused={setIsProfessionPageFocused}
             pageTitles={pageTitles}
             onNavClick={handleNavClick}
             isMenuOpen={isMenuOpen}
@@ -37,8 +37,8 @@ function App() {
         </Route>
         <Route exact path="/profession-hero/:id">
           <ProfessionPage
-            professionPage={professionPage}
-            setProfessionPage={setProfessionPage}
+            isProfessionPageFocused={isProfessionPageFocused}
+            setIsProfessionPageFocused={setIsProfessionPageFocused}
             pageTitles={pageTitles}
             displayCourseButtons={false}
             onNavClick={handleNavClick}
