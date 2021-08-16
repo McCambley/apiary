@@ -7,7 +7,7 @@
 import React from 'react';
 import './Form.css';
 
-function Form(props) {
+function Form({ isOpen, onClose }) {
   const [displayForm, setDisplayForm] = React.useState(true);
   const [isCompleted, setIsCompleted] = React.useState(false);
 
@@ -37,7 +37,7 @@ function Form(props) {
 
   // Combines closing modal and clearing of inputs and error messages
   function closeModal() {
-    props.onClose();
+    onClose();
     setTimeout(clearValues, 1000);
     setTimeout(() => {
       // Display form instead of confirmation message when reopening popup
@@ -107,7 +107,7 @@ function Form(props) {
   }
 
   return (
-    <div className={`modal ${props.isOpen ? 'modal_open' : ''}`} onClick={handleModalClick}>
+    <div className={`modal ${isOpen ? 'modal_open' : ''}`} onClick={handleModalClick}>
       <div className="modal__content" style={{ display: displayForm ? 'block' : 'none' }}>
         <button
           className="modal__close-button modal__close-button_form"
@@ -127,6 +127,7 @@ function Form(props) {
               placeholder="Company Name"
               onChange={handleChange}
               value={inputValues.company}
+              required
             />
             <span className={`form__error ${inputErrors.company && 'form__error_visible'}`}>
               {inputErrors.company}
@@ -144,6 +145,7 @@ function Form(props) {
               placeholder="email@email.com"
               onChange={handleChange}
               value={inputValues.email}
+              required
             />
             <span className={`form__error ${inputErrors.email && 'form__error_visible'}`}>
               {inputErrors.email}
@@ -160,6 +162,7 @@ function Form(props) {
               placeholder="We want to.."
               onChange={handleChange}
               value={inputValues.description}
+              required
             />
             <span className={`form__error ${inputErrors.description && 'form__error_visible'}`}>
               {inputErrors.description}
@@ -177,6 +180,7 @@ function Form(props) {
               placeholder="My name is"
               onChange={handleChange}
               value={inputValues.name}
+              required
             />
             <span className={`form__error ${inputErrors.name && 'form__error_visible'}`}>
               {inputErrors.name}

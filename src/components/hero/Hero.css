@@ -5,6 +5,8 @@
   align-items: center;
   position: relative;
   height: auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero__title {

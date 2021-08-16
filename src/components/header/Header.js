@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/button-has-type */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-scroll';
 import './Header.css';
@@ -10,7 +11,7 @@ import Hamburger from '../../images/hamburger.svg';
 import XIcon from '../../images/x-icon.svg';
 import HeaderWrapper from '../header-wrapper/HeaderWrapper';
 
-function Header() {
+function Header({ onButtonClick }) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [mobileWidth, setMobileWidth] = React.useState(false);
 
@@ -30,6 +31,12 @@ function Header() {
 
   function onNavClick() {
     setIsMenuOpen(!isMenuOpen);
+  }
+
+  // When user clicks on CTA-button, mobile menu closes and form is displayed
+  function onDelegateTaskClick() {
+    onNavClick();
+    onButtonClick();
   }
 
   return (
@@ -79,7 +86,7 @@ function Header() {
             </Link>
           </li>
         </ul>
-        <button className="header__button" to="" onClick={onNavClick}>
+        <button className="header__button" to="" onClick={onDelegateTaskClick}>
           Delegate a task
         </button>
       </HeaderWrapper>
