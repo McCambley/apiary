@@ -1,57 +1,56 @@
-/* eslint-disable no-use-before-define */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/jsx-boolean-value */
 import React from 'react';
 import './App.css';
-import { Route } from 'react-router-dom';
-import Hero from './hero/Hero';
-import Header from './header/Header';
-import Lead from './lead/Lead';
-import Requests from './requests/Requests';
-import DummyPage from './dummy-page/DummyPage';
-import ChooseUs from './choose-us/ChooseUs';
-import Projects from './projects/Projects';
-import Form from './form/Form';
-import Footer from './footer/Footer';
+import { Route, Switch } from 'react-router-dom';
+import Homepage from './homepage/Homepage';
+import ProfessionPage from './profession-page/ProfessionPage';
+import PageNotFound from './page-not-found/PageNotFound';
 import pageTitles from '../arrays/projects-page-titles'; // import titles to be used in profession page
-import {
-  webDevProjects, // default display data for webdev profession page
-  dataAnalysisProjects, // default display data for dataAnalysis profession page
-  dataScienceProjects, // default display data for dataScience profession page
-} from '../arrays/delegate-tasks';
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [isProfessionPageFocused, setIsProfessionPageFocused] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  function handleButtonClick() {
-    setIsModalOpen(true);
-  }
-
-  function closeModal() {
-    setIsModalOpen(false);
+  function handleNavClick() {
+    setIsMenuOpen(!isMenuOpen);
   }
 
   return (
     <div className="page">
-      <Header onButtonClick={handleButtonClick} />
-      <Hero onButtonClick={handleButtonClick} />
-      <Lead />
-      <Route path="/dummy-page">
-        <DummyPage />
-      </Route>
-      <Requests />
-      <ChooseUs />
-      <Projects
-        // Colin these props will be the things you change when you route this component
-        // For the profession pages select the corresponding titles from pageTitles
-        // select the defaultDisplay from delegate-tasks
-        // displayCourseButtons will be false
-        title={pageTitles.default.title}
-        subtitle={pageTitles.default.subtitle}
-        defaultDisplay={webDevProjects}
-        displayCourseButtons={true}
+      <div
+        className={`header__menu-overlay ${
+          isMenuOpen ? 'header__menu-overlay_type_active' : 'header__menu-overlay_type_inactive'
+        }`}
+        onClick={handleNavClick}
       />
-      <Footer />
-      <Form isOpen={isModalOpen} onClose={closeModal} />
+      <Switch>
+        <Route exact path="/">
+          <Homepage
+            isProfessionPageFocused={isProfessionPageFocused}
+            setIsProfessionPageFocused={setIsProfessionPageFocused}
+            pageTitles={pageTitles}
+            onNavClick={handleNavClick}
+            isMenuOpen={isMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
+          />
+        </Route>
+        <Route exact path="/profession-hero/:id">
+          <ProfessionPage
+            isProfessionPageFocused={isProfessionPageFocused}
+            setIsProfessionPageFocused={setIsProfessionPageFocused}
+            pageTitles={pageTitles}
+            displayCourseButtons={false}
+            onNavClick={handleNavClick}
+            isMenuOpen={isMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
+          />
+        </Route>
+        <Route>
+          <PageNotFound />
+        </Route>
+      </Switch>
     </div>
   );
 }
