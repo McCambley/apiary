@@ -16,7 +16,7 @@ export default function Footer() {
           About us
         </a>
         {/* TODO link the link below to the header */}
-        <Link to="header" className="footer__top transparency">
+        <Link to="header" smooth="true" className="footer__top transparency">
           Back to top ↑
         </Link>
         <ul className="footer__contact">
