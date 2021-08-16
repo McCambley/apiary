@@ -22,6 +22,7 @@ function ProfessionPage({
   displayCourseButtons,
   onNavClick,
   isMenuOpen,
+  setIsMenuOpen,
 }) {
   const { id } = useParams();
   const professionTitle = professionHeroTitles.find((page) => page.id === id);
@@ -55,9 +56,10 @@ function ProfessionPage({
     <>
       <Header
         name="header"
-        isProfessionPageFocused={isProfessionPageFocused}
         onNavClick={onNavClick}
         isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        isProfessionPageFocused={isProfessionPageFocused}
       >
         <li className="header__list">
           <NavLink className="header__link" exact to="/" smooth="true" onClick={onNavClick}>

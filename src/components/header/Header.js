@@ -30,10 +30,14 @@ function Header(props) {
     return () => window.removeEventListener('resize', checkWidth);
   });
 
+  function closeMenu() {
+    props.setIsMenuOpen(false);
+  }
+
   return (
     <header className="header" id="header">
       <div className="header__mobile-wrapper">
-        <NavLink className="logo-link" exact to="/" smooth="true" onClick={props.onNavClick}>
+        <NavLink className="logo-link" exact to="/" smooth="true" onClick={closeMenu}>
           <img className="logo" src={Logo} alt="" />
         </NavLink>
         <button

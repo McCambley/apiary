@@ -33,6 +33,7 @@ function App() {
             pageTitles={pageTitles}
             onNavClick={handleNavClick}
             isMenuOpen={isMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
           />
         </Route>
         <Route exact path="/profession-hero/:id">
@@ -43,6 +44,7 @@ function App() {
             displayCourseButtons={false}
             onNavClick={handleNavClick}
             isMenuOpen={isMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
           />
         </Route>
         <Route>

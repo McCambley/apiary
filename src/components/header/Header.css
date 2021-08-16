@@ -287,6 +287,10 @@
         border-radius: 40px;
     }
 
+    .header__button:hover {
+        transform: translate3D(0, -1px, 0) scale(1.05);
+      }
+
 }
 
 @media (max-width: 480px) {

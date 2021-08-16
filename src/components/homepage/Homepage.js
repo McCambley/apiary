@@ -21,6 +21,7 @@ function Homepage({
   pageTitles,
   onNavClick,
   isMenuOpen,
+  setIsMenuOpen,
 }) {
   React.useEffect(() => {
     setIsProfessionPageFocused(false);
@@ -32,6 +33,7 @@ function Homepage({
         name="header"
         onNavClick={onNavClick}
         isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
         isProfessionPageFocused={isProfessionPageFocused}
       >
         <li className="header__list">
