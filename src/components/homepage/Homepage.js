@@ -13,6 +13,7 @@ import {
   // dataAnalysisProjects, // default display data for dataAnalysis profession page
   // dataScienceProjects, // default display data for dataScience profession page
 } from '../../arrays/delegate-tasks';
+import Form from '../form/Form';
 import Footer from '../footer/Footer';
 
 function Homepage({
@@ -27,6 +28,16 @@ function Homepage({
     setIsProfessionPageFocused(false);
   }, [isProfessionPageFocused, setIsProfessionPageFocused]);
 
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+
+  function handleButtonClick() {
+    setIsModalOpen(true);
+  }
+
+  function closeModal() {
+    setIsModalOpen(false);
+  }
+
   return (
     <>
       <Header
@@ -35,6 +46,7 @@ function Homepage({
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         isProfessionPageFocused={isProfessionPageFocused}
+        onButtonClick={handleButtonClick}
       >
         <li className="header__list">
           <Link className="header__link" to="requests" smooth="true" onClick={onNavClick}>
@@ -62,7 +74,7 @@ function Homepage({
           </Link>
         </li>
       </Header>
-      <Hero />
+      <Hero onButtonClick={handleButtonClick} />
       <Lead />
       <Requests name="requests" setIsProfessionPageFocused={setIsProfessionPageFocused} />
       <ChooseUs />
@@ -74,6 +86,7 @@ function Homepage({
         displayCourseButtons={true}
       />
       <Footer name="footer" />
+      <Form isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }

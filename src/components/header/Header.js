@@ -4,7 +4,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/button-has-type */
-
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
@@ -13,7 +12,14 @@ import Hamburger from '../../images/hamburger.svg';
 import XIcon from '../../images/x-icon.svg';
 import HeaderWrapper from '../header-wrapper/HeaderWrapper';
 
-function Header(props) {
+function Header({
+  onButtonClick,
+  isMenuOpen,
+  setIsMenuOpen,
+  onNavClick,
+  isProfessionPageFocused,
+  children,
+}) {
   const [mobileWidth, setMobileWidth] = React.useState(false);
 
   React.useState(() => {
@@ -31,7 +37,13 @@ function Header(props) {
   });
 
   function closeMenu() {
-    props.setIsMenuOpen(false);
+    setIsMenuOpen(false);
+  }
+
+  // When user clicks on CTA-button, mobile menu closes and form is displayed
+  function onDelegateTaskClick() {
+    onNavClick();
+    onButtonClick();
   }
 
   return (
@@ -42,26 +54,24 @@ function Header(props) {
         </NavLink>
         <button
           className={`header__hamburger-button ${
-            props.isMenuOpen ? '' : 'header__hamburger-button_active'
+            isMenuOpen ? '' : 'header__hamburger-button_active'
           }`}
         >
-          <img src={Hamburger} alt="" onClick={props.onNavClick} />
+          <img src={Hamburger} alt="" onClick={onNavClick} />
         </button>
         <button
-          className={`header__x-icon-button ${
-            props.isMenuOpen ? 'header__x-icon-button_active' : ''
-          }`}
+          className={`header__x-icon-button ${isMenuOpen ? 'header__x-icon-button_active' : ''}`}
         >
-          <img src={XIcon} alt="" onClick={props.onNavClick} />
+          <img src={XIcon} alt="" onClick={onNavClick} />
         </button>
       </div>
       <HeaderWrapper
         wrapMobileMenu={mobileWidth}
-        isMenuOpen={props.isMenuOpen}
-        isProfessionPageFocused={props.isProfessionPageFocused}
+        isMenuOpen={isMenuOpen}
+        isProfessionPageFocused={isProfessionPageFocused}
       >
-        <ul className="header__navbar">{props.children}</ul>
-        <button className="header__button" to="" onClick={props.onNavClick}>
+        <ul className="header__navbar">{children}</ul>
+        <button className="header__button" to="" onClick={onDelegateTaskClick}>
           Delegate a task
         </button>
       </HeaderWrapper>
