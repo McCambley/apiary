@@ -7,22 +7,25 @@ const requests = [
     id: 1,
     hashtag: '#programming',
     title: 'Web development',
-    image: DataAnalysis,
+    image: WebDev,
     alt: 'website drawing',
+    link: '/profession-hero/web-dev',
   },
   {
     id: 2,
     hashtag: '#analysis',
     title: 'Data analysis',
-    image: WebDev,
+    image: DataAnalysis,
     alt: 'snowglobe with math inside',
+    link: '/profession-hero/data-analysis',
   },
   {
     id: 3,
-    hashtag: '#analysis',
+    hashtag: '#science',
     title: 'Data science',
     image: DataScience,
     alt: "rubik's cube",
+    link: '/profession-hero/data-science',
   },
 ];
 
