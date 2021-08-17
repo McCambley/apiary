@@ -3,17 +3,17 @@
 /* eslint-disable react/jsx-boolean-value */
 import React from 'react';
 import './App.css';
-import { Route } from 'react-router-dom';
+// import { Route } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import Hero from './hero/Hero';
-import Header from './header/Header';
-import Lead from './lead/Lead';
-import Requests from './requests/Requests';
-import DummyPage from './dummy-page/DummyPage';
-import ChooseUs from './choose-us/ChooseUs';
-import Projects from './projects/Projects';
-import Footer from './footer/Footer';
 import { Route, Switch } from 'react-router-dom';
+// import Hero from './hero/Hero';
+// import Header from './header/Header';
+// import Lead from './lead/Lead';
+// import Requests from './requests/Requests';
+// import DummyPage from './dummy-page/DummyPage';
+// import ChooseUs from './choose-us/ChooseUs';
+// import Projects from './projects/Projects';
+// import Footer from './footer/Footer';
 import Homepage from './homepage/Homepage';
 import ProfessionPage from './profession-page/ProfessionPage';
 import PageNotFound from './page-not-found/PageNotFound';
