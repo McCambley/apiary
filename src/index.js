@@ -9,7 +9,7 @@ import { client } from './utils/api';
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <HashRouter basename="/apiary">
+      <HashRouter basename="/">
         <App />
       </HashRouter>
     </ApolloProvider>

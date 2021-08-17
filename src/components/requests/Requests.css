@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 100px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .requests__title {
@@ -36,6 +38,8 @@
   border-radius: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
+
 }
 
 .card:hover {
@@ -53,6 +57,7 @@
   font-size: 30px;
   line-height: 40px;
   margin-bottom: 20px;
+  color: #000000;
 }
 
 .card__image {
@@ -98,24 +103,40 @@
     padding-right: 16px;
   }
 
-  .requests__title {
-    text-align: left;
-    font-size: 32px;
-  }
-
-  .requests__subtitle {
-    text-align: left;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
-
   .requests__card-container {
     grid-template-columns: 1fr;
     grid-template-areas:
       'card-1'
       'card-2'
       'card-3';
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .requests__title {
+    font-size: 40px;
+  }
+
+  .requests__subtitle {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .requests {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .requests__title {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .requests__subtitle {
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 32px auto 32px auto;
   }
 }

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Footer.css';
 
 export default function Footer() {
@@ -15,9 +16,9 @@ export default function Footer() {
           About us
         </a>
         {/* TODO link the link below to the header */}
-        <a href="#header" className="footer__top transparency">
+        <Link to="header" smooth="true" className="footer__top transparency">
           Back to top ↑
-        </a>
+        </Link>
         <ul className="footer__contact">
           <li className="footer__contact-source-wrapper">
             <a
