@@ -15,14 +15,18 @@ function App() {
   const [isProfessionPageFocused, setIsProfessionPageFocused] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const [currentCourse, setCurrentCourse] = React.useState('Web');
-  const [currentCourseData, setCurrentCourseData] = React.useState({});
+  const [courseQuery, setCourseQuery] = React.useState('Web');
   const { data, loading, error } = useQuery(QUERY, {
-    variables: { classList: currentCourse },
+    variables: { classList: courseQuery },
   });
+  // const [currentCourseData, setCurrentCourseData] = React.useState({});
 
   function handleNavClick() {
     setIsMenuOpen(!isMenuOpen);
+  }
+
+  function handleCourseClick(queryString) {
+    setCourseQuery(queryString);
   }
 
   return (

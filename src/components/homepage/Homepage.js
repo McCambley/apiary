@@ -8,11 +8,11 @@ import Lead from '../lead/Lead';
 import Requests from '../requests/Requests';
 import ChooseUs from '../choose-us/ChooseUs';
 import Projects from '../projects/Projects';
-import {
-  webDevProjects, // default display data for webdev profession page
-  // dataAnalysisProjects, // default display data for dataAnalysis profession page
-  // dataScienceProjects, // default display data for dataScience profession page
-} from '../../arrays/delegate-tasks';
+// import {
+//   webDevProjects, // default display data for webdev profession page
+//   dataAnalysisProjects, // default display data for dataAnalysis profession page
+//   dataScienceProjects, // default display data for dataScience profession page
+// } from '../../arrays/delegate-tasks';
 import Form from '../form/Form';
 import Footer from '../footer/Footer';
 

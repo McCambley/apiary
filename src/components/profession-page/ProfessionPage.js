@@ -9,11 +9,11 @@ import Projects from '../projects/Projects';
 import professionHeroTitles from '../../arrays/profession-hero-titles';
 import professionHeroCards from '../../arrays/profession-hero-cards';
 import projectsPageTitles from '../../arrays/projects-page-titles'; // import titles to be used in profession page
-import {
-  dataAnalysisProjects,
-  dataScienceProjects,
-  webDevProjects,
-} from '../../arrays/delegate-tasks';
+// import {
+//   dataAnalysisProjects,
+//   dataScienceProjects,
+//   webDevProjects,
+// } from '../../arrays/delegate-tasks';
 import Footer from '../footer/Footer';
 
 function ProfessionPage({

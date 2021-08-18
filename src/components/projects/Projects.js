@@ -2,11 +2,11 @@
 import React from 'react';
 import './Projects.css';
 import floppyHat from '../../images/floppy-hat.png';
-import {
-  webDevProjects,
-  dataAnalysisProjects,
-  dataScienceProjects,
-} from '../../arrays/delegate-tasks';
+// import {
+//   webDevProjects,
+//   dataAnalysisProjects,
+//   dataScienceProjects,
+// } from '../../arrays/delegate-tasks';
 import Project from '../project/Project.js';
 
 export default function Projects({ title, subtitle, defaultDisplay, displayCourseButtons }) {
