@@ -2,6 +2,40 @@
   border: 1px solid red;
 } */
 
+/* LOADING STYLES */
+
+@keyframes shimmerSlide {
+  0% {
+    background-position: -700px 0;
+  }
+
+  100% {
+    background-position: 0px 0;
+  }
+}
+
+.loading {
+  /* temp */
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #792222 0%,
+    #1f6a77 25%,
+    #fdf916 50%,
+    #4b0255 75%,
+    #360202 100%
+  );
+  /* background-image: linear-gradient(to right, #1b5085 0%, #aa9a0c 20%, #080b0e 40%, #f71143 100%); */
+  background-repeat: no-repeat;
+  background-size: 10000px 4000px;
+  background-position: center;
+  animation: shimmerSlide 1s ease-in-out infinite alternate;
+  /* transform: scale(1.1); */
+}
+
+/* LOADING STYLES */
+
 .projects {
   background-color: #e5e5e5;
 }
