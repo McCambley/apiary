@@ -9,10 +9,17 @@ import Homepage from './homepage/Homepage';
 import ProfessionPage from './profession-page/ProfessionPage';
 import PageNotFound from './page-not-found/PageNotFound';
 import pageTitles from '../arrays/projects-page-titles'; // import titles to be used in profession page
+import { QUERY } from '../utils/api';
 
 function App() {
   const [isProfessionPageFocused, setIsProfessionPageFocused] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const [currentCourse, setCurrentCourse] = React.useState('Web');
+  const [currentCourseData, setCurrentCourseData] = React.useState({});
+  const { data, loading, error } = useQuery(QUERY, {
+    variables: { classList: currentCourse },
+  });
 
   function handleNavClick() {
     setIsMenuOpen(!isMenuOpen);
@@ -36,6 +43,7 @@ function App() {
             isMenuOpen={isMenuOpen}
             setIsMenuOpen={setIsMenuOpen}
           />
+          )
         </Route>
         <Route exact path="/profession-hero/:id">
           <ProfessionPage
