@@ -23,8 +23,8 @@ function ProfessionPage({
   onNavClick,
   isMenuOpen,
   setIsMenuOpen,
-  courseData,
-  isCourseDataLoading,
+  projectCollection,
+  isProjectCollectionLoading,
 }) {
   const { id } = useParams();
   const professionTitle = professionHeroTitles.find((page) => page.id === id);
@@ -80,8 +80,8 @@ function ProfessionPage({
         title={projectTitle}
         // defaultDisplay={projectDisplay}
         displayCourseButtons={displayCourseButtons}
-        courseData={courseData}
-        isCourseDataLoading={isCourseDataLoading}
+        projectCollection={projectCollection}
+        isProjectCollectionLoading={isProjectCollectionLoading}
       />
       <Footer name="footer" />
     </>

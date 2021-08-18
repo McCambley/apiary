@@ -12,46 +12,50 @@ import Project from '../project/Project.js';
 export default function Projects({
   title,
   subtitle,
-  defaultDisplay,
   displayCourseButtons,
-  courseData,
-  isCourseDataLoading,
+  onCourseClick,
+  projectCollection,
+  isProjectCollectionLoading,
 }) {
-  // const [focusedCourse, setCourse] = React.useState(defaultDisplay);
-  // const [displayedProjects, setProjects] = React.useState([]);
+  // const [projectCollection, setCourse] = React.useState(defaultDisplay); REPLACED BY UPDATING PRIMARY QUERY
+  // from projects collection, displays a truncated list based on limit
+  const [displayedProjects, setDisplayedProjects] = React.useState([]);
+  // should the project list be expanded to show all projects
   const [isExpanded, setExpanded] = React.useState(false);
+  // should the 'show more' button be hidden (project list is <= limit)
   const [isShowMoreHidden, setHideShowMoreButton] = React.useState(false);
   const displayLimit = 2;
 
-  React.useEffect(() => {
-    setCourse(defaultDisplay);
-  }, [defaultDisplay]);
+  // React.useEffect(() => {
+  //   setCourse(defaultDisplay);
+  // }, [defaultDisplay]);
+
+  // React.useEffect(() => {
+  //   setCourse(webDevProjects);
+  // }, []);
 
   React.useEffect(() => {
-    setCourse(webDevProjects);
-  }, []);
+    console.log(projectCollection);
+    setDisplayedProjects(projectCollection.slice(0, displayLimit));
+  }, [projectCollection]);
 
   React.useEffect(() => {
-    setProjects(focusedCourse.slice(0, displayLimit));
-  }, [focusedCourse]);
-
-  React.useEffect(() => {
-    if (focusedCourse.length > displayLimit) {
+    if (projectCollection.length > displayLimit) {
       setHideShowMoreButton(false);
     } else {
       setHideShowMoreButton(true);
     }
-  }, [focusedCourse]);
+  }, [projectCollection]);
 
-  function updateCourse(course) {
-    setCourse(course);
-  }
+  // function updateCourse(course) {
+  //   setCourse(course);
+  // }
 
   function showMore() {
     if (!isExpanded) {
-      setProjects(focusedCourse);
+      setDisplayedProjects(projectCollection);
     } else {
-      setProjects(focusedCourse.slice(0, displayLimit));
+      setDisplayedProjects(projectCollection.slice(0, displayLimit));
     }
     setExpanded(!isExpanded);
   }
@@ -74,36 +78,44 @@ export default function Projects({
             <button
               type="button"
               className={`projects__button ${
-                focusedCourse === webDevProjects && 'projects__button_active'
+                !isProjectCollectionLoading &&
+                projectCollection[0].course === 'Web Development' &&
+                'projects__button_active'
               }`}
-              onClick={() => updateCourse(webDevProjects)}
+              onClick={() => onCourseClick('web')}
             >
               Web development
             </button>
             <button
               type="button"
               className={`projects__button ${
-                focusedCourse === dataAnalysisProjects && 'projects__button_active'
+                !isProjectCollectionLoading &&
+                projectCollection[0].course === 'Data Analysis' &&
+                'projects__button_active'
               }`}
-              onClick={() => updateCourse(dataAnalysisProjects)}
+              onClick={() => onCourseClick('analysis')}
             >
               Data analysis
             </button>
             <button
               type="button"
               className={`projects__button ${
-                focusedCourse === dataScienceProjects && 'projects__button_active'
+                !isProjectCollectionLoading &&
+                projectCollection[0].course === 'Data Science' &&
+                'projects__button_active'
               }`}
-              onClick={() => updateCourse(dataScienceProjects)}
+              onClick={() => onCourseClick('science')}
             >
               Data science
             </button>
           </div>
         )}
         <ul className="projects__list">
-          {displayedProjects.map((project) => (
-            <Project key={project.id} data={project} />
-          ))}
+          {isProjectCollectionLoading ? (
+            <div className="loading" />
+          ) : (
+            displayedProjects.map((project) => <Project key={project.id} data={project} />)
+          )}
         </ul>
         <div className="projects__buttons projects__buttons_position_end">
           <button

@@ -24,8 +24,8 @@ function Homepage({
   onCourseClick,
   isMenuOpen,
   setIsMenuOpen,
-  courseData,
-  isCourseDataLoading,
+  projectCollection,
+  isProjectCollectionLoading,
 }) {
   React.useEffect(() => {
     setIsProfessionPageFocused(false);
@@ -89,10 +89,11 @@ function Homepage({
         name="projects"
         title={pageTitles.default.title}
         subtitle={pageTitles.default.subtitle}
-        defaultDisplay={webDevProjects}
+        // defaultDisplay={webDevProjects}
+        onCourseClick={onCourseClick}
         displayCourseButtons={true}
-        courseData={courseData}
-        isCourseDataLoading={isCourseDataLoading}
+        projectCollection={projectCollection}
+        isProjectCollectionLoading={isProjectCollectionLoading}
       />
       <Footer name="footer" />
       <Form isOpen={isModalOpen} onClose={closeModal} />

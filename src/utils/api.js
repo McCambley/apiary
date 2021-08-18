@@ -59,6 +59,7 @@ export function createQuery(course) {
     query courseProjects {
       projectCollection(where: { course_contains: "${course}" }) {
         items {
+          course
           info {
             title
             description

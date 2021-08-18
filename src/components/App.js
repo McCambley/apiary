@@ -48,8 +48,8 @@ function App() {
             onCourseClick={handleCourseClick}
             isMenuOpen={isMenuOpen}
             setIsMenuOpen={setIsMenuOpen}
-            courseData={data?.data.projectCollection}
-            isCourseDataLoading={loading}
+            projectCollection={loading ? [] : data.projectCollection.items}
+            isProjectCollectionLoading={loading}
           />
           )
         </Route>
@@ -62,8 +62,8 @@ function App() {
             onNavClick={handleNavClick}
             isMenuOpen={isMenuOpen}
             setIsMenuOpen={setIsMenuOpen}
-            courseData={data}
-            isCourseDataLoading={loading}
+            projectCollection={loading ? [] : data.projectCollection.items}
+            isProjectCollectionLoading={loading}
           />
         </Route>
         <Route>
