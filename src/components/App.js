@@ -16,9 +16,10 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const [courseQuery, setCourseQuery] = React.useState('Web');
-  const { data, loading, error } = useQuery(QUERY, {
+  const { data, loading /* error? */ } = useQuery(QUERY, {
     variables: { classList: courseQuery },
   });
+
   // const [currentCourseData, setCurrentCourseData] = React.useState({});
 
   function handleNavClick() {
@@ -44,8 +45,11 @@ function App() {
             setIsProfessionPageFocused={setIsProfessionPageFocused}
             pageTitles={pageTitles}
             onNavClick={handleNavClick}
+            onCourseClick={handleCourseClick}
             isMenuOpen={isMenuOpen}
             setIsMenuOpen={setIsMenuOpen}
+            courseData={data?.data.projectCollection}
+            isCourseDataLoading={loading}
           />
           )
         </Route>
@@ -58,6 +62,8 @@ function App() {
             onNavClick={handleNavClick}
             isMenuOpen={isMenuOpen}
             setIsMenuOpen={setIsMenuOpen}
+            courseData={data}
+            isCourseDataLoading={loading}
           />
         </Route>
         <Route>

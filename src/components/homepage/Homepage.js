@@ -21,8 +21,11 @@ function Homepage({
   setIsProfessionPageFocused,
   pageTitles,
   onNavClick,
+  onCourseClick,
   isMenuOpen,
   setIsMenuOpen,
+  courseData,
+  isCourseDataLoading,
 }) {
   React.useEffect(() => {
     setIsProfessionPageFocused(false);
@@ -76,7 +79,11 @@ function Homepage({
       </Header>
       <Hero onButtonClick={handleButtonClick} />
       <Lead />
-      <Requests name="requests" setIsProfessionPageFocused={setIsProfessionPageFocused} />
+      <Requests
+        name="requests"
+        setIsProfessionPageFocused={setIsProfessionPageFocused}
+        onCourseClick={onCourseClick}
+      />
       <ChooseUs />
       <Projects
         name="projects"
@@ -84,6 +91,8 @@ function Homepage({
         subtitle={pageTitles.default.subtitle}
         defaultDisplay={webDevProjects}
         displayCourseButtons={true}
+        courseData={courseData}
+        isCourseDataLoading={isCourseDataLoading}
       />
       <Footer name="footer" />
       <Form isOpen={isModalOpen} onClose={closeModal} />

@@ -23,12 +23,14 @@ function ProfessionPage({
   onNavClick,
   isMenuOpen,
   setIsMenuOpen,
+  courseData,
+  isCourseDataLoading,
 }) {
   const { id } = useParams();
   const professionTitle = professionHeroTitles.find((page) => page.id === id);
   const professionCard = professionHeroCards.find((cardGroup) => cardGroup.id === id);
 
-  const [projectDisplay, setProjectDisplay] = React.useState(webDevProjects);
+  // const [projectDisplay, setProjectDisplay] = React.useState(webDevProjects);
   const [projectTitle, setProjectTitle] = React.useState(projectsPageTitles.webDev.title);
 
   React.useEffect(() => {
@@ -41,13 +43,13 @@ function ProfessionPage({
 
   React.useEffect(() => {
     if (id === 'web-dev') {
-      setProjectDisplay(webDevProjects);
+      // setProjectDisplay(webDevProjects);
       setProjectTitle(projectsPageTitles.webDev.title);
     } else if (id === 'data-analysis') {
-      setProjectDisplay(dataAnalysisProjects);
+      // setProjectDisplay(dataAnalysisProjects);
       setProjectTitle(projectsPageTitles.dataAnalysis.title);
     } else if (id === 'data-science') {
-      setProjectDisplay(dataScienceProjects);
+      // setProjectDisplay(dataScienceProjects);
       setProjectTitle(projectsPageTitles.dataScience.title);
     }
   }, [id]);
@@ -76,8 +78,10 @@ function ProfessionPage({
       <Projects
         name="projects"
         title={projectTitle}
-        defaultDisplay={projectDisplay}
+        // defaultDisplay={projectDisplay}
         displayCourseButtons={displayCourseButtons}
+        courseData={courseData}
+        isCourseDataLoading={isCourseDataLoading}
       />
       <Footer name="footer" />
     </>

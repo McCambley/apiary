@@ -9,9 +9,16 @@ import floppyHat from '../../images/floppy-hat.png';
 // } from '../../arrays/delegate-tasks';
 import Project from '../project/Project.js';
 
-export default function Projects({ title, subtitle, defaultDisplay, displayCourseButtons }) {
-  const [focusedCourse, setCourse] = React.useState(defaultDisplay);
-  const [displayedProjects, setProjects] = React.useState([]);
+export default function Projects({
+  title,
+  subtitle,
+  defaultDisplay,
+  displayCourseButtons,
+  courseData,
+  isCourseDataLoading,
+}) {
+  // const [focusedCourse, setCourse] = React.useState(defaultDisplay);
+  // const [displayedProjects, setProjects] = React.useState([]);
   const [isExpanded, setExpanded] = React.useState(false);
   const [isShowMoreHidden, setHideShowMoreButton] = React.useState(false);
   const displayLimit = 2;

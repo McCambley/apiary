@@ -57,7 +57,7 @@ export function createQuery(course) {
   console.log(typeof course);
   return gql`
     query courseProjects {
-      ${course}: projectCollection(where: { course_contains: "${course}" }) {
+      projectCollection(where: { course_contains: "${course}" }) {
         items {
           info {
             title
