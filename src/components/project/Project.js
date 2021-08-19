@@ -27,7 +27,7 @@ export default function Project({ data }) {
         </div>
       </div>
       <ul className="project__reviews">
-        {data.reviewsCollection.items.map((review, index) => (
+        {data.reviewsCollection.items.map((review) => (
           <Review key={review.sys.id} data={review} />
         ))}
       </ul>
