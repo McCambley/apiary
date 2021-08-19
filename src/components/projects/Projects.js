@@ -11,6 +11,7 @@ export default function Projects({
   onCourseClick,
   projectCollection, // data from useQuery in App
   isProjectCollectionLoading, // loading from useQuery in App
+  onButtonClick,
 }) {
   // from projects collection, displays a truncated list based on limit
   const [displayedProjects, setDisplayedProjects] = React.useState([]);
@@ -117,7 +118,7 @@ export default function Projects({
               isShowMoreHidden && 'projects__button_center'
             }`}
             onClick={() => {
-              console.log('Delegating...');
+              onButtonClick(true);
             }}
           >
             Delegate a task

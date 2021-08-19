@@ -10,6 +10,7 @@ import professionHeroTitles from '../../arrays/profession-hero-titles';
 import professionHeroCards from '../../arrays/profession-hero-cards';
 import projectsPageTitles from '../../arrays/projects-page-titles'; // import titles to be used in profession page
 import Footer from '../footer/Footer';
+import Form from '../form/Form';
 
 function ProfessionPage({
   isProfessionPageFocused,
@@ -20,6 +21,9 @@ function ProfessionPage({
   setIsMenuOpen,
   projectCollection,
   isProjectCollectionLoading,
+  handleButtonClick,
+  isModalOpen,
+  closeModal,
 }) {
   const { id } = useParams();
   const professionTitle = professionHeroTitles.find((page) => page.id === id);
@@ -53,6 +57,7 @@ function ProfessionPage({
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         isProfessionPageFocused={isProfessionPageFocused}
+        onButtonClick={handleButtonClick}
       >
         <li className="header__list">
           <NavLink className="header__link" exact to="/" smooth="true" onClick={onNavClick}>
@@ -72,8 +77,10 @@ function ProfessionPage({
         displayCourseButtons={displayCourseButtons}
         projectCollection={projectCollection}
         isProjectCollectionLoading={isProjectCollectionLoading}
+        onButtonClick={handleButtonClick}
       />
       <Footer name="footer" />
+      <Form isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }

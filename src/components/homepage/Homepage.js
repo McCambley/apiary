@@ -22,20 +22,13 @@ function Homepage({
   setIsMenuOpen,
   projectCollection,
   isProjectCollectionLoading,
+  handleButtonClick,
+  isModalOpen,
+  closeModal,
 }) {
   React.useEffect(() => {
     setIsProfessionPageFocused(false);
   }, [isProfessionPageFocused, setIsProfessionPageFocused]);
-
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-
-  function handleButtonClick() {
-    setIsModalOpen(true);
-  }
-
-  function closeModal() {
-    setIsModalOpen(false);
-  }
 
   return (
     <>
@@ -89,6 +82,7 @@ function Homepage({
         displayCourseButtons={true}
         projectCollection={projectCollection}
         isProjectCollectionLoading={isProjectCollectionLoading}
+        onButtonClick={handleButtonClick}
       />
       <Footer name="footer" />
       <Form isOpen={isModalOpen} onClose={closeModal} />

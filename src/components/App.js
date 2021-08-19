@@ -15,6 +15,8 @@ function App() {
   const [isProfessionPageFocused, setIsProfessionPageFocused] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+
   // this variable is fed into the query string in order to search the database for course project lists
   // when updated, this will trigger a new query and update the visible list of projects
   const [courseQuery, setCourseQuery] = React.useState('Web');
@@ -30,6 +32,14 @@ function App() {
 
   function handleCourseClick(queryString) {
     setCourseQuery(queryString);
+  }
+
+  function handleButtonClick() {
+    setIsModalOpen(true);
+  }
+
+  function closeModal() {
+    setIsModalOpen(false);
   }
 
   return (
@@ -52,6 +62,9 @@ function App() {
             setIsMenuOpen={setIsMenuOpen}
             projectCollection={loading ? [] : data.projectCollection.items}
             isProjectCollectionLoading={loading}
+            handleButtonClick={handleButtonClick}
+            isModalOpen={isModalOpen}
+            closeModal={closeModal}
           />
           )
         </Route>
@@ -66,6 +79,9 @@ function App() {
             setIsMenuOpen={setIsMenuOpen}
             projectCollection={loading ? [] : data.projectCollection.items}
             isProjectCollectionLoading={loading}
+            handleButtonClick={handleButtonClick}
+            isModalOpen={isModalOpen}
+            closeModal={closeModal}
           />
         </Route>
         <Route>
