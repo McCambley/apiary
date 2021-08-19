@@ -129,6 +129,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  min-height: 1600px;
 }
 
 @media (max-width: 1024px) {

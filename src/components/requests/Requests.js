@@ -16,7 +16,6 @@ function Requests(props) {
     // updates global courseQuery variable to render new course data
     props.onCourseClick(courseTitle);
   }
-
   return (
     <section className="requests">
       <h2 className="requests__title">What requests can we help with?</h2>
