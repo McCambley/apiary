@@ -98,7 +98,7 @@ function Form({ isOpen, onClose }) {
     if (Object.keys(inputErrors).length === 0 && onSubmitClick) {
       submit();
     }
-  }, [inputErrors]);
+  }, [inputErrors, onSubmitClick]);
 
   // Close form and display confirmation message
   function submit() {
