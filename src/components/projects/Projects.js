@@ -28,10 +28,6 @@ export default function Projects({
   const displayLimit = 2;
 
   React.useEffect(() => {
-    console.log(displayedProjects);
-  }, [displayedProjects, isProjectCollectionLoading]);
-
-  React.useEffect(() => {
     setDisplayedProjects(projectCollection.slice(0, displayLimit));
   }, [projectCollection]);
 
@@ -110,7 +106,7 @@ export default function Projects({
           {projectsAreLoading ? (
             <div className="projects__loading" />
           ) : (
-            displayedProjects.map((project) => <Project key={project.id} data={project} />)
+            displayedProjects.map((project) => <Project key={project.sys.id} data={project} />)
           )}
         </ul>
         <div className="projects__buttons projects__buttons_position_end">

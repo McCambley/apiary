@@ -33,8 +33,9 @@ export default function Review({ data }) {
     <li className="review">
       <div className="review__reviewer-info">
         <div className="review__avatar-container">
-          {avatarsCollection.items.map((image) => (
-            <img key={image.id} src={image.url} alt="A dude" className="review__avatar" />
+          {avatarsCollection.items.map((image, index) => (
+            // index used as key as images are duplicates and contain the same system id
+            <img key={index} src={image.url} alt="A dude" className="review__avatar" />
           ))}
         </div>
         <div className="review__title-container">

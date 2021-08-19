@@ -31,6 +31,9 @@ export const QUERY = gql`
         }
         reviewsCollection(limit: 2) {
           items {
+            sys {
+              id
+            }
             title
             subtitle
             quote
@@ -42,6 +45,9 @@ export const QUERY = gql`
               }
             }
           }
+        }
+        sys {
+          id
         }
       }
     }

@@ -14,7 +14,6 @@ function Requests(props) {
     // adjusts content of header component
     onProfessionPageClick();
     // updates global courseQuery variable to render new course data
-    console.log(courseTitle);
     props.onCourseClick(courseTitle);
   }
 
