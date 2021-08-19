@@ -16,7 +16,11 @@ export const client = new ApolloClient({
 // this search accepts one variable and is queried on each course button/card click
 export const QUERY = gql`
   query courseProjects($classList: String!) {
-    projectCollection(where: { course_contains: $classList }, limit: 10) {
+    projectCollection(
+      order: sys_publishedVersion_ASC
+      where: { course_contains: $classList }
+      limit: 10
+    ) {
       items {
         course
         info {
