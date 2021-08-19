@@ -2,11 +2,6 @@
 import React from 'react';
 import './Projects.css';
 import floppyHat from '../../images/floppy-hat.png';
-// import {
-//   webDevProjects,
-//   dataAnalysisProjects,
-//   dataScienceProjects,
-// } from '../../arrays/delegate-tasks';
 import Project from '../project/Project.js';
 
 export default function Projects({
@@ -14,17 +9,15 @@ export default function Projects({
   subtitle,
   displayCourseButtons,
   onCourseClick,
-  projectCollection,
-  isProjectCollectionLoading,
+  projectCollection, // data from useQuery in App
+  isProjectCollectionLoading, // loading from useQuery in App
 }) {
-  // const [projectCollection, setCourse] = React.useState(defaultDisplay); REPLACED BY UPDATING PRIMARY QUERY
   // from projects collection, displays a truncated list based on limit
   const [displayedProjects, setDisplayedProjects] = React.useState([]);
   // should the project list be expanded to show all projects
   const [isExpanded, setExpanded] = React.useState(false);
   // should the 'show more' button be hidden (project list is <= limit)
   const [isShowMoreHidden, setHideShowMoreButton] = React.useState(false);
-  const [projectsAreLoading, setProjectsAreLoading] = React.useState(true);
   const displayLimit = 2;
 
   React.useEffect(() => {
@@ -39,10 +32,6 @@ export default function Projects({
     }
   }, [projectCollection]);
 
-  React.useEffect(() => {
-    setProjectsAreLoading(isProjectCollectionLoading);
-  }, [isProjectCollectionLoading]);
-
   function showMore() {
     if (!isExpanded) {
       setDisplayedProjects(projectCollection);
@@ -52,9 +41,6 @@ export default function Projects({
     setExpanded(!isExpanded);
   }
 
-  // const title = 'Delegate tasks to those who enjoy them';
-  // const subtitle =
-  //   'Check out the projects our students have done for companies in the USA and beyond';
   return (
     <section className="projects">
       <div className="projects__content">
@@ -66,6 +52,7 @@ export default function Projects({
           <img src={floppyHat} alt="Developer with a floppy hat" className="projects__hero-image" />
         </div>
         {displayCourseButtons && (
+          // course buttons will not be displayed when profession page is open
           <div className="projects__buttons">
             <button
               type="button"
@@ -103,9 +90,16 @@ export default function Projects({
           </div>
         )}
         <ul className="projects__list">
-          {projectsAreLoading ? (
-            <div className="projects__loading" />
+          {isProjectCollectionLoading ? (
+            // if project data has not been retrieved from server, display loading animation
+            <>
+              <div className="projects__loading" />
+              <div className="projects__loading" />
+              <div className="projects__loading" />
+              <div className="projects__loading" />
+            </>
           ) : (
+            // once data is retrieved from server, map over the array of projects to populate the page
             displayedProjects.map((project) => <Project key={project.sys.id} data={project} />)
           )}
         </ul>

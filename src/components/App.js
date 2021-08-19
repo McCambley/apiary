@@ -15,12 +15,14 @@ function App() {
   const [isProfessionPageFocused, setIsProfessionPageFocused] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+  // this variable is fed into the query string in order to search the database for course project lists
+  // when updated, this will trigger a new query and update the visible list of projects
   const [courseQuery, setCourseQuery] = React.useState('Web');
-  const { data, loading /* error? */ } = useQuery(QUERY, {
+  // ApolloClient returns from each search some data and a loading boolean that is true if the fetch is incomplete
+  // when the fetch is complete and data is populated, loading is then false
+  const { data, loading } = useQuery(QUERY, {
     variables: { classList: courseQuery },
   });
-
-  // const [currentCourseData, setCurrentCourseData] = React.useState({});
 
   function handleNavClick() {
     setIsMenuOpen(!isMenuOpen);
@@ -75,12 +77,3 @@ function App() {
 }
 
 export default App;
-
-// import Hero from './hero/Hero';
-// import Header from './header/Header';
-// import Lead from './lead/Lead';
-// import Requests from './requests/Requests';
-// import DummyPage from './dummy-page/DummyPage';
-// import ChooseUs from './choose-us/ChooseUs';
-// import Projects from './projects/Projects';
-// import Footer from './footer/Footer';
