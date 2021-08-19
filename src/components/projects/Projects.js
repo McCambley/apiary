@@ -24,18 +24,14 @@ export default function Projects({
   const [isExpanded, setExpanded] = React.useState(false);
   // should the 'show more' button be hidden (project list is <= limit)
   const [isShowMoreHidden, setHideShowMoreButton] = React.useState(false);
+  const [projectsAreLoading, setProjectsAreLoading] = React.useState(true);
   const displayLimit = 2;
 
-  // React.useEffect(() => {
-  //   setCourse(defaultDisplay);
-  // }, [defaultDisplay]);
-
-  // React.useEffect(() => {
-  //   setCourse(webDevProjects);
-  // }, []);
+  React.useEffect(() => {
+    console.log(displayedProjects);
+  }, [displayedProjects, isProjectCollectionLoading]);
 
   React.useEffect(() => {
-    console.log(projectCollection);
     setDisplayedProjects(projectCollection.slice(0, displayLimit));
   }, [projectCollection]);
 
@@ -47,9 +43,9 @@ export default function Projects({
     }
   }, [projectCollection]);
 
-  // function updateCourse(course) {
-  //   setCourse(course);
-  // }
+  React.useEffect(() => {
+    setProjectsAreLoading(isProjectCollectionLoading);
+  }, [isProjectCollectionLoading]);
 
   function showMore() {
     if (!isExpanded) {
@@ -111,8 +107,8 @@ export default function Projects({
           </div>
         )}
         <ul className="projects__list">
-          {isProjectCollectionLoading ? (
-            <div className="loading" />
+          {projectsAreLoading ? (
+            <div className="projects__loading" />
           ) : (
             displayedProjects.map((project) => <Project key={project.id} data={project} />)
           )}

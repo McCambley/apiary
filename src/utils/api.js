@@ -12,8 +12,9 @@ export const client = new ApolloClient({
 
 export const QUERY = gql`
   query courseProjects($classList: String!) {
-    projectCollection(where: { course_contains: $classList }) {
+    projectCollection(where: { course_contains: $classList }, limit: 10) {
       items {
+        course
         info {
           title
           description
@@ -28,67 +29,14 @@ export const QUERY = gql`
             url
           }
         }
-        companyReview {
-          title
-          subtitle
-          description
-          avatar {
-            fileName
-            url
-          }
-        }
-        studentReview {
-          title
-          subtitle
-          description
-          avatarsCollection {
-            items {
-              fileName
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`;
-
-export function createQuery(course) {
-  console.log(typeof course);
-  return gql`
-    query courseProjects {
-      projectCollection(where: { course_contains: "${course}" }) {
-        items {
-          course
-          info {
-            title
-            description
-            date
-            link
-            linkText
-          }
-          image {
-            image {
-              title
-              fileName
-              url
-            }
-          }
-          companyReview {
+        reviewsCollection(limit: 2) {
+          items {
             title
             subtitle
-            description
-            avatar {
-              fileName
-              url
-            }
-          }
-          studentReview {
-            title
-            subtitle
-            description
-            avatarsCollection {
+            quote
+            avatarsCollection(limit: 3) {
               items {
+                title
                 fileName
                 url
               }
@@ -97,8 +45,8 @@ export function createQuery(course) {
         }
       }
     }
-  `;
-}
+  }
+`;
 
 // APP LEVEL QUERY
 
@@ -150,4 +98,4 @@ export function createQuery(course) {
 // //   ({ data, loading, error } = useQuery(createQuery(course)));
 // // }
 
-export default { client, createQuery, QUERY };
+export default { client, QUERY };
