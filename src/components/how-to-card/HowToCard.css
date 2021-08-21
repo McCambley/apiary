@@ -32,7 +32,7 @@
   margin-bottom: 30px;
   text-align: center;
   font-size: 30px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 40px;
 }
 
@@ -40,7 +40,7 @@
   margin: 0;
   text-align: center;
   font-size: 20px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 30px;
   color: #616161;
 }
@@ -68,4 +68,21 @@
 
 @media (max-width: 480px) {
   /*  */
+  .how__img {
+    /* some weird styling to crop images */
+    min-height: 196px;
+    object-fit: cover;
+    transform: scale(1.1);
+  }
+
+  .how__card-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+
+  .how__paragraph {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

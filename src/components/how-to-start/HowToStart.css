@@ -79,11 +79,15 @@
   }
 
   .how__content {
-    gap: 20px;
+    gap: 32px;
   }
 }
 
 @media (max-width: 768px) {
+  .how {
+    padding: 60px 16px;
+  }
+
   .how__content {
     max-width: 480px;
     grid-template-areas:
@@ -93,6 +97,7 @@
     margin-bottom: 100px;
     gap: 60px;
   }
+
   .how__step-container {
     display: none;
   }
@@ -100,4 +105,12 @@
 
 @media (max-width: 480px) {
   /*  */
+  .how__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .how__button {
+    width: 100%;
+  }
 }
