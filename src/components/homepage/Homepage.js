@@ -6,6 +6,7 @@ import Header from '../header/Header';
 import Hero from '../hero/Hero';
 import Lead from '../lead/Lead';
 import Requests from '../requests/Requests';
+import HowToStart from '../how-to-start/HowToStart';
 import ChooseUs from '../choose-us/ChooseUs';
 import Projects from '../projects/Projects';
 import {
@@ -77,6 +78,7 @@ function Homepage({
       <Hero onButtonClick={handleButtonClick} />
       <Lead />
       <Requests name="requests" setIsProfessionPageFocused={setIsProfessionPageFocused} />
+      <HowToStart />
       <ChooseUs />
       <Projects
         name="projects"
