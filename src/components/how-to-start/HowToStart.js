@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import HowToCard from '../how-to-card/HowToCard';
 import content from '../../arrays/how-to-start';
 import './HowToStart.css';
 
-export default function HowToStart() {
+export default function HowToStart({ handleButtonClick }) {
   return (
     <section className="how">
       <h2 className="how__title">How to start?</h2>
@@ -26,7 +27,7 @@ export default function HowToStart() {
           />
         ))}
       </div>
-      <button type="button" className="how__button">
+      <button type="button" className="how__button" onClick={handleButtonClick}>
         Delegate a Task
       </button>
     </section>

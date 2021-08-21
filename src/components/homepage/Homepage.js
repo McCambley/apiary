@@ -78,7 +78,7 @@ function Homepage({
       <Hero onButtonClick={handleButtonClick} />
       <Lead />
       <Requests name="requests" setIsProfessionPageFocused={setIsProfessionPageFocused} />
-      <HowToStart />
+      <HowToStart handleButtonClick={handleButtonClick} />
       <ChooseUs />
       <Projects
         name="projects"
