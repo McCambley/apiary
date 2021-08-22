@@ -14,6 +14,7 @@ import {
   dataScienceProjects,
   webDevProjects,
 } from '../../arrays/delegate-tasks';
+import Form from '../form/Form';
 import Footer from '../footer/Footer';
 
 function ProfessionPage({
@@ -52,6 +53,16 @@ function ProfessionPage({
     }
   }, [id]);
 
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+
+  function handleButtonClick() {
+    setIsModalOpen(true);
+  }
+
+  function closeModal() {
+    setIsModalOpen(false);
+  }
+
   return (
     <>
       <Header
@@ -60,6 +71,7 @@ function ProfessionPage({
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         isProfessionPageFocused={isProfessionPageFocused}
+        onButtonClick={handleButtonClick}
       >
         <li className="header__list">
           <NavLink className="header__link" exact to="/" smooth="true" onClick={onNavClick}>
@@ -80,6 +92,7 @@ function ProfessionPage({
         displayCourseButtons={displayCourseButtons}
       />
       <Footer name="footer" />
+      <Form isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }
