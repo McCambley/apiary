@@ -2,56 +2,46 @@
 import React from 'react';
 import './Projects.css';
 import floppyHat from '../../images/floppy-hat.png';
-import {
-  webDevProjects,
-  dataAnalysisProjects,
-  dataScienceProjects,
-} from '../../arrays/delegate-tasks';
 import Project from '../project/Project.js';
 
-export default function Projects({ title, subtitle, defaultDisplay, displayCourseButtons }) {
-  const [focusedCourse, setCourse] = React.useState(defaultDisplay);
-  const [displayedProjects, setProjects] = React.useState([]);
+export default function Projects({
+  title,
+  subtitle,
+  displayCourseButtons,
+  onCourseClick,
+  projectCollection, // data from useQuery in App
+  isProjectCollectionLoading, // loading from useQuery in App
+  onButtonClick,
+}) {
+  // from projects collection, displays a truncated list based on limit
+  const [displayedProjects, setDisplayedProjects] = React.useState([]);
+  // should the project list be expanded to show all projects
   const [isExpanded, setExpanded] = React.useState(false);
+  // should the 'show more' button be hidden (project list is <= limit)
   const [isShowMoreHidden, setHideShowMoreButton] = React.useState(false);
   const displayLimit = 2;
 
   React.useEffect(() => {
-    setCourse(defaultDisplay);
-  }, [defaultDisplay]);
+    setDisplayedProjects(projectCollection.slice(0, displayLimit));
+  }, [projectCollection]);
 
   React.useEffect(() => {
-    setCourse(webDevProjects);
-  }, []);
-
-  React.useEffect(() => {
-    setProjects(focusedCourse.slice(0, displayLimit));
-  }, [focusedCourse]);
-
-  React.useEffect(() => {
-    if (focusedCourse.length > displayLimit) {
+    if (projectCollection.length > displayLimit) {
       setHideShowMoreButton(false);
     } else {
       setHideShowMoreButton(true);
     }
-  }, [focusedCourse]);
-
-  function updateCourse(course) {
-    setCourse(course);
-  }
+  }, [projectCollection]);
 
   function showMore() {
     if (!isExpanded) {
-      setProjects(focusedCourse);
+      setDisplayedProjects(projectCollection);
     } else {
-      setProjects(focusedCourse.slice(0, displayLimit));
+      setDisplayedProjects(projectCollection.slice(0, displayLimit));
     }
     setExpanded(!isExpanded);
   }
 
-  // const title = 'Delegate tasks to those who enjoy them';
-  // const subtitle =
-  //   'Check out the projects our students have done for companies in the USA and beyond';
   return (
     <section className="projects">
       <div className="projects__content">
@@ -63,40 +53,56 @@ export default function Projects({ title, subtitle, defaultDisplay, displayCours
           <img src={floppyHat} alt="Developer with a floppy hat" className="projects__hero-image" />
         </div>
         {displayCourseButtons && (
+          // course buttons will not be displayed when profession page is open
           <div className="projects__buttons">
             <button
               type="button"
               className={`projects__button ${
-                focusedCourse === webDevProjects && 'projects__button_active'
+                !isProjectCollectionLoading &&
+                projectCollection[0].course === 'Web Development' &&
+                'projects__button_active'
               }`}
-              onClick={() => updateCourse(webDevProjects)}
+              onClick={() => onCourseClick('web')}
             >
               Web development
             </button>
             <button
               type="button"
               className={`projects__button ${
-                focusedCourse === dataAnalysisProjects && 'projects__button_active'
+                !isProjectCollectionLoading &&
+                projectCollection[0].course === 'Data Analysis' &&
+                'projects__button_active'
               }`}
-              onClick={() => updateCourse(dataAnalysisProjects)}
+              onClick={() => onCourseClick('analysis')}
             >
               Data analysis
             </button>
             <button
               type="button"
               className={`projects__button ${
-                focusedCourse === dataScienceProjects && 'projects__button_active'
+                !isProjectCollectionLoading &&
+                projectCollection[0].course === 'Data Science' &&
+                'projects__button_active'
               }`}
-              onClick={() => updateCourse(dataScienceProjects)}
+              onClick={() => onCourseClick('science')}
             >
               Data science
             </button>
           </div>
         )}
         <ul className="projects__list">
-          {displayedProjects.map((project) => (
-            <Project key={project.id} data={project} />
-          ))}
+          {isProjectCollectionLoading ? (
+            // if project data has not been retrieved from server, display loading animation
+            <>
+              <div className="projects__loading" />
+              <div className="projects__loading" />
+              <div className="projects__loading" />
+              <div className="projects__loading" />
+            </>
+          ) : (
+            // once data is retrieved from server, map over the array of projects to populate the page
+            displayedProjects.map((project) => <Project key={project.sys.id} data={project} />)
+          )}
         </ul>
         <div className="projects__buttons projects__buttons_position_end">
           <button
@@ -112,7 +118,7 @@ export default function Projects({ title, subtitle, defaultDisplay, displayCours
               isShowMoreHidden && 'projects__button_center'
             }`}
             onClick={() => {
-              console.log('Delegating...');
+              onButtonClick(true);
             }}
           >
             Delegate a task

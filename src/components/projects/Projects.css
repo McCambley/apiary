@@ -2,6 +2,33 @@
   border: 1px solid red;
 } */
 
+/* LOADING STYLES */
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.projects__loading {
+  min-height: 365px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 80px;
+  background: linear-gradient(to right, #eff1f3 4%, #e5e5e5 25%, #eff1f3 36%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+.projects__loading:nth-child(odd) {
+  margin-bottom: 20px;
+}
+
+/* LOADING STYLES */
+
 .projects {
   background-color: #e5e5e5;
 }
@@ -101,6 +128,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+  min-height: 1600px;
 }
 
 @media (max-width: 1024px) {

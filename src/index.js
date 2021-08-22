@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
-// import './index.css';
+import { ApolloProvider } from '@apollo/client';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import { client } from './utils/api';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter basename="/">
-      <App />
-    </HashRouter>
+    <ApolloProvider client={client}>
+      <HashRouter basename="/">
+        <App />
+      </HashRouter>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
