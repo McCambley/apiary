@@ -21,12 +21,14 @@
 }
 
 .modal__content {
+  max-height: 95%;
   box-sizing: border-box;
   width: 827px;
   border-radius: 10px;
   background-color: #fff;
   padding: 60px 100px;
   position: relative;
+  overflow-y: auto;
 }
 
 .modal__title {
