@@ -3,6 +3,7 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import './Hero.css';
+
 import HeroImage from '../../images/hero-meditation.png';
 
 function Hero({ onButtonClick }) {

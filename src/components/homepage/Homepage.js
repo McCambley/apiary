@@ -9,11 +9,7 @@ import Requests from '../requests/Requests';
 import HowToStart from '../how-to-start/HowToStart';
 import ChooseUs from '../choose-us/ChooseUs';
 import Projects from '../projects/Projects';
-import {
-  webDevProjects, // default display data for webdev profession page
-  // dataAnalysisProjects, // default display data for dataAnalysis profession page
-  // dataScienceProjects, // default display data for dataScience profession page
-} from '../../arrays/delegate-tasks';
+
 import Form from '../form/Form';
 import Footer from '../footer/Footer';
 
@@ -22,22 +18,18 @@ function Homepage({
   setIsProfessionPageFocused,
   pageTitles,
   onNavClick,
+  onCourseClick,
   isMenuOpen,
   setIsMenuOpen,
+  projectCollection,
+  isProjectCollectionLoading,
+  handleButtonClick,
+  isModalOpen,
+  closeModal,
 }) {
   React.useEffect(() => {
     setIsProfessionPageFocused(false);
   }, [isProfessionPageFocused, setIsProfessionPageFocused]);
-
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-
-  function handleButtonClick() {
-    setIsModalOpen(true);
-  }
-
-  function closeModal() {
-    setIsModalOpen(false);
-  }
 
   return (
     <>
@@ -77,15 +69,22 @@ function Homepage({
       </Header>
       <Hero onButtonClick={handleButtonClick} />
       <Lead />
-      <Requests name="requests" setIsProfessionPageFocused={setIsProfessionPageFocused} />
       <HowToStart handleButtonClick={handleButtonClick} />
+      <Requests
+        name="requests"
+        setIsProfessionPageFocused={setIsProfessionPageFocused}
+        onCourseClick={onCourseClick}
+      />
       <ChooseUs />
       <Projects
         name="projects"
         title={pageTitles.default.title}
         subtitle={pageTitles.default.subtitle}
-        defaultDisplay={webDevProjects}
+        onCourseClick={onCourseClick}
         displayCourseButtons={true}
+        projectCollection={projectCollection}
+        isProjectCollectionLoading={isProjectCollectionLoading}
+        onButtonClick={handleButtonClick}
       />
       <Footer name="footer" />
       <Form isOpen={isModalOpen} onClose={closeModal} />
