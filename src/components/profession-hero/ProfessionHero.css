@@ -32,7 +32,7 @@
 
 .profession__title {
   font-size: 48px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 55.58px;
   margin: 0 0 40px 0;
   max-width: 620px;
@@ -107,6 +107,7 @@
     align-items: center;
     padding-top: 50px;
   }
+
   .profession__intro-group {
     margin: 0 80px 100px 80px;
     width: 100%;
