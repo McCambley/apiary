@@ -12,6 +12,7 @@ import Projects from '../projects/Projects';
 
 import Form from '../form/Form';
 import Footer from '../footer/Footer';
+import MessageContainer from '../message/messageContainer';
 
 function Homepage({
   isProfessionPageFocused,
@@ -70,6 +71,7 @@ function Homepage({
       <Hero onButtonClick={handleButtonClick} />
       <Lead />
       <HowToStart handleButtonClick={handleButtonClick} />
+      <MessageContainer />
       <Requests
         name="requests"
         setIsProfessionPageFocused={setIsProfessionPageFocused}
