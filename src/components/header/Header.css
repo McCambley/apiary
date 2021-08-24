@@ -1,7 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 27px 80px 0 80px;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 27px;
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
 .header__mobile-wrapper {
@@ -88,6 +92,7 @@
 @media (max-width: 1024px) {
   .header {
     margin: 27px 40px 0 40px;
+    padding: 0;
   }
 
   .logo-link {
@@ -171,6 +176,7 @@
     display: none;
     background-color: transparent;
     border: none;
+    padding-right: 0;
   }
 
   .header__hamburger-button:hover {
@@ -185,6 +191,7 @@
     display: none;
     background-color: transparent;
     border: none;
+    padding-right: 0;
   }
 
   .header__x-icon-button:hover {
@@ -196,7 +203,7 @@
   }
 
   .header__menu {
-    width: 70%;
+    width: 100%;
     left: 50%;
     transform: translate(-50%);
     max-height: 0;
@@ -204,7 +211,7 @@
     overflow: hidden;
     position: absolute;
     background-color: #ffffff;
-    top: 72px;
+    top: 71px;
     z-index: 2;
     border-radius: 0 0 15px 15px;
   }
@@ -240,7 +247,7 @@
   }
 
   .header__menu-overlay_type_active {
-    transition: opacity 01s ease;
+    transition: opacity 0.1s ease;
     opacity: 1;
     visibility: visible;
   }
@@ -277,10 +284,10 @@
   .header__button {
     font-size: 24px;
     line-height: 32px;
-    padding: 19px 0;
     color: #ffffff;
     background-color: #ff9900;
-    width: 250px;
+    width: 288px;
+    height: 70px;
     margin: 0 auto;
     border-radius: 40px;
   }
@@ -291,10 +298,6 @@
 }
 
 @media (max-width: 480px) {
-  .header__menu {
-    width: 100%;
-  }
-
   .header__homepage-menu_type_active {
     max-height: 570px;
     min-height: 576px;
@@ -302,10 +305,6 @@
 
   .header__navbar {
     margin: 70px 0;
-  }
-
-  .header__button {
-    width: 90%;
   }
 }
 
