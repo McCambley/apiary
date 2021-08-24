@@ -3,7 +3,6 @@ import React, { useEffect, useLayoutEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Inner, Container, Item, Bubble, Title, Reply, Image } from './styledMessages';
-import Message from './messageComponents';
 import messages from '../../arrays/what-is-practicum';
 
 export default function MessageContainer() {
