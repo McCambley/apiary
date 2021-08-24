@@ -16,8 +16,8 @@ export default function MessageContainer() {
     <Container>
       <Title>What is Practicum by Yandex?</Title>
       {messages.map((item) => (
-        <Item data-aos={item.fade}>
-          <Inner key={item.id} direction={item.direction}>
+        <Item key={item.id} data-aos={item.fade}>
+          <Inner direction={item.direction}>
             <Image displayLogo={item.displayLogo} src={item.backgroundImage} />
             <Bubble borderRadius={item.borderRadius} backgroundColor={item.backgroundColor}>
               <Reply text={item.text}>{item.message}</Reply>
