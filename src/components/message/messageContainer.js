@@ -15,7 +15,7 @@ export default function MessageContainer() {
     <Container>
       <Title>What is Practicum by Yandex?</Title>
       {messages.map((item) => (
-        <Item key={item.id} data-aos={item.fade} data-aos-duration="500">
+        <Item key={item.id} data-aos={item.fade} data-aos-duration="750">
           <Inner direction={item.direction}>
             <Image displayLogo={item.displayLogo} src={item.backgroundImage} />
             <Bubble borderRadius={item.borderRadius} backgroundColor={item.backgroundColor}>
@@ -25,8 +25,8 @@ export default function MessageContainer() {
         </Item>
       ))}
       <div
+        data-aos-duration="750"
         data-aos="fade-up"
-        data-aos-duration="500"
         className="hero__cta-wrapper"
         style={{ alignSelf: 'center' }}
       >
