@@ -1,9 +1,8 @@
 /* eslint-disable react/button-has-type */
-import React, { useEffect, useLayoutEffect } from 'react';
+import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Inner, Container, Item, Bubble, Title, Reply, Image } from './styledMessages';
-import Message from './messageComponents';
 import messages from '../../arrays/what-is-practicum';
 
 export default function MessageContainer() {
@@ -16,8 +15,8 @@ export default function MessageContainer() {
     <Container>
       <Title>What is Practicum by Yandex?</Title>
       {messages.map((item) => (
-        <Item data-aos={item.fade} data-aos-duration="9000">
-          <Inner key={item.id} direction={item.direction}>
+        <Item key={item.id} data-aos={item.fade} data-aos-duration="500">
+          <Inner direction={item.direction}>
             <Image displayLogo={item.displayLogo} src={item.backgroundImage} />
             <Bubble borderRadius={item.borderRadius} backgroundColor={item.backgroundColor}>
               <Reply text={item.text}>{item.message}</Reply>
@@ -25,7 +24,12 @@ export default function MessageContainer() {
           </Inner>
         </Item>
       ))}
-      <div className="hero__cta-wrapper" style={{ alignSelf: 'center' }}>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        className="hero__cta-wrapper"
+        style={{ alignSelf: 'center' }}
+      >
         <button className="hero__cta-button">Delegate a task</button>
       </div>
     </Container>
