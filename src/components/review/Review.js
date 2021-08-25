@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import './Review.css';
 
@@ -16,8 +15,7 @@ export default function Review({ data }) {
     if (quote.length > lengthLimit) {
       setReview(shortenedReview);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [quote.length, shortenedReview]);
 
   function handleDisplayAmountClick() {
     if (displayedReview !== quote) {

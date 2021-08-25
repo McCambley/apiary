@@ -1,9 +1,3 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-use-before-define */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import './Form.css';
 
@@ -107,7 +101,13 @@ function Form({ isOpen, onClose }) {
   }
 
   return (
-    <div className={`modal ${isOpen ? 'modal_open' : ''}`} onClick={handleModalClick}>
+    <div
+      role="button"
+      tabIndex="0"
+      onKeyPress={handleModalClick}
+      className={`modal ${isOpen ? 'modal_open' : ''}`}
+      onClick={handleModalClick}
+    >
       <div className="modal__content" style={{ display: displayForm ? 'block' : 'none' }}>
         <button
           className="modal__close-button modal__close-button_form"

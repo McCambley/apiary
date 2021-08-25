@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-boolean-value */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-scroll';
 import Header from '../header/Header';
@@ -83,7 +81,7 @@ function Homepage({
         title={pageTitles.default.title}
         subtitle={pageTitles.default.subtitle}
         onCourseClick={onCourseClick}
-        displayCourseButtons={true}
+        displayCourseButtons
         projectCollection={projectCollection}
         isProjectCollectionLoading={isProjectCollectionLoading}
         onButtonClick={handleButtonClick}
