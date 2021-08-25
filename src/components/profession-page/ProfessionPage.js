@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import React from 'react';
 import { useParams, NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';

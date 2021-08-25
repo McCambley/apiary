@@ -1,9 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-boolean-value */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable react/button-has-type */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
@@ -53,16 +47,20 @@ function Header({
           <img className="logo" src={Logo} alt="" />
         </NavLink>
         <button
+          type="button"
           className={`header__hamburger-button ${
             isMenuOpen ? '' : 'header__hamburger-button_active'
           }`}
+          onClick={onNavClick}
         >
-          <img src={Hamburger} alt="" onClick={onNavClick} />
+          <img src={Hamburger} alt="" />
         </button>
         <button
+          type="button"
           className={`header__x-icon-button ${isMenuOpen ? 'header__x-icon-button_active' : ''}`}
+          onClick={onNavClick}
         >
-          <img src={XIcon} alt="" onClick={onNavClick} />
+          <img src={XIcon} alt="" />
         </button>
       </div>
       <HeaderWrapper
@@ -71,7 +69,7 @@ function Header({
         isProfessionPageFocused={isProfessionPageFocused}
       >
         <ul className="header__navbar">{children}</ul>
-        <button className="header__button" to="" onClick={onDelegateTaskClick}>
+        <button type="button" className="header__button" to="" onClick={onDelegateTaskClick}>
           Delegate a task
         </button>
       </HeaderWrapper>

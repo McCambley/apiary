@@ -1,7 +1,7 @@
 import React from 'react';
 import SellingPoints from '../selling-points/SellingPoints.js';
 import '../selling-points/SellingPoints.css';
-import { choose } from '../../arrays/why-choose-us';
+import choose from '../../arrays/why-choose-us';
 
 function ChooseUs() {
   return (

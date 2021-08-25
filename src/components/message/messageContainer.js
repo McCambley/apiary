@@ -1,4 +1,3 @@
-/* eslint-disable react/button-has-type */
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -30,7 +29,9 @@ export default function MessageContainer() {
         className="hero__cta-wrapper"
         style={{ alignSelf: 'center' }}
       >
-        <button className="hero__cta-button">Delegate a task</button>
+        <button type="button" className="hero__cta-button">
+          Delegate a task
+        </button>
       </div>
     </Container>
   );
