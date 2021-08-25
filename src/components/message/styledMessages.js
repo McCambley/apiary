@@ -24,7 +24,6 @@ export const Bubble = styled.div`
 
 export const Reply = styled.h1`
   font-size: 20px;
-  /* max-width: 780px; */
   font-weight: normal;
   line-height: 30px;
   color: ${({ text }) => text};
@@ -59,8 +58,6 @@ export const Image = styled.img`
   z-index: 5;
   display: ${({ displayLogo }) => displayLogo};
   border-radius: 50px;
-  /* position: absolute;
-  z-index: 1; */
   @media (max-width: 1200px) {
     margin-right: 18px;
   }
