@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import './Projects.css';
 import floppyHat from '../../images/floppy-hat.png';

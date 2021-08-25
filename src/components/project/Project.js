@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import './Project.css';
 import Review from '../review/Review.js';

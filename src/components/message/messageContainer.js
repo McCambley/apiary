@@ -1,4 +1,3 @@
-/* eslint-disable react/button-has-type */
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -35,5 +34,6 @@ export default function MessageContainer() {
         </div>
       </Container>
     </Section>
+
   );
 }
