@@ -17,7 +17,6 @@ function Form({ isOpen, onClose }) {
   };
 
   // This will clear all input values and error messages when user closes form without submitting.
-  // Lots of repeated code!! How to improve this?
   function clearValues() {
     inputValues.company = '';
     inputValues.email = '';

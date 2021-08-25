@@ -30,10 +30,11 @@ export default function MessageContainer() {
           className="hero__cta-wrapper"
           style={{ alignSelf: 'center' }}
         >
-          <button className="hero__cta-button">Delegate a task</button>
+          <button className="hero__cta-button" type="button">
+            Delegate a task
+          </button>
         </div>
       </Container>
     </Section>
-
   );
 }
