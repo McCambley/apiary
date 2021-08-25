@@ -9,6 +9,7 @@ import Requests from '../requests/Requests';
 import HowToStart from '../how-to-start/HowToStart';
 import ChooseUs from '../choose-us/ChooseUs';
 import Projects from '../projects/Projects';
+import Button from '../button/StyledButton';
 
 import Form from '../form/Form';
 import Footer from '../footer/Footer';
@@ -34,6 +35,7 @@ function Homepage({
 
   return (
     <>
+      <Button>Hello?</Button>
       <Header
         name="header"
         onNavClick={onNavClick}
