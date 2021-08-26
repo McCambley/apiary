@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import HowToCard from '../how-to-card/HowToCard';
 import content from '../../arrays/how-to-start';

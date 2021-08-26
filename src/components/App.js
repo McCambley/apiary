@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable react/jsx-boolean-value */
 import React from 'react';
 import './App.css';
 import { useQuery } from '@apollo/client';
@@ -45,6 +42,9 @@ function App() {
   return (
     <div className="page">
       <div
+        onKeyPress={handleNavClick}
+        role="button"
+        tabIndex="0"
         className={`header__menu-overlay ${
           isMenuOpen ? 'header__menu-overlay_type_active' : 'header__menu-overlay_type_inactive'
         }`}

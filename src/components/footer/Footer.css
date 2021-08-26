@@ -94,9 +94,7 @@
   color: #fff;
   margin: 0;
   padding: 20px 16px;
-  /* I don't like this border radius lol --Jake */
-  /* border-radius: 14px 14px 14px 0px; */
-  border-radius: 16px;
+  border-radius: 14px 14px 14px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +107,6 @@
   opacity: 0;
   transform-origin: bottom left;
   transform: scale(0);
-  /* transition: opacity 0.3s ease, transform 0.3 ease; */
   transition: all 0.3s ease;
 }
 

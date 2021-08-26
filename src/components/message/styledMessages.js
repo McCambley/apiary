@@ -15,6 +15,7 @@ export const Bubble = styled.div`
   padding: 30px 30px;
   background-color: ${({ backgroundColor }) => backgroundColor};
   border-radius: ${({ borderRadius }) => borderRadius};
+  max-width: 840px;
   @media (max-width: 600px) {
     padding: 14px 14px;
     text-align: center;
@@ -23,7 +24,6 @@ export const Bubble = styled.div`
 
 export const Reply = styled.h1`
   font-size: 20px;
-  /* max-width: 780px; */
   font-weight: normal;
   line-height: 30px;
   color: ${({ text }) => text};
@@ -31,6 +31,10 @@ export const Reply = styled.h1`
     font-size: 16px;
     line-height: 20px;
   }
+`;
+
+export const Section = styled.div`
+  background-color: #e5e5e5;
 `;
 
 export const Title = styled.h2`
@@ -54,8 +58,6 @@ export const Image = styled.img`
   z-index: 5;
   display: ${({ displayLogo }) => displayLogo};
   border-radius: 50px;
-  /* position: absolute;
-  z-index: 1; */
   @media (max-width: 1200px) {
     margin-right: 18px;
   }
@@ -71,10 +73,12 @@ export const Item = styled.div`
 `;
 
 export const Container = styled.div`
-  background-color: #e5e5e5;
   display: flex;
   padding: 100px 80px;
+  max-width: 1440px;
+  margin: auto;
   flex-direction: column;
+  box-sizing: border-box;
   justify-content: center;
   @media (max-width: 1200px) {
     padding: 100px 40px;
