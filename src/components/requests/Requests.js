@@ -1,5 +1,3 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import './Requests.css';
 import { Link } from 'react-router-dom';

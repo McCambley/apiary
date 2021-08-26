@@ -40,6 +40,7 @@
   margin: 0 80px;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 .selling-points__image-card-wrap-container {

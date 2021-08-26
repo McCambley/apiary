@@ -1,9 +1,8 @@
-/* eslint-disable import/prefer-default-export */
 import QualityImage from '../images/star-world.png';
 import ProfessionalismImage from '../images/grad-laptop.png';
 import SpecialityImage from '../images/bees-n-flowers.png';
 
-export const choose = [
+const choose = [
   {
     id: 1,
     title: 'Quality',

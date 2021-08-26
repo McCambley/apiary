@@ -63,7 +63,6 @@
 }
 
 @media (max-width: 480px) {
-  /*  */
   .how__img {
     /* some weird styling to crop images */
     min-height: 196px;
