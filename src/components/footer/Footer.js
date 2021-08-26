@@ -51,7 +51,7 @@ export default function Footer() {
             This website is developed by Practicum by Yandex students
           </p>
           <p className="footer__authors">
-            Colin Maretsky, Denise Hung, Rebecca Burch, and Jake McCambley{' '}
+            Colin Maretsky, Denise Hung, Rebecca Burch, and Jake McCambley
           </p>
         </div>
         <p className="footer__copyright">&#169; 2020 Practicum by Yandex</p>

@@ -9,7 +9,7 @@ function SellingPoints({ title, subtitle, data }) {
           <h2 className="selling-points__title">{title}</h2>
           <p className="selling-points__subtitle">{subtitle}</p>
         </div>
-        <ul className="selling-points__image-card-group" style={{ listStyle: 'none' }}>
+        <ul className="selling-points__image-card-group">
           {data.map((item) => (
             <li key={item.id} className="selling-points__image-card-wrap-container">
               <div className="image-card">
