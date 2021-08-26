@@ -113,7 +113,7 @@ export default function Projects({
           </button>
           <button
             type="button"
-            className={`projects__button projects__button_active ${
+            className={`projects__button projects__button_type_cta ${
               isShowMoreHidden && 'projects__button_center'
             }`}
             onClick={() => {

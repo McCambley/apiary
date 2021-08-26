@@ -111,7 +111,7 @@
   border-radius: 40px;
   padding: 19px 60px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .form__button:hover {

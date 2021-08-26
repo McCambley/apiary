@@ -110,6 +110,16 @@
   background-color: #ff9900;
 }
 
+.projects__button_type_cta {
+  color: #ffffff;
+  background-color: #ff9900;
+  transition: transform 0.3s ease;
+}
+
+.projects__button_type_cta:hover {
+  transform: translate3D(0, -1px, 0) scale(1.05);
+}
+
 .projects__button_hidden {
   display: none;
 }
