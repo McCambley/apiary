@@ -253,7 +253,7 @@
   }
 
   .header__menu-overlay_type_inactive {
-    transition: visibility 01s ease, opacity 01s ease;
+    transition: visibility 1s ease, opacity 1s ease;
     opacity: 0;
     visibility: hidden;
   }
