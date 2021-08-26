@@ -247,7 +247,7 @@
   }
 
   .header__menu-overlay_type_active {
-    transition: opacity 0.1s ease;
+    transition: opacity 1s ease;
     opacity: 1;
     visibility: visible;
   }
