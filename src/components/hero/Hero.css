@@ -31,7 +31,8 @@
   line-height: 32px;
   background-color: #ff9900;
   border: none;
-  padding: 19px 60px;
+  width: 293px;
+  height: 70px;
   border-radius: 40px;
   margin-top: 79px;
   cursor: pointer;
@@ -93,6 +94,8 @@
   .hero__cta-button_mobile {
     display: block;
     margin-top: 30px;
-    padding: 19px 58px;
+    padding: 0;
+    width: 288px;
+    height: 70px;
   }
 }
