@@ -4,15 +4,17 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import Header from '../header/Header';
 import Hero from '../hero/Hero';
-import Lead from '../lead/Lead';
+import SellingPoints from '../selling-points/SellingPoints';
 import Requests from '../requests/Requests';
-import ChooseUs from '../choose-us/ChooseUs';
 import Projects from '../projects/Projects';
 import {
   webDevProjects, // default display data for webdev profession page
   // dataAnalysisProjects, // default display data for dataAnalysis profession page
   // dataScienceProjects, // default display data for dataScience profession page
 } from '../../arrays/delegate-tasks';
+import sellingPointsTitles from '../../arrays/selling-points-titles';
+import chooseUsArray from '../../arrays/why-choose-us';
+import usefulArray from '../../arrays/why-is-it-useful';
 import Footer from '../footer/Footer';
 
 function Homepage({
@@ -63,9 +65,17 @@ function Homepage({
         </li>
       </Header>
       <Hero />
-      <Lead />
+      <SellingPoints
+        title={sellingPointsTitles.lead.title}
+        subtitle={sellingPointsTitles.lead.subtitle}
+        data={usefulArray}
+      />
       <Requests name="requests" setIsProfessionPageFocused={setIsProfessionPageFocused} />
-      <ChooseUs />
+      <SellingPoints
+        title={sellingPointsTitles.chooseUs.title}
+        subtitle={sellingPointsTitles.chooseUs.subtitle}
+        data={chooseUsArray}
+      />
       <Projects
         name="projects"
         title={pageTitles.default.title}
