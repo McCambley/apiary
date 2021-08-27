@@ -36,7 +36,7 @@
   border-radius: 40px;
   margin-top: 79px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .hero__cta-button:hover {

@@ -66,7 +66,6 @@ function App() {
             isModalOpen={isModalOpen}
             closeModal={closeModal}
           />
-          )
         </Route>
         <Route exact path="/profession-hero/:id">
           <ProfessionPage

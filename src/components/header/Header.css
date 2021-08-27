@@ -63,7 +63,6 @@
   font-size: 16px;
   line-height: 18.53px;
   color: #616161;
-  transition: color 0.4s ease;
 }
 
 .header__link:hover {
@@ -77,10 +76,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 20px 32px;
+  padding: 18px 32px;
   border: 2px solid #ff9900;
   border-radius: 30px;
-  transition: color 0.4s ease, background-color 0.4s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .header__button:hover {

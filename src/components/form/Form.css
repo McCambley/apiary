@@ -11,13 +11,13 @@
   align-items: center;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.4s, opacity 0.4s linear;
+  transition: visibility 0.1s, opacity 0.1s linear;
 }
 
 .modal_open {
   visibility: visible;
   opacity: 1;
-  transition: visibility 0.4s, opacity 0.4s linear;
+  transition: visibility 0.3s, opacity 0.3s linear;
 }
 
 .modal__content {
@@ -111,7 +111,7 @@
   border-radius: 40px;
   padding: 19px 60px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .form__button:hover {

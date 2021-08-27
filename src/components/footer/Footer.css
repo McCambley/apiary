@@ -46,6 +46,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .footer__contact {
@@ -107,7 +108,7 @@
   opacity: 0;
   transform-origin: bottom left;
   transform: scale(0);
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .footer__disclaimer:hover + .footer__authors {
