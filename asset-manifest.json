@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/apiary/static/css/main.61bc20ab.chunk.css",
-    "main.js": "/apiary/static/js/main.f7b2193f.chunk.js",
-    "main.js.map": "/apiary/static/js/main.f7b2193f.chunk.js.map",
+    "main.js": "/apiary/static/js/main.f1e8f0cd.chunk.js",
+    "main.js.map": "/apiary/static/js/main.f1e8f0cd.chunk.js.map",
     "runtime-main.js": "/apiary/static/js/runtime-main.a86dc1d9.js",
     "runtime-main.js.map": "/apiary/static/js/runtime-main.a86dc1d9.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/apiary/static/css/2.7fc9bc2b.chunk.css",
@@ -24,6 +24,7 @@
     "static/media/hamburger.7d90c33c.svg": "/apiary/static/media/hamburger.7d90c33c.svg",
     "static/media/hands.00fb3932.png": "/apiary/static/media/hands.00fb3932.png",
     "static/media/hero-meditation.505799f4.png": "/apiary/static/media/hero-meditation.505799f4.png",
+    "static/media/logo.b3e842eb.svg": "/apiary/static/media/logo.b3e842eb.svg",
     "static/media/megaphone.06fd862a.png": "/apiary/static/media/megaphone.06fd862a.png",
     "static/media/star-world.3a6ebab2.png": "/apiary/static/media/star-world.3a6ebab2.png",
     "static/media/web-dev.a5174ccc.png": "/apiary/static/media/web-dev.a5174ccc.png",
@@ -35,6 +36,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.1e0c47a4.chunk.js",
     "static/css/main.61bc20ab.chunk.css",
-    "static/js/main.f7b2193f.chunk.js"
+    "static/js/main.f1e8f0cd.chunk.js"
   ]
 }
