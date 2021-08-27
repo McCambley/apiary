@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-boolean-value */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-scroll';
 import Header from '../header/Header';
@@ -16,14 +14,21 @@ import sellingPointsTitles from '../../arrays/selling-points-titles';
 import chooseUsArray from '../../arrays/why-choose-us';
 import usefulArray from '../../arrays/why-is-it-useful';
 import Footer from '../footer/Footer';
+import MessageContainer from '../message/messageContainer';
 
 function Homepage({
   isProfessionPageFocused,
   setIsProfessionPageFocused,
   pageTitles,
   onNavClick,
+  onCourseClick,
   isMenuOpen,
   setIsMenuOpen,
+  projectCollection,
+  isProjectCollectionLoading,
+  handleButtonClick,
+  isModalOpen,
+  closeModal,
 }) {
   React.useEffect(() => {
     setIsProfessionPageFocused(false);
@@ -37,6 +42,7 @@ function Homepage({
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         isProfessionPageFocused={isProfessionPageFocused}
+        onButtonClick={handleButtonClick}
       >
         <li className="header__list">
           <Link className="header__link" to="requests" smooth="true" onClick={onNavClick}>
@@ -80,10 +86,14 @@ function Homepage({
         name="projects"
         title={pageTitles.default.title}
         subtitle={pageTitles.default.subtitle}
-        defaultDisplay={webDevProjects}
-        displayCourseButtons={true}
+        onCourseClick={onCourseClick}
+        displayCourseButtons
+        projectCollection={projectCollection}
+        isProjectCollectionLoading={isProjectCollectionLoading}
+        onButtonClick={handleButtonClick}
       />
       <Footer name="footer" />
+      <Form isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }

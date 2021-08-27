@@ -1,27 +1,25 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import './Review.css';
 
 export default function Review({ data }) {
-  const { avatars, description, subtitle, title } = data;
+  const { title, subtitle, quote, avatarsCollection } = data;
 
-  const [displayedReview, setReview] = React.useState(description);
+  const [displayedReview, setReview] = React.useState(quote);
   const [isReviewExpanded, setExpanded] = React.useState(false);
 
   const lengthLimit = 290;
-  const shortenedReview = `${description.slice(0, lengthLimit)}..."`;
-  const isLong = description.length > lengthLimit;
+  const shortenedReview = `${quote.slice(0, lengthLimit)}..."`;
+  const isLong = quote.length > lengthLimit;
 
   React.useEffect(() => {
-    if (description.length > lengthLimit) {
+    if (quote.length > lengthLimit) {
       setReview(shortenedReview);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [quote.length, shortenedReview]);
 
   function handleDisplayAmountClick() {
-    if (displayedReview !== description) {
-      setReview(description);
+    if (displayedReview !== quote) {
+      setReview(quote);
       setExpanded(true);
     } else {
       setReview(shortenedReview);
@@ -33,8 +31,9 @@ export default function Review({ data }) {
     <li className="review">
       <div className="review__reviewer-info">
         <div className="review__avatar-container">
-          {avatars.map((image) => (
-            <img key={image.id} src={image.src} alt="A dude" className="review__avatar" />
+          {avatarsCollection.items.map((image, index) => (
+            // index used as key as images are duplicates and contain the same system id
+            <img key={index} src={image.url} alt="A dude" className="review__avatar" />
           ))}
         </div>
         <div className="review__title-container">

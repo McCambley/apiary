@@ -1,32 +1,30 @@
-
 .not-found__link-wrapper {
-    margin-top: 50px;
-    width: 100%;
+  margin-top: 50px;
+  width: 100%;
 }
 
 .not-found__link {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 18.53px;
-    color: #616161;
-    transition: all 0.4s ease;
-    margin-left: 70px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 18.53px;
+  color: #616161;
+  transition: all 0.3s ease;
+  margin-left: 70px;
 }
 
 .not-found__text-wrapper {
-    margin-bottom: 200px;
-    width: 100%;
+  margin-bottom: 200px;
+  width: 100%;
 }
 
 .not-found__text {
-    text-align: center;
-    font-size: 50px;
+  text-align: center;
+  font-size: 50px;
 }
 
 .not-found__image {
-    width: 100%;
-    object-fit: contain;
-    margin: 0 auto;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
 }
-

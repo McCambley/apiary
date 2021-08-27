@@ -1,11 +1,7 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prop-types */
-
 import React from 'react';
 import './ProfessionHero.css';
 
-function ProfessionHero({professionTitle, professionCard}) {
+function ProfessionHero({ professionTitle, professionCard }) {
   return (
     <section className="profession">
       <div className="profession__intro-group">
