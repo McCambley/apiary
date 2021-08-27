@@ -58,6 +58,8 @@ export const Image = styled.img`
   z-index: 5;
   display: ${({ displayLogo }) => displayLogo};
   border-radius: 50px;
+  object-fit: contain;
+  background: black;
   @media (max-width: 1200px) {
     margin-right: 18px;
   }
