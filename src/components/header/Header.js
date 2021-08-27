@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo.svg';
 import Hamburger from '../../images/hamburger.svg';
 import XIcon from '../../images/x-icon.svg';
 import HeaderWrapper from '../header-wrapper/HeaderWrapper';
