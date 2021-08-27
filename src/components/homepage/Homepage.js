@@ -14,6 +14,7 @@ import sellingPointsTitles from '../../arrays/selling-points-titles';
 import chooseUsArray from '../../arrays/why-choose-us';
 import usefulArray from '../../arrays/why-is-it-useful';
 import Footer from '../footer/Footer';
+import Form from '../form/Form';
 import MessageContainer from '../message/messageContainer';
 
 function Homepage({
