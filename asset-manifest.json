@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/apiary/static/css/main.3ab9b768.chunk.css",
-    "main.js": "/apiary/static/js/main.3f57f9df.chunk.js",
-    "main.js.map": "/apiary/static/js/main.3f57f9df.chunk.js.map",
-    "runtime-main.js": "/apiary/static/js/runtime-main.9b9de5a9.js",
-    "runtime-main.js.map": "/apiary/static/js/runtime-main.9b9de5a9.js.map",
-    "static/js/2.370675d4.chunk.js": "/apiary/static/js/2.370675d4.chunk.js",
-    "static/js/2.370675d4.chunk.js.map": "/apiary/static/js/2.370675d4.chunk.js.map",
-    "static/js/3.01d5ba42.chunk.js": "/apiary/static/js/3.01d5ba42.chunk.js",
-    "static/js/3.01d5ba42.chunk.js.map": "/apiary/static/js/3.01d5ba42.chunk.js.map",
+    "main.css": "/apiary/static/css/main.61bc20ab.chunk.css",
+    "main.js": "/apiary/static/js/main.f7b2193f.chunk.js",
+    "main.js.map": "/apiary/static/js/main.f7b2193f.chunk.js.map",
+    "runtime-main.js": "/apiary/static/js/runtime-main.a86dc1d9.js",
+    "runtime-main.js.map": "/apiary/static/js/runtime-main.a86dc1d9.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/apiary/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.1e0c47a4.chunk.js": "/apiary/static/js/2.1e0c47a4.chunk.js",
+    "static/js/2.1e0c47a4.chunk.js.map": "/apiary/static/js/2.1e0c47a4.chunk.js.map",
+    "static/js/3.4329c632.chunk.js": "/apiary/static/js/3.4329c632.chunk.js",
+    "static/js/3.4329c632.chunk.js.map": "/apiary/static/js/3.4329c632.chunk.js.map",
     "index.html": "/apiary/index.html",
-    "static/css/main.3ab9b768.chunk.css.map": "/apiary/static/css/main.3ab9b768.chunk.css.map",
-    "static/js/2.370675d4.chunk.js.LICENSE.txt": "/apiary/static/js/2.370675d4.chunk.js.LICENSE.txt",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/apiary/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.61bc20ab.chunk.css.map": "/apiary/static/css/main.61bc20ab.chunk.css.map",
+    "static/js/2.1e0c47a4.chunk.js.LICENSE.txt": "/apiary/static/js/2.1e0c47a4.chunk.js.LICENSE.txt",
     "static/media/404-cones.12c901ef.png": "/apiary/static/media/404-cones.12c901ef.png",
     "static/media/App.css": "/apiary/static/media/SuisseIntl-Book.455a3985.otf",
     "static/media/bees-n-flowers.97e53b2a.png": "/apiary/static/media/bees-n-flowers.97e53b2a.png",
@@ -29,9 +31,10 @@
     "static/media/Form.css": "/apiary/static/media/x-icon.e9f35edf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9b9de5a9.js",
-    "static/js/2.370675d4.chunk.js",
-    "static/css/main.3ab9b768.chunk.css",
-    "static/js/main.3f57f9df.chunk.js"
+    "static/js/runtime-main.a86dc1d9.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.1e0c47a4.chunk.js",
+    "static/css/main.61bc20ab.chunk.css",
+    "static/js/main.f7b2193f.chunk.js"
   ]
 }
