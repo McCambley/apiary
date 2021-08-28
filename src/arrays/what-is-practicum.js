@@ -7,7 +7,7 @@ const practicum = [
     message:
       'Practicum by Yandex is a kind of boot camp. Our goal is to help ambitious and passionate people to master it and find their first job. At the same time, the level of our training allows graduates to carry out high-quality real projects of companies under the review of experienced mentors.',
     direction: 'row',
-    backgroundColor: 'orange',
+    backgroundColor: '#FF9900',
     text: 'white',
     backgroundImage: image,
     displayLogo: 'block',
@@ -32,7 +32,7 @@ const practicum = [
     message:
       'It is a win-win situation: we take real tasks from real companies and give them to graduates of Data Science and Data Analytics courses. The results of these tasks will be repeatedly checked by curators and returned to the customer as ordered for free.',
     direction: 'row',
-    backgroundColor: 'orange',
+    backgroundColor: '#FF9900',
     text: 'white',
     backgroundImage: image,
     displayLogo: 'block',
@@ -57,7 +57,7 @@ const practicum = [
     message:
       'Because Practicum has students who are eager to gain real life experience, find them interesting and useful, and are ready to take on your tasks',
     direction: 'row',
-    backgroundColor: 'orange',
+    backgroundColor: '#FF9900',
     text: 'white',
     backgroundImage: image,
     displayLogo: 'block',
