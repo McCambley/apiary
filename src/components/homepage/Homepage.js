@@ -2,15 +2,16 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import Header from '../header/Header';
 import Hero from '../hero/Hero';
-import Lead from '../lead/Lead';
+import SellingPoints from '../selling-points/SellingPoints';
 import Requests from '../requests/Requests';
 import HowToStart from '../how-to-start/HowToStart';
-import ChooseUs from '../choose-us/ChooseUs';
 import Projects from '../projects/Projects';
-
 import Form from '../form/Form';
 import Footer from '../footer/Footer';
 import MessageContainer from '../message/messageContainer';
+import sellingPointsTitles from '../../arrays/selling-points-titles';
+import chooseUsArray from '../../arrays/why-choose-us';
+import usefulArray from '../../arrays/why-is-it-useful.js';
 
 function Homepage({
   isProfessionPageFocused,
@@ -67,7 +68,11 @@ function Homepage({
         </li>
       </Header>
       <Hero onButtonClick={handleButtonClick} />
-      <Lead />
+      <SellingPoints
+        title={sellingPointsTitles.lead.title}
+        subtitle={sellingPointsTitles.lead.subtitle}
+        data={usefulArray}
+      />
       <HowToStart handleButtonClick={handleButtonClick} />
       <MessageContainer />
       <Requests
@@ -75,7 +80,11 @@ function Homepage({
         setIsProfessionPageFocused={setIsProfessionPageFocused}
         onCourseClick={onCourseClick}
       />
-      <ChooseUs />
+      <SellingPoints
+        title={sellingPointsTitles.chooseUs.title}
+        subtitle={sellingPointsTitles.chooseUs.subtitle}
+        data={chooseUsArray}
+      />
       <Projects
         name="projects"
         title={pageTitles.default.title}
