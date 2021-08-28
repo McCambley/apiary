@@ -74,9 +74,11 @@ function Homepage({
         data={usefulArray}
       />
       <Requests
+        name="requests"
         setIsProfessionPageFocused={setIsProfessionPageFocused}
         onCourseClick={onCourseClick}
       />
+
       <MessageContainer name="about" />
       <HowToStart name="start" handleButtonClick={handleButtonClick} />
       <SellingPoints
