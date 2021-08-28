@@ -73,13 +73,12 @@ function Homepage({
         subtitle={sellingPointsTitles.lead.subtitle}
         data={usefulArray}
       />
-      <HowToStart handleButtonClick={handleButtonClick} />
-      <MessageContainer />
       <Requests
-        name="requests"
         setIsProfessionPageFocused={setIsProfessionPageFocused}
         onCourseClick={onCourseClick}
       />
+      <MessageContainer name="about" />
+      <HowToStart name="start" handleButtonClick={handleButtonClick} />
       <SellingPoints
         title={sellingPointsTitles.chooseUs.title}
         subtitle={sellingPointsTitles.chooseUs.subtitle}
