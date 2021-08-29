@@ -17,7 +17,7 @@ export default function MessageContainer({ handleButtonClick }) {
         {messages.map((item) => (
           <Item key={item.id} data-aos={item.fade} data-aos-duration="750">
             <Inner direction={item.direction}>
-              <Image displayLogo={item.displayLogo} src={item.backgroundImage} />
+              <Image displayLogo={item.displayLogo} alt="Practicum" src={item.backgroundImage} />
               <Bubble borderRadius={item.borderRadius} backgroundColor={item.backgroundColor}>
                 <Reply text={item.text}>{item.message}</Reply>
               </Bubble>

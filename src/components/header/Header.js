@@ -43,8 +43,15 @@ function Header({
   return (
     <header className="header" id="header">
       <div className="header__mobile-wrapper">
-        <NavLink className="logo-link" exact to="/" smooth="true" onClick={closeMenu}>
-          <img className="logo" src={Logo} alt="" />
+        <NavLink
+          aria-label="Link back to main page"
+          className="logo-link"
+          exact
+          to="/"
+          smooth="true"
+          onClick={closeMenu}
+        >
+          <img className="logo" src={Logo} alt="Practicum" />
         </NavLink>
         <button
           type="button"
@@ -53,14 +60,14 @@ function Header({
           }`}
           onClick={onNavClick}
         >
-          <img src={Hamburger} alt="" />
+          <img src={Hamburger} alt="Open menu" />
         </button>
         <button
           type="button"
           className={`header__x-icon-button ${isMenuOpen ? 'header__x-icon-button_active' : ''}`}
           onClick={onNavClick}
         >
-          <img src={XIcon} alt="" />
+          <img src={XIcon} alt="Close menu" />
         </button>
       </div>
       <HeaderWrapper

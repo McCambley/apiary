@@ -44,6 +44,7 @@ function App() {
       <div
         onKeyPress={handleNavClick}
         role="button"
+        aria-label="Toggle hamburger menu"
         tabIndex="0"
         className={`header__menu-overlay ${
           isMenuOpen ? 'header__menu-overlay_type_active' : 'header__menu-overlay_type_inactive'
