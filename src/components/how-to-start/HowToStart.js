@@ -5,7 +5,7 @@ import './HowToStart.css';
 
 export default function HowToStart({ handleButtonClick }) {
   return (
-    <section className="how">
+    <section id="start" className="how">
       <h2 className="how__title">How to start?</h2>
       <div className="how__content">
         <div className="how__step-container">

@@ -11,7 +11,7 @@ export default function MessageContainer({ handleButtonClick }) {
   }, []);
 
   return (
-    <Section>
+    <Section id="about">
       <Container>
         <Title>What is Practicum by Yandex?</Title>
         {messages.map((item) => (
