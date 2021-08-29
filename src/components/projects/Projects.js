@@ -30,7 +30,7 @@ export default function Projects({
     } else {
       setHideShowMoreButton(true);
     }
-  }, [projectCollection]);
+  }, [projectCollection, displayedProjects]);
 
   function showMore() {
     if (!isExpanded) {
@@ -39,6 +39,11 @@ export default function Projects({
       setDisplayedProjects(projectCollection.slice(0, displayLimit));
     }
     setExpanded(!isExpanded);
+  }
+
+  function handleCourseButtonClick(course) {
+    onCourseClick(course);
+    setExpanded(false);
   }
 
   return (
@@ -61,7 +66,7 @@ export default function Projects({
                 projectCollection[0].course === 'Web Development' &&
                 'projects__button_active'
               }`}
-              onClick={() => onCourseClick('web')}
+              onClick={() => handleCourseButtonClick('web')}
             >
               Web development
             </button>
@@ -72,7 +77,7 @@ export default function Projects({
                 projectCollection[0].course === 'Data Analysis' &&
                 'projects__button_active'
               }`}
-              onClick={() => onCourseClick('analysis')}
+              onClick={() => handleCourseButtonClick('analysis')}
             >
               Data analysis
             </button>
@@ -83,7 +88,7 @@ export default function Projects({
                 projectCollection[0].course === 'Data Science' &&
                 'projects__button_active'
               }`}
-              onClick={() => onCourseClick('science')}
+              onClick={() => handleCourseButtonClick('science')}
             >
               Data science
             </button>
