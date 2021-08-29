@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import { Inner, Section, Container, Item, Bubble, Title, Reply, Image } from './styledMessages';
 import messages from '../../arrays/what-is-practicum';
 
-export default function MessageContainer() {
+export default function MessageContainer({ handleButtonClick }) {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -30,7 +30,7 @@ export default function MessageContainer() {
           className="hero__cta-wrapper"
           style={{ alignSelf: 'center' }}
         >
-          <button className="hero__cta-button" type="button">
+          <button className="hero__cta-button" type="button" onClick={handleButtonClick}>
             Delegate a task
           </button>
         </div>

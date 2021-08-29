@@ -78,7 +78,7 @@ function Homepage({
         setIsProfessionPageFocused={setIsProfessionPageFocused}
         onCourseClick={onCourseClick}
       />
-      <MessageContainer name="about" />
+      <MessageContainer name="about" handleButtonClick={handleButtonClick} />
       <HowToStart name="start" handleButtonClick={handleButtonClick} />
       <SellingPoints
         title={sellingPointsTitles.chooseUs.title}
