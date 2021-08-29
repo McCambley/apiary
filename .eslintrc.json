@@ -22,6 +22,7 @@
     "jest": true
   },
   "rules": {
+    "import/no-unresolved": "off",
     "react-hooks/rules-of-hooks": "error",
     "no-use-before-define": 0,
     "react/prop-types": 0,
