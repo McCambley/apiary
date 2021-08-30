@@ -1,5 +1,6 @@
 @font-face {
-  src: url(./SuisseIntl-Book.otf) format('opentype');
+  src: url(./suisseintl-regular-webfont.woff) format('woff'),
+    url(./suisseintl-regular-webfont.woff) format('woff2');
   font-family: 'Suisse Intl';
   font-weight: 400;
 }
