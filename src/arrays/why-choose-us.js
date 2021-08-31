@@ -1,6 +1,6 @@
 import QualityImage from '../images/star-world.png';
 import ProfessionalismImage from '../images/grad-laptop.png';
-import SpecialityImage from '../images/bees-n-flowers.png';
+import ExperienceImage from '../images/bees-n-flowers.png';
 
 const choose = [
   {
@@ -21,10 +21,10 @@ const choose = [
   },
   {
     id: 3,
-    title: 'Speciality',
+    title: 'Experience',
     subTitle:
       'Our students are already working at Accenture, Tesla, Invitae. Our specialty is practical training for the real world.',
-    image: SpecialityImage,
+    image: ExperienceImage,
     alt: 'flowers',
   },
 ];
