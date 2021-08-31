@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/apiary/static/css/main.61bc20ab.chunk.css",
-    "main.js": "/apiary/static/js/main.24b557cf.chunk.js",
-    "main.js.map": "/apiary/static/js/main.24b557cf.chunk.js.map",
+    "main.css": "/apiary/static/css/main.e83fbcf6.chunk.css",
+    "main.js": "/apiary/static/js/main.96926be2.chunk.js",
+    "main.js.map": "/apiary/static/js/main.96926be2.chunk.js.map",
     "runtime-main.js": "/apiary/static/js/runtime-main.a86dc1d9.js",
     "runtime-main.js.map": "/apiary/static/js/runtime-main.a86dc1d9.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/apiary/static/css/2.7fc9bc2b.chunk.css",
@@ -12,10 +12,9 @@
     "static/js/3.4329c632.chunk.js.map": "/apiary/static/js/3.4329c632.chunk.js.map",
     "index.html": "/apiary/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/apiary/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.61bc20ab.chunk.css.map": "/apiary/static/css/main.61bc20ab.chunk.css.map",
+    "static/css/main.e83fbcf6.chunk.css.map": "/apiary/static/css/main.e83fbcf6.chunk.css.map",
     "static/js/2.6028338f.chunk.js.LICENSE.txt": "/apiary/static/js/2.6028338f.chunk.js.LICENSE.txt",
     "static/media/404-cones.12c901ef.png": "/apiary/static/media/404-cones.12c901ef.png",
-    "static/media/App.css": "/apiary/static/media/SuisseIntl-Book.455a3985.otf",
     "static/media/bees-n-flowers.97e53b2a.png": "/apiary/static/media/bees-n-flowers.97e53b2a.png",
     "static/media/data-analysis.c823f0d7.png": "/apiary/static/media/data-analysis.c823f0d7.png",
     "static/media/data-science.22f3577a.png": "/apiary/static/media/data-science.22f3577a.png",
@@ -27,6 +26,7 @@
     "static/media/logo.b3e842eb.svg": "/apiary/static/media/logo.b3e842eb.svg",
     "static/media/megaphone.06fd862a.png": "/apiary/static/media/megaphone.06fd862a.png",
     "static/media/star-world.3a6ebab2.png": "/apiary/static/media/star-world.3a6ebab2.png",
+    "static/media/App.css": "/apiary/static/media/suisseintl-regular-webfont.05fd9051.woff",
     "static/media/web-dev.a5174ccc.png": "/apiary/static/media/web-dev.a5174ccc.png",
     "static/media/work-bee.5b676c0a.png": "/apiary/static/media/work-bee.5b676c0a.png",
     "static/media/Form.css": "/apiary/static/media/x-icon.e9f35edf.svg"
@@ -35,7 +35,7 @@
     "static/js/runtime-main.a86dc1d9.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.6028338f.chunk.js",
-    "static/css/main.61bc20ab.chunk.css",
-    "static/js/main.24b557cf.chunk.js"
+    "static/css/main.e83fbcf6.chunk.css",
+    "static/js/main.96926be2.chunk.js"
   ]
 }
