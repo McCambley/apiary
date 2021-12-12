@@ -1,6 +1,7 @@
 {
   "name": "apiary",
   "version": "0.1.0",
+  "homepage": "https://mccambley.github.io/hacktober-code-jam/",
   "private": true,
   "homepage": "https://mccambley.github.io/apiary/",
   "dependencies": {
