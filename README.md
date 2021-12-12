@@ -53,16 +53,17 @@ $ npm run start
 
 ---
 
-### Search
+### Landing Page
 
-![Demonstration](./src/images/demo.gif)
+![Landing Page](https://user-images.githubusercontent.com/74033573/145720228-0cd7bb34-bd17-4345-894f-9c042a86ea1e.png)
 
-### Register
+### "Delegate a Task" Form
 
-![Demonstration](./src/images/demo.png)
+![Delegate Form](https://user-images.githubusercontent.com/74033573/145720346-822aff0c-e8a1-4bd9-a37c-f53254f1b37e.png)
 
-### Saved Articles
+### Completed Projects Page
 
-![Demonstration](./src/images/demo2.png)
+![Completed Projects](https://user-images.githubusercontent.com/74033573/145720318-c30f29a7-01b6-489b-8884-f5a506c91ebf.png)
+
 
 ---
