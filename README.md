@@ -2,6 +2,8 @@
 
 This is a project created in conjunction with Practicum by Yandex. The task at hand is to build a landing page to display Practicum's Apiary program, a program that connects startups and junior developers in order to begin building successful companies.
 
+### Check out a live demo of this project [here](https://youtu.be/ztpOAcOPbu0).
+
 ## 📣 Overview
 
 - Learn about Practicum by Yandex's Apiary program
@@ -49,7 +51,7 @@ $ npm run start
 - [Figma Design](https://www.figma.com/file/bwci9FERyxDq7ZLp1GxV9i/Apiary?node-id=0%3A1)
 - [Trello Board](https://trello.com/b/szWEO0K5/apiary-landing-page)
 
-## ✨ Demo
+## ✨ Screenshots - [Live Demo](https://youtu.be/ztpOAcOPbu0)
 
 ---
 
