@@ -1,4 +1,4 @@
-# [Apiary Landing Page](https://mccambley.github.io/apiary/) 🐝
+# Apiary Landing Page
 
 This is a project created in conjunction with Practicum by Yandex. The task at hand is to build a landing page to display Practicum's Apiary program, a program that connects startups and junior developers in order to begin building successful companies.
 
